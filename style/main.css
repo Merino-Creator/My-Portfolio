@@ -1,0 +1,36 @@
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+}
+
+.hero {
+    background-image: url("../assets/images/hero-bg.png");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.about {
+    height: 100vh;
+}
+
+.skills {
+    background-image: url("../assets/images/skills-bg.png");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.projects {
+    height: 100vh;
+}
+
+.contact {
+    background-image: url("../assets/images/contact-bg.png");
+    background-position: bottom;
+    background-size: cover;
+    transform: rotate(180deg);
+    height: 100vh;
+}
