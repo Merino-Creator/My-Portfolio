@@ -10,10 +10,23 @@ body {
 
 @font-face {
     font-family: 'Bricolage';
-    src: url("./assets/fonts/BricolageGrotesque-VariableFont_opsz\,wdth\,wght.ttf");
+    src: url("../assets/fonts/BricolageGrotesque-VariableFont_opsz\,wdth\,wght.ttf");
 }
 
 .content-wrapper {
     max-width: 1440px;
     width: 100%;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+}
+
+p {
+    color: white;
+    font-size: 28px;
 }

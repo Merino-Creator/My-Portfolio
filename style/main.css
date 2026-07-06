@@ -7,7 +7,7 @@ main {
 
 .hero {
     background-image: url("../assets/images/hero-bg.png");
-    background-position: center;
+    background-position: top;
     background-size: cover;
     height: 100vh;
 }
