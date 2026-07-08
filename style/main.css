@@ -10,6 +10,7 @@ main {
     background-position: top;
     background-size: cover;
     height: 100vh;
+    margin-top: -160px;
 }
 
 .about {
@@ -33,4 +34,5 @@ main {
     background-size: cover;
     transform: rotate(180deg);
     height: 100vh;
+    margin-bottom: -160px;
 }
