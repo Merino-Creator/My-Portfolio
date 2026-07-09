@@ -33,8 +33,7 @@ main {
     flex-shrink: 0;
     gap: 8px;
     width: 40px;
-    align-self: flex-start;
-    margin-top: 55vh;
+    margin-top: 40vh;
 }
 
 .hero-content {
