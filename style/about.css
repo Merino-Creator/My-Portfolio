@@ -1,0 +1,37 @@
+.about {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-content {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.location {
+    display: flex;
+    flex-direction: column;
+}
+
+.yellow {
+    position: relative;
+}
+
+.yellow-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: absolute;
+    width: 100%;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.about-img {
+    height: 40px;
+    width: 40px;
+}

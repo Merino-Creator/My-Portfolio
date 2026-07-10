@@ -26,14 +26,28 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100px;
+    gap: 8px;
 }
 
-.vector {
-    background-image: url('../assets/images/Vector-bar.png');
-    background-position: center;
-    background-size: cover;
-    border-radius: 8px;
-    width: 40px;
-    height: 12px;
+.toggle-track {
+    position: relative;
+    width: 32px;
+}
+
+.vector-bar {
+    width: 100%;
+    display: block;
+}
+
+.vector-point {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    transition: left 0.3s ease;
+}
+
+.vector-point.active {
+    left: 100%;
+    transform: translate(-100%, -50%);
 }
