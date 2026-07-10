@@ -10,7 +10,12 @@ body {
 
 @font-face {
     font-family: 'Bricolage';
-    src: url("../assets/fonts/BricolageGrotesque-VariableFont_opsz\,wdth\,wght.ttf");
+    src: url("../assets/fonts/bricolage/BricolageGrotesque-VariableFont_opsz\,wdth\,wght.ttf");
+}
+
+@font-face {
+    font-family: 'Kalam';
+    src: url("../assets/fonts/kalam/Kalam-Regular.ttf");
 }
 
 .content-wrapper {

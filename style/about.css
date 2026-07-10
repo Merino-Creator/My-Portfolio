@@ -15,11 +15,30 @@
     flex-direction: column;
 }
 
-.yellow {
+.green {
     position: relative;
+    z-index: 3;
 }
 
-.yellow-text {
+.green-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: absolute;
+    width: 100%;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-4deg);
+}
+
+.purple {
+    position: relative;
+    z-index: 2;
+    margin-top: -75px;
+}
+
+.purple-text {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,7 +50,60 @@
     transform: translate(-50%, -50%);
 }
 
+.brown {
+    position: relative;
+    z-index: 1;
+    margin-top: -65px;
+}
+
+.brown-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: absolute;
+    width: 100%;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(4deg);
+}
+
 .about-img {
     height: 40px;
-    width: 40px;
+    width: 35px;
+}
+
+.about-ripped-img {
+    height: 120px;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about-me-top {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-me-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.lets-talk-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    width: 140px;
+    height: 39px;
+}
+
+.about-underline {
+    width: 120px;
+    height: 12px;
 }

@@ -13,9 +13,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("../assets/images/background/contact-bg.png");
+    background-image: url("../assets/images/background/footer-bg.png");
     background-position: bottom;
     background-size: cover;
-    transform: rotate(180deg);
     z-index: -1;
 }
