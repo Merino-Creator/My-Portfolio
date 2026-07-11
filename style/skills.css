@@ -12,13 +12,27 @@
     width: 100%;
     height: 450px;
     display: flex;
-    justify-content: space-between;
+    gap: 60px;
 }
 
 .skill-left {
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
 }
+
+.skill-headline-one {
+    font-size: 20px;
+    text-wrap: nowrap;
+    margin: 0;
+}
+
+.skill-headline-two {
+    font-size: 60px;
+    text-wrap: nowrap;
+    margin: 0;
+}
+
 
 .skill-mid {
     display: flex;
