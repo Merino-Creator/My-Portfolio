@@ -45,3 +45,14 @@ p {
     height: 80px;
     width: 80px;
 }
+
+h2 {
+    font-size: 60px;
+    margin: 0;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0;
+}

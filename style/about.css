@@ -8,16 +8,19 @@
     display: flex;
     justify-content: space-around;
     width: 100%;
+    gap: 80px;
 }
 
 .location {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .green {
     position: relative;
     z-index: 3;
+    transform: rotate(-4deg);
 }
 
 .green-text {
@@ -27,15 +30,16 @@
     gap: 20px;
     position: absolute;
     width: 100%;
-    top: 45%;
+    top: 40%;
     left: 50%;
-    transform: translate(-50%, -50%) rotate(-4deg);
+    transform: translate(-50%, -50%) rotate(-2deg);
+    font-weight: 300;
 }
 
 .purple {
     position: relative;
     z-index: 2;
-    margin-top: -75px;
+    margin-top: -50px;
 }
 
 .purple-text {
@@ -45,15 +49,17 @@
     gap: 20px;
     position: absolute;
     width: 100%;
-    top: 45%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-weight: 300;
 }
 
 .brown {
     position: relative;
     z-index: 1;
-    margin-top: -65px;
+    margin-top: -40px;
+    transform: rotate(2deg);
 }
 
 .brown-text {
@@ -63,9 +69,10 @@
     gap: 20px;
     position: absolute;
     width: 100%;
-    top: 45%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) rotate(4deg);
+    transform: translate(-50%, -50%) rotate(2deg);
+    font-weight: 300;
 }
 
 .about-img {
@@ -74,13 +81,14 @@
 }
 
 .about-ripped-img {
-    height: 120px;
+    height: 160px;
 }
 
 .about-me {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 100%;
 }
 
 .about-me-top {
@@ -88,10 +96,13 @@
     flex-direction: column;
 }
 
+.about-me-mid {
+    display: flex;
+}
+
 .about-me-bottom {
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    justify-content: flex-end;
 }
 
 .lets-talk-btn {
@@ -104,6 +115,11 @@
 }
 
 .about-underline {
-    width: 120px;
-    height: 12px;
+    width: 280px;
+    height: 24px;
+}
+
+.about-me-text {
+    color: black;
+    font-size: 22px;
 }
