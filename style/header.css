@@ -27,6 +27,8 @@ header {
     align-items: center;
     justify-content: space-between;
     gap: 8px;
+    color: var(--primary-color);
+    font-size: var(--standard-text);
 }
 
 .toggle-track {
