@@ -20,3 +20,10 @@ footer {
     flex-direction: column;
     align-items: flex-start;
 }
+
+footer a {
+    text-decoration: none;
+    font-size: var(--standard-text);
+    font-weight: var(--heavy-font-weight);
+    color: var(--primary-color);
+}

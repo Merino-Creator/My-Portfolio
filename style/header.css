@@ -53,3 +53,10 @@ header {
     left: 100%;
     transform: translate(-100%, -50%);
 }
+
+header a {
+    text-decoration: none;
+    font-size: var(--standard-text);
+    font-weight: var(--heavy-font-weight);
+    color: var(--primary-color);
+}
