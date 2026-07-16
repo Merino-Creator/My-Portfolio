@@ -22,13 +22,18 @@
 }
 
 .skill-headline-one {
-    font-size: 20px;
+    font-size: var(--small-headline);
+    font-weight: var(--light-font-weight);
+    color: var(--primary-color);
     text-wrap: nowrap;
     margin: 0;
+    margin-bottom: 16px;
 }
 
 .skill-headline-two {
-    font-size: 60px;
+    font-size: var(--big-headline);
+    font-weight: var(--heavy-font-weight);
+    color: var(--primary-color);
     text-wrap: nowrap;
     margin: 0;
 }
@@ -52,7 +57,12 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    color: black;
+    margin: 0;
+    max-width: 650px;
+    box-sizing: border-box;
+    padding: 12px 12px 28px 12px;
+    color: var(--secondary-color);
+    font-size: var(--small-text);
 }
 
 .skill-badges {
