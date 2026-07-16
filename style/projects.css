@@ -4,3 +4,64 @@
     justify-content: center;
     align-items: center;
 }
+
+.projects h4 {
+    font-size: var(--small-headline);
+    font-weight: var(--middle-font-weight);
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.projects h3 {
+    font-size: var(--big-headline);
+    font-weight: var(--heavy-font-weight);
+    margin: 0;
+}
+
+.projects-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.projects-top {
+    display: flex;
+    height: 50%;
+    gap: 80px;
+}
+
+.projects-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 560px;
+}
+
+.projects-text {
+    font-size: var(--small-text);
+    margin: 0;
+    margin-top: 40px;
+}
+
+.join-project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.join {
+    position: relative;
+}
+
+.join-badge-img {
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+}
+
+.projects-bottom {
+    display: flex;
+    height: 50%;
+    gap: 80px;
+}
