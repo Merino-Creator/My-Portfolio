@@ -60,7 +60,7 @@
     margin: 0;
     max-width: 650px;
     box-sizing: border-box;
-    padding: 12px 12px 28px 12px;
+    padding: 20px 8px 20px 30px;
     color: var(--secondary-color);
     font-size: var(--small-text);
 }
