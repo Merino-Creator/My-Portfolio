@@ -1,6 +1,5 @@
 header {
     z-index: 100;
-    height: 160px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -13,6 +12,11 @@ header {
     align-items: center;
     height: 100%;
     width: 100%;
+}
+
+.logo {
+    height: 60px;
+    width: 60px;
 }
 
 .header-tabs {
