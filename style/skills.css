@@ -20,6 +20,8 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    position: relative;
+    perspective: 600px;
 }
 
 .skill-headline-one {
@@ -37,6 +39,28 @@
     color: var(--primary-color);
     text-wrap: nowrap;
     margin: 0;
+}
+
+.skill-circle-img {
+    height: 80px;
+    width: 260px;
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    transform: translate(-50%, -50%) scaleX(-1);
+    transition: none;
+}
+
+.skill-circle-img {
+    animation: draw-circle 5s ease infinite;
+}
+
+@keyframes draw-circle {
+    0% { transform: translate(-50%, -50%) scaleX(-1) rotateY(90deg); opacity: 0; }
+    20% { transform: translate(-50%, -50%) scaleX(-1) rotateY(0deg); opacity: 1; }
+    70% { transform: translate(-50%, -50%) scaleX(-1) rotateY(0deg); opacity: 1; }
+    90% { transform: translate(-50%, -50%) scaleX(-1) rotateY(90deg); opacity: 0; }
+    100% { transform: translate(-50%, -50%) scaleX(-1) rotateY(90deg); opacity: 0; }
 }
 
 .skill-mid {
