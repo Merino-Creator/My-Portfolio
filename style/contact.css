@@ -73,6 +73,15 @@
     height: 44px;
     width: 280px;
     align-self: self-end;
+    animation: draw 5s ease-in-out infinite;
+}
+
+@keyframes draw {
+    0% { clip-path: inset(0 100% 0 0); }
+    20% { clip-path: inset(0 0% 0 0); }
+    70% { clip-path: inset(0 0% 0 0); }
+    90% { clip-path: inset(0 100% 0 0); }
+    100% { clip-path: inset(0 100% 0 0); }
 }
 
 .contact-right {
