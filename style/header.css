@@ -31,6 +31,65 @@ header {
     width: 100%;
 }
 
+.header-tabs a {
+    position: relative;
+}
+
+.circle-img {
+    width: 130px;
+    height: 50px;
+}
+
+.string-img {
+    width: 130px;
+    height: 50px;
+}
+
+.wave-img {
+    width: 130px;
+    height: 50px;
+}
+
+.underscore-img {
+    width: 130px;
+    height: 50px;
+}
+
+.circle-img, .string-img, .wave-img, .underscore-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    clip-path: inset(0 100% 0 0);
+    transition: none;
+}
+
+.header-tabs a:hover .circle-img {
+    animation: draw-circle 0.4s ease forwards;
+}
+
+.header-tabs a:hover .string-img {
+    animation: draw-line 0.4s ease forwards;
+}
+
+.header-tabs a:hover .wave-img {
+    animation: draw-line 0.4s ease forwards;
+}
+
+.header-tabs a:hover .underscore-img {
+    animation: draw-line 0.4s ease forwards;
+}
+
+@keyframes draw-circle {
+    0% { clip-path: inset(0 0 100% 0); }
+    100% { clip-path: inset(0 0% 0 0); }
+}
+
+@keyframes draw-line {
+    0% { clip-path: inset(0 100% 0 0); }
+    100% { clip-path: inset(0 0% 0 0); }
+}
+
 .language-btn {
     display: flex;
     align-items: center;
