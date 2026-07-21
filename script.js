@@ -8,6 +8,7 @@ btn.addEventListener('click', () => {
 function highlightWords() {
     const legalNoticeRef = document.getElementById('legalNoticeText');
     const words = ['Portfolio', 'Developer Akademie GmbH', 'Developer Akademie'];
+    if (!legalNoticeRef) return;
 
     let html = legalNoticeRef.innerHTML;
 
