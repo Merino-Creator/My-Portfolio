@@ -1,6 +1,8 @@
 :root {
     --primary-color: white;
     --secondary-color: black;
+    --highlight-color: #3355FF;
+    --highlight-color-light: #647EFD;
     --big-headline: 60px;
     --small-headline: 24px;
     --big-text: 28px;

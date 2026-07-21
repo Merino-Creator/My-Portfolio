@@ -1,0 +1,39 @@
+.legal-notice-background {
+    background-image: url('../assets/images/background/skills-bg.png');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 440px;
+    width: 100%;
+}
+
+h3 {
+    font-size: var(--big-headline);
+    margin-top: 100px;
+    color: var(--primary-color);
+}
+
+h4 {
+    font-size: var(--small-headline);
+    color: var(--highlight-color);
+}
+
+.legal-notice-footer a {
+    color: var(--secondary-color);
+}
+
+.legal-notice-content {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 200px 200px 100px 0;
+}
+
+.legal-notice-wrapper {
+    max-width: 1440px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px 70px 70px 70px;
+    display: flex;
+    flex-direction: column;
+}
