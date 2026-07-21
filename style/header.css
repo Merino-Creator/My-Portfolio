@@ -17,6 +17,11 @@ header {
 .logo {
     height: 60px;
     width: 60px;
+    transition: filter 0.3s ease;
+}
+
+.logo:hover {
+    filter: invert(77%) sepia(84%) saturate(409%) hue-rotate(18deg) brightness(120%) contrast(101%);
 }
 
 .header-tabs {
