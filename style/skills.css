@@ -52,10 +52,10 @@
 }
 
 .skill-circle-img {
-    animation: draw-skill-circle 5s ease infinite;
+    animation: twist-circle 5s ease infinite;
 }
 
-@keyframes draw-skill-circle {
+@keyframes twist-circle {
     0% { transform: translate(-50%, -50%) scaleX(-1) rotateY(90deg); opacity: 0; }
     20% { transform: translate(-50%, -50%) scaleX(-1) rotateY(0deg); opacity: 1; }
     70% { transform: translate(-50%, -50%) scaleX(-1) rotateY(0deg); opacity: 1; }
