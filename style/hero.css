@@ -94,6 +94,52 @@
     justify-content: space-around;
 }
 
+.hello-world-btn {
+    height: 40px;
+    width: 140px;
+    background: none;
+    border: 1px solid white;
+    border-radius: 20px;
+    color: var(--primary-color);
+    font-size: var(--small-text);
+    transition: width 0.3s ease, background 0.3s ease;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.hello-world-btn.expanded {
+    width: 220px;
+    background: var(--highlight-color);
+}
+
+.hello-world-wrapper {
+    position: relative;
+    width: 140px;
+    transition: width 0.3s ease;
+}
+
+.hello-world-wrapper.expanded {
+    width: 220px;
+}
+
+.hand-img {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    height: 40px;
+    width: 40px;
+    opacity: 0;
+    transition: opacity 0.1s ease 0.1s, left 0.7s ease, transform 0.7s ease;
+    transform: translateX(-50%) rotate(360deg);
+}
+
+.hello-world-wrapper.expanded .hand-img {
+    opacity: 1;
+    left: 100%;
+    transform: translateX(-50%) rotate(720deg);
+    transition: opacity 0.1s ease, left 0.7s ease, transform 0.7s ease;
+}
+
 .hero-top-right {
     display: flex;
     transform: rotate(8deg);
@@ -107,21 +153,16 @@
     gap: 20px;
 }
 
-.hello-world-img {
-    height: 40px;
-    width: 140px;
-}
-
 .getintouch-btn {
     height: 40px;
     width: 140px;
     background: none;
-    border: 2px solid white;
+    border: 1px solid white;
     border-radius: 20px;
     color: var(--primary-color);
+    font-size: var(--small-text);
     box-shadow: 2px 2px 0 0;
     transition: box-shadow 0.2s ease, transform 0.2s ease;
-    font-size: var(--small-text);
 }
 
 .getintouch-btn:hover {

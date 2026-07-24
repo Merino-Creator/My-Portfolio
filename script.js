@@ -21,3 +21,18 @@ function highlightWords() {
 }
 
 highlightWords();
+
+
+let helloBtn = document.getElementById('helloWorldBtn');
+
+helloBtn.onmouseover = () => {
+    helloBtn.textContent = "I´M DANIEL STUERMER";
+    helloBtn.classList.add('expanded');
+    helloBtn.parentElement.classList.add('expanded');
+};
+
+helloBtn.onmouseout = () => {
+    helloBtn.textContent = "Hello world";
+    helloBtn.classList.remove('expanded');
+    helloBtn.parentElement.classList.remove('expanded');
+};
