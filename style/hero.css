@@ -112,7 +112,21 @@
     width: 140px;
 }
 
-.getintouch-img {
+.getintouch-btn {
     height: 40px;
     width: 140px;
+    background: none;
+    border: 2px solid white;
+    border-radius: 20px;
+    color: var(--primary-color);
+    box-shadow: 2px 2px 0 0;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    font-size: var(--small-text);
+}
+
+.getintouch-btn:hover {
+    cursor: pointer;
+    background-color: var(--button-hover-color);
+    box-shadow: 0 0 0 0;
+    transform: translate(4px, 4px);
 }
