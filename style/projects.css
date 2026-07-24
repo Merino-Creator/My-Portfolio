@@ -57,9 +57,19 @@
     position: relative;
 }
 
+.join-img {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(15px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(15px); }
+}
+
 .join-badge-img {
     position: absolute;
-    bottom: 100px;
+    bottom: 160px;
     left: 0;
 }
 
