@@ -80,6 +80,11 @@
     width: 560px;
     height: 360px;
     border-radius: 16px;
+    transition: transform 0.3s ease;
+}
+
+.sharky-img:hover {
+    transform: scale(1.1);
 }
 
 .pokedex-project {
@@ -93,4 +98,9 @@
     width: 560px;
     height: 360px;
     border-radius: 16px;
+    transition: transform 0.3s ease;
+}
+
+.pokedex-img:hover {
+    transform: scale(1.1);
 }
