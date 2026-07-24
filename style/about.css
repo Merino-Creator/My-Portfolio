@@ -125,11 +125,21 @@
 
 .lets-talk-btn {
     background: none;
-    border: none;
-    padding: 0;
+    border: 1px solid black;
+    border-radius: 20px;
     cursor: pointer;
     width: 140px;
-    height: 39px;
+    height: 40px;
+    box-shadow: 2px 2px 0 0;
+    font-size: var(--small-text);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.lets-talk-btn:hover {
+    cursor: pointer;
+    background-color: var(--button-hover-color);
+    box-shadow: 0 0 0 0;
+    transform: translate(4px, 4px);
 }
 
 .about-underline {
