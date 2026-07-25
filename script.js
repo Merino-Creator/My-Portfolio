@@ -41,13 +41,9 @@ let joinImgWrapper = document.getElementById('joinImgWrapper');
 let joinImg = document.getElementById('joinImg');
 
 joinImgWrapper.onmouseover = () => {
-    joinImg.style.animation = 'none';
-    setTimeout(() => {
-        joinImg.style.transform = 'scale(1.1)';
-    }, 10);
+    joinImg.style.animationPlayState = 'paused';
 };
 
 joinImgWrapper.onmouseout = () => {
-    joinImg.style.transform = '';
-    joinImg.style.animation = 'float 3s ease-in-out infinite';
+    joinImg.style.animationPlayState = 'running';
 };

@@ -53,8 +53,39 @@
     width: 560px;
 }
 
-.join-img {
-    animation: float 3s ease-in-out infinite;
+.join {
+    position: relative;
+}
+
+.join-img-wrapper {
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.join-img-wrapper:hover {
+    .project-details-btn {
+        opacity: 1;
+    }
+
+    transform: scale(1.1);
+}
+
+.join-img-wrapper::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+    border-radius: 0 0 16px 16px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.join-img-wrapper:hover::after {
+    opacity: 1;
 }
 
 @keyframes float {
@@ -63,46 +94,11 @@
     100% { transform: translateY(15px); }
 }
 
-.join-img-wrapper {
-    position: relative;
-}
-
-.join-img-wrapper:hover {
-    .project-details-btn {
-        opacity: 1;
-    }
-
-    .join-img {
-        transform: scale(1.1);
-    }
-}
-
-.project-details-btn {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    width: 170px;
-    height: 40px;
-    border: 1px solid white;
-    border-radius: 20px;
-    background: none;
-    color: var(--primary-color);
-    font-size: var(--small-text);
-    box-shadow: 4px 4px 0 0;
-}
-
-.project-details-btn:hover {
-    cursor: pointer;
-    background-color: var(--button-hover-color);
-    box-shadow: 0 0 0 0;
-    transform: translate(4px, 4px);
-}
-
-.join-img-wrapper:hover .join-hover-btn {
-    opacity: 1;
-    pointer-events: all;
+.join-img {
+    width: 560px;
+    height: 360px;
+    border-radius: 16px;
+    animation: float 3s ease-in-out infinite;
 }
 
 .join-badge-img {
@@ -127,6 +123,7 @@
 
 .sharky-img-wrapper {
     position: relative;
+    transition: transform 0.3s ease;
 }
 
 .sharky-img-wrapper:hover {
@@ -134,16 +131,32 @@
         opacity: 1;
     }
 
-    .sharky-img {
-        transform: scale(1.1);
-    }
+    transform: scale(1.1);
+}
+
+.sharky-img-wrapper::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+    border-radius: 0 0 16px 16px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.sharky-img-wrapper:hover::after {
+    opacity: 1;
+    z-index: 1;
 }
 
 .sharky-img {
     width: 560px;
     height: 360px;
     border-radius: 16px;
-    transition: transform 0.3s ease;
 }
 
 .pokedex-project {
@@ -155,6 +168,7 @@
 
 .pokedex-img-wrapper {
     position: relative;
+    transition: transform 0.3s ease;
 }
 
 .pokedex-img-wrapper:hover {
@@ -162,14 +176,54 @@
         opacity: 1;
     }
 
-    .pokedex-img {
-        transform: scale(1.1);
-    }
+    transform: scale(1.1);
+}
+
+.pokedex-img-wrapper::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+    border-radius: 0 0 16px 16px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.pokedex-img-wrapper:hover::after {
+    opacity: 1;
+    z-index: 1;
 }
 
 .pokedex-img {
     width: 560px;
     height: 360px;
     border-radius: 16px;
-    transition: transform 0.3s ease;
+}
+
+.project-details-btn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    width: 170px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 20px;
+    background: none;
+    color: var(--primary-color);
+    font-size: var(--small-text);
+    box-shadow: 4px 4px 0 0;
+    z-index: 2;
+}
+
+.project-details-btn:hover {
+    cursor: pointer;
+    background-color: var(--button-hover-color);
+    box-shadow: 0 0 0 0;
+    transform: translate(4px, 4px);
 }
