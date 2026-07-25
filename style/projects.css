@@ -71,6 +71,12 @@
     position: relative;
 }
 
+.join-img-wrapper:hover {
+    .project-details-btn {
+        opacity: 1;
+    }
+}
+
 .join-img-wrapper::after {
     content: '';
     position: absolute;
@@ -89,7 +95,7 @@
     opacity: 1;
 }
 
-.join-hover-btn {
+.project-details-btn {
     position: absolute;
     bottom: 20px;
     right: 20px;
@@ -102,10 +108,10 @@
     background: none;
     color: var(--primary-color);
     font-size: var(--small-text);
-    box-shadow: 2px 2px 0 0;
+    box-shadow: 4px 4px 0 0;
 }
 
-.join-hover-btn:hover {
+.project-details-btn:hover {
     cursor: pointer;
     background-color: var(--button-hover-color);
     box-shadow: 0 0 0 0;
@@ -137,6 +143,16 @@
     width: 560px;
 }
 
+.sharky-img-wrapper {
+    position: relative;
+}
+
+.sharky-img-wrapper:hover {
+    .project-details-btn {
+        opacity: 1;
+    }
+}
+
 .sharky-img {
     width: 560px;
     height: 360px;
@@ -153,6 +169,16 @@
     flex-direction: column;
     justify-content: flex-start;
     width: 560px;
+}
+
+.pokedex-img-wrapper {
+    position: relative;
+}
+
+.pokedex-img-wrapper:hover {
+    .project-details-btn {
+        opacity: 1;
+    }
 }
 
 .pokedex-img {

@@ -130,7 +130,7 @@
     cursor: pointer;
     width: 140px;
     height: 40px;
-    box-shadow: 2px 2px 0 0;
+    box-shadow: 4px 4px 0 0;
     font-size: var(--small-text);
     transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
