@@ -37,16 +37,17 @@ helloBtn.onmouseout = () => {
     helloBtn.parentElement.classList.remove('expanded');
 };
 
+let joinImgWrapper = document.getElementById('joinImgWrapper');
 let joinImg = document.getElementById('joinImg');
 
-joinImg.onmouseover = () => {
+joinImgWrapper.onmouseover = () => {
     joinImg.style.animation = 'none';
     setTimeout(() => {
         joinImg.style.transform = 'scale(1.1)';
     }, 10);
 };
 
-joinImg.onmouseout = () => {
+joinImgWrapper.onmouseout = () => {
     joinImg.style.transform = '';
     joinImg.style.animation = 'float 3s ease-in-out infinite';
 };
