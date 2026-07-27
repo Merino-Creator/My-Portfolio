@@ -158,12 +158,31 @@
     gap: 12px;
 }
 
+.checkbox-wrapper {
+    position: relative;
+}
+
 .checkbox {
     appearance: none;
     border: 2px solid purple;
     min-width: 20px;
     min-height: 20px;
     margin: 0;
+}
+
+.checkmark-img {
+    position: absolute;
+    top: 25%;
+    left: 70%;
+    height: 24px;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+}
+
+.checkmark-img.visible {
+    opacity: 1;
 }
 
 .contact-link {

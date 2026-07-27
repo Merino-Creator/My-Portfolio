@@ -75,3 +75,10 @@ nameInput.oninput = checkForm;
 emailInput.oninput = checkForm;
 helpInput.oninput = checkForm;
 checkbox.onclick = checkForm;
+
+let checkmark = document.getElementById('checkmark');
+
+checkbox.onclick = () => {
+    checkmark.classList.toggle('visible');
+    checkForm();
+}
