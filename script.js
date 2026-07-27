@@ -56,3 +56,22 @@ if (languageBtn) {
         germanBtn.classList.toggle('active');
     };
 }
+
+let sendBtn = document.getElementById('sendBtn');
+let nameInput = document.getElementById('nameInput');
+let emailInput = document.getElementById('emailInput');
+let helpInput = document.getElementById('helpInput');
+let checkbox = document.getElementById('checkbox');
+
+function checkForm() {
+    if (nameInput.value && emailInput.value && helpInput.value && checkbox.checked) {
+        sendBtn.disabled = false;
+    } else {
+        sendBtn.disabled = true;
+    }
+}
+
+nameInput.oninput = checkForm;
+emailInput.oninput = checkForm;
+helpInput.oninput = checkForm;
+checkbox.onclick = checkForm;

@@ -1,6 +1,6 @@
 .contact {
     position: relative;
-    height: 1000px;
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -100,6 +100,7 @@
 
 .contact-badge-img {
     height: 170px;
+    z-index: 1;
 }
 
 .contact-right h4 {
@@ -126,6 +127,8 @@
     border: none;
     margin-bottom: 8px;
     font-size: var(--small-text);
+    outline: none;
+    color: var(--primary-color);
 }
 
 .name-question {
@@ -165,4 +168,32 @@
 
 .contact-link {
     color: purple;
+}
+
+.send-btn {
+    background: none;
+    border: 1px solid white;
+    border-radius: 20px;
+    color: var(--primary-color);
+    cursor: pointer;
+    width: 140px;
+    height: 40px;
+    align-self: self-end;
+    box-shadow: 4px 4px 0 0;
+    font-size: var(--small-text);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.send-btn:hover {
+    cursor: pointer;
+    background-color: var(--button-hover-color);
+    box-shadow: 0 0 0 0;
+    transform: translate(4px, 4px);
+}
+
+.send-btn:disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+    border: 1px solid gray;
+    color: gray;
 }
