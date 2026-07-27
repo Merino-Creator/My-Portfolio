@@ -1,10 +1,3 @@
-const btn = document.querySelector('.language-btn');
-const point = document.querySelector('.vector-point');
-
-btn.addEventListener('click', () => {
-    point.classList.toggle('active');
-});
-
 function highlightWords() {
     const legalNoticeRef = document.getElementById('legalNoticeText');
     const words = ['Portfolio', 'Developer Akademie GmbH', 'Developer Akademie'];
@@ -21,7 +14,6 @@ function highlightWords() {
 }
 
 highlightWords();
-
 
 let helloBtn = document.getElementById('helloWorldBtn');
 
@@ -47,3 +39,20 @@ joinImgWrapper.onmouseover = () => {
 joinImgWrapper.onmouseout = () => {
     joinImg.style.animationPlayState = 'running';
 };
+
+let languageBtn = document.getElementById('languageBtn');
+let vectorPoint = document.getElementById('vectorPoint');
+let englishBtn = document.getElementById('englishBtn');
+let germanBtn = document.getElementById('germanBtn');
+
+if (languageBtn) {
+    let vectorPoint = document.getElementById('vectorPoint');
+    let englishBtn = document.getElementById('englishBtn');
+    let germanBtn = document.getElementById('germanBtn');
+
+    languageBtn.onclick = () => {
+        vectorPoint.classList.toggle('active');
+        englishBtn.classList.toggle('active');
+        germanBtn.classList.toggle('active');
+    };
+}
