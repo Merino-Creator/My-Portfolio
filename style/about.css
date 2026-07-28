@@ -145,15 +145,7 @@
 .about-underline {
     width: 280px;
     height: 24px;
-    animation: draw 5s ease infinite;
-}
-
-@keyframes draw {
-    0% { clip-path: inset(0 100% 0 0); }
-    20% { clip-path: inset(0 0% 0 0); }
-    70% { clip-path: inset(0 0% 0 0); }
-    90% { clip-path: inset(0 100% 0 0); }
-    100% { clip-path: inset(0 100% 0 0); }
+    animation: draw-left-right 5s ease infinite;
 }
 
 .about-me-text {

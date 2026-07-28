@@ -55,14 +55,6 @@
     animation: twist-circle 5s ease infinite;
 }
 
-@keyframes twist-circle {
-    0% { transform: translate(-50%, -50%) scaleX(-1) rotateY(90deg); opacity: 0; }
-    20% { transform: translate(-50%, -50%) scaleX(-1) rotateY(0deg); opacity: 1; }
-    70% { transform: translate(-50%, -50%) scaleX(-1) rotateY(0deg); opacity: 1; }
-    90% { transform: translate(-50%, -50%) scaleX(-1) rotateY(90deg); opacity: 0; }
-    100% { transform: translate(-50%, -50%) scaleX(-1) rotateY(90deg); opacity: 0; }
-}
-
 .skill-mid {
     display: flex;
     flex-direction: column;

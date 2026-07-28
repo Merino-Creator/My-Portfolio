@@ -88,12 +88,6 @@
     opacity: 1;
 }
 
-@keyframes float {
-    0% { transform: translateY(15px); }
-    50% { transform: translateY(-15px); }
-    100% { transform: translateY(15px); }
-}
-
 .join-img {
     width: 560px;
     height: 360px;

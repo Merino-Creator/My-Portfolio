@@ -1,0 +1,37 @@
+@keyframes draw-circle {
+    0% { clip-path: inset(0 0 100% 0); }
+    100% { clip-path: inset(0 0% 0 0); }
+}
+
+@keyframes draw-line {
+    0% { clip-path: inset(0 100% 0 0); }
+    100% { clip-path: inset(0 0% 0 0); }
+}
+
+@keyframes draw-box {
+    0% { clip-path: inset(0 0 100% 100%); }
+    50% { clip-path: inset(0 0 0 100%); }
+    100% { clip-path: inset(0 0 0 0); }
+}
+
+@keyframes draw-left-right {
+    0% { clip-path: inset(0 100% 0 0); }
+    20% { clip-path: inset(0 0% 0 0); }
+    70% { clip-path: inset(0 0% 0 0); }
+    90% { clip-path: inset(0 100% 0 0); }
+    100% { clip-path: inset(0 100% 0 0); }
+}
+
+@keyframes float {
+    0% { transform: translateY(15px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(15px); }
+}
+
+@keyframes twist-circle {
+    0% { transform: translate(-50%, -50%) scaleX(-1) rotateY(90deg); opacity: 0; }
+    20% { transform: translate(-50%, -50%) scaleX(-1) rotateY(0deg); opacity: 1; }
+    70% { transform: translate(-50%, -50%) scaleX(-1) rotateY(0deg); opacity: 1; }
+    90% { transform: translate(-50%, -50%) scaleX(-1) rotateY(90deg); opacity: 0; }
+    100% { transform: translate(-50%, -50%) scaleX(-1) rotateY(90deg); opacity: 0; }
+}

@@ -69,16 +69,6 @@ header a {
     animation: draw-line 0.4s ease forwards;
 }
 
-@keyframes draw-circle {
-    0% { clip-path: inset(0 0 100% 0); }
-    100% { clip-path: inset(0 0% 0 0); }
-}
-
-@keyframes draw-line {
-    0% { clip-path: inset(0 100% 0 0); }
-    100% { clip-path: inset(0 0% 0 0); }
-}
-
 .language-btn {
     display: flex;
     align-items: center;
@@ -108,12 +98,6 @@ header a {
     transform: translate(-50%, -50%) rotate(180deg);
     pointer-events: none;
     opacity: 0;
-}
-
-@keyframes draw-box {
-    0% { clip-path: inset(0 0 100% 100%); }
-    50% { clip-path: inset(0 0 0 100%); }
-    100% { clip-path: inset(0 0 0 0); }
 }
 
 .lang-btn-wrapper:hover .lang-box-img {
