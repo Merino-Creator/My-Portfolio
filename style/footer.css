@@ -62,12 +62,12 @@ footer a {
 .roll-img {
     position: absolute;
     bottom: 100%;
-    left: 30%;
-    height: 40px;
-    width: 40px;
+    left: 40%;
+    height: 30px;
+    width: 30px;
     opacity: 0;
     transform: translateX(0) rotate(180deg);
-    transition: opacity 0.1s ease 0.2s, left 0.7s ease, transform 0.7s ease;
+    transition: opacity 0.1s ease 0.15s, left 0.4s ease, transform 0.4s ease;
     pointer-events: none;
 }
 
@@ -77,5 +77,5 @@ footer a {
     opacity: 1;
     left: 90%;
     transform: translateX(-50%) rotate(360deg);
-    transition: opacity 0.1s ease, left 0.7s ease, transform 0.7s ease;
+    transition: opacity 0.1s ease, left 0.4s ease, transform 0.4s ease;
 }
