@@ -115,7 +115,7 @@
 }
 
 .bar-one {
-    display: none;
+    background-color: transparent;
 }
 
 .contact-input-field {

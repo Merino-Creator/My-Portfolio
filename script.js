@@ -96,9 +96,9 @@ let barFour = document.getElementById('barFour');
 
 if (nameQuestion) {
     nameQuestion.onmouseover = () => {
-        barOne.style.backgroundColor = 'purple';
+        barOne.style.backgroundColor = 'var(--main-color-two)';
         barOne.style.display = 'flex';
-        barTwo.style.backgroundColor = 'purple';
+        barTwo.style.backgroundColor = 'var(--main-color-two)';
     };
 
     nameQuestion.onmouseout = () => {
@@ -107,8 +107,8 @@ if (nameQuestion) {
     };
 
     emailQuestion.onmouseover = () => {
-        barTwo.style.backgroundColor = 'purple';
-        barThree.style.backgroundColor = 'purple';
+        barTwo.style.backgroundColor = 'var(--main-color-two)';
+        barThree.style.backgroundColor = 'var(--main-color-two)';
     };
 
     emailQuestion.onmouseout = () => {
@@ -117,8 +117,8 @@ if (nameQuestion) {
     };
 
     helpQuestion.onmouseover = () => {
-        barThree.style.backgroundColor = 'purple';
-        barFour.style.backgroundColor = 'purple';
+        barThree.style.backgroundColor = 'var(--main-color-two)';
+        barFour.style.backgroundColor = 'var(--main-color-two)';
     };
 
     helpQuestion.onmouseout = () => {
