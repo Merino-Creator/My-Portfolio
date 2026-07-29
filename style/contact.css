@@ -111,7 +111,11 @@
 .contact-questions-seperator {
     height: 1px;
     width: 100%;
-    background-color: greenyellow;
+    background-color: var(--main-color-one);
+}
+
+.bar-one {
+    display: none;
 }
 
 .contact-input-field {
@@ -156,7 +160,7 @@
 
 .checkbox {
     appearance: none;
-    border: 2px solid purple;
+    border: 2px solid var(--main-color-two);
     min-width: 20px;
     min-height: 20px;
     margin: 0;
@@ -178,7 +182,7 @@
 }
 
 .contact-link {
-    color: purple;
+    color: var(--main-color-two);
 }
 
 .send-btn {

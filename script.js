@@ -85,3 +85,44 @@ if (sendBtn) {
         checkForm();
     };
 }
+
+let nameQuestion = document.getElementById('nameQuestion');
+let emailQuestion = document.getElementById('emailQuestion');
+let helpQuestion = document.getElementById('helpQuestion');
+let barOne = document.getElementById('barOne');
+let barTwo = document.getElementById('barTwo');
+let barThree = document.getElementById('barThree');
+let barFour = document.getElementById('barFour');
+
+if (nameQuestion) {
+    nameQuestion.onmouseover = () => {
+        barOne.style.backgroundColor = 'purple';
+        barOne.style.display = 'flex';
+        barTwo.style.backgroundColor = 'purple';
+    };
+
+    nameQuestion.onmouseout = () => {
+        barOne.style.backgroundColor = '';
+        barTwo.style.backgroundColor = '';
+    };
+
+    emailQuestion.onmouseover = () => {
+        barTwo.style.backgroundColor = 'purple';
+        barThree.style.backgroundColor = 'purple';
+    };
+
+    emailQuestion.onmouseout = () => {
+        barTwo.style.backgroundColor = '';
+        barThree.style.backgroundColor = '';
+    };
+
+    helpQuestion.onmouseover = () => {
+        barThree.style.backgroundColor = 'purple';
+        barFour.style.backgroundColor = 'purple';
+    };
+
+    helpQuestion.onmouseout = () => {
+        barThree.style.backgroundColor = '';
+        barFour.style.backgroundColor = '';
+    };
+}
