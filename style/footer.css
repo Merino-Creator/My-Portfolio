@@ -26,9 +26,56 @@ footer {
     width: 60px;
 }
 
+.legal-notice-link {
+    position: relative;
+}
+
+.legal-notice-link:hover .nav-underscore-img {
+    animation: draw-line 0.4s ease forwards;
+}
+
 footer a {
     text-decoration: none;
     font-size: var(--standard-text);
     font-weight: var(--heavy-font-weight);
     color: var(--primary-color);
+}
+
+.github-link-btn, .linkedin-link-btn, .email-link-btn {
+    background: none;
+    border: none;
+    border-radius: 20px;
+    color: var(--primary-color);
+    font-size: var(--small-text);
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+    position: relative;
+    overflow: visible;
+}
+
+.github-link-btn:hover, .linkedin-link-btn:hover, .email-link-btn:hover {
+    background-color: var(--main-color-two);
+    transition: ease 0.4s;
+}
+
+.roll-img {
+    position: absolute;
+    bottom: 100%;
+    left: 30%;
+    height: 40px;
+    width: 40px;
+    opacity: 0;
+    transform: translateX(0) rotate(180deg);
+    transition: opacity 0.1s ease 0.2s, left 0.7s ease, transform 0.7s ease;
+    pointer-events: none;
+}
+
+.github-link-btn:hover .roll-img,
+.linkedin-link-btn:hover .roll-img,
+.email-link-btn:hover .roll-img {
+    opacity: 1;
+    left: 90%;
+    transform: translateX(-50%) rotate(360deg);
+    transition: opacity 0.1s ease, left 0.7s ease, transform 0.7s ease;
 }
