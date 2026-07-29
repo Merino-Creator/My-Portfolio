@@ -40,6 +40,14 @@
     align-items: center;
 }
 
+.social-link a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
 .social-images {
     height: 32px;
     width: 32px;
