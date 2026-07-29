@@ -18,14 +18,18 @@ highlightWords();
 let helloBtn = document.getElementById('helloWorldBtn');
 
 if (helloBtn) {
+    let helloWrapper = helloBtn.parentElement;
+
     helloBtn.onmouseover = () => {
         helloBtn.textContent = "I´M DANIEL STUERMER";
         helloBtn.classList.add('expanded');
+        helloWrapper.classList.add('expanded');
     };
 
     helloBtn.onmouseout = () => {
         helloBtn.textContent = "Hello world";
         helloBtn.classList.remove('expanded');
+        helloWrapper.classList.remove('expanded');
     };
 }
 
@@ -97,7 +101,6 @@ let barFour = document.getElementById('barFour');
 if (nameQuestion) {
     nameQuestion.onmouseover = () => {
         barOne.style.backgroundColor = 'var(--main-color-two)';
-        barOne.style.display = 'flex';
         barTwo.style.backgroundColor = 'var(--main-color-two)';
     };
 
