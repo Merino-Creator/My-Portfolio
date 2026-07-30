@@ -79,3 +79,12 @@ footer a {
     transform: translateX(-50%) rotate(360deg);
     transition: opacity 0.1s ease, left 0.4s ease, transform 0.4s ease;
 }
+
+.legal-notice-btn {
+    color: var(--secondary-color);
+}
+
+.legal-notice-img {
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+}
