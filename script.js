@@ -133,3 +133,12 @@ if (nameQuestion) {
         barFour.style.backgroundColor = '';
     };
 }
+
+let skillRight = document.querySelector('.skill-right');
+let peelStart = document.querySelector('.peel-img-start');
+
+if (skillRight) {
+    skillRight.onclick = () => {
+        skillRight.classList.toggle('peeled');
+    };
+}

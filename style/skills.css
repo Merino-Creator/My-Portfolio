@@ -107,27 +107,64 @@
     align-items: end;
     margin-bottom: 40px;
     transform: rotate(8deg);
+    height: fit-content;
+    align-self: flex-end;
 }
 
-.peel-img {
+.peel-img-start {
     height: 200px;
     width: 200px;
     position: relative;
+    transition: opacity 0.3s ease;
+}
+
+.peel-img-begin {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 .peel-arrow {
     position: absolute;
     height: 40px;
-    top: 60%;
+    top: 20%;
     right: 40%;
 }
 
 .peel-text {
     margin: 0;
     position: absolute;
-    top: 70%;
-    right: 36%;
+    top: 45%;
+    right: 25%;
     font-family: 'Kalam';
     text-align: center;
-    font-size: 38px;
+    font-size: 40px;
+    line-height: 1.1;
+    color: var(--primary-color);
+}
+
+.peel-img-end {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.skill-right:hover .peel-img-start {
+    opacity: 0;
+}
+
+.skill-right:hover .peel-img-begin {
+    opacity: 1;
+}
+
+.skill-right.peeled .peel-img-begin {
+    opacity: 0;
+}
+
+.skill-right.peeled .peel-img-end {
+    opacity: 1;
 }
