@@ -1,12 +1,19 @@
 function init() {
     loadTemplates();
+    initLanguageBtn();
+    initHelloBtn();
+    initJoinWrapper();
+    initSendBtn();
+    initContactBars();
+    initPeel();
+    highlightWords();
 }
 
 function highlightWords() {
     const legalNoticeRef = document.getElementById('legalNoticeText');
-    const words = ['Portfolio', 'Developer Akademie GmbH', 'Developer Akademie'];
     if (!legalNoticeRef) return;
 
+    const words = ['Portfolio', 'Developer Akademie GmbH', 'Developer Akademie'];
     let html = legalNoticeRef.innerHTML;
 
     words.forEach(word => {
@@ -17,11 +24,10 @@ function highlightWords() {
     legalNoticeRef.innerHTML = html;
 }
 
-highlightWords();
+function initHelloBtn() {
+    let helloBtn = document.getElementById('helloWorldBtn');
+    if (!helloBtn) return;
 
-let helloBtn = document.getElementById('helloWorldBtn');
-
-if (helloBtn) {
     let helloWrapper = helloBtn.parentElement;
 
     helloBtn.onmouseover = () => {
@@ -37,10 +43,11 @@ if (helloBtn) {
     };
 }
 
-let joinImgWrapper = document.getElementById('joinImgWrapper');
-let joinImg = document.getElementById('joinImg');
+function initJoinWrapper() {
+    let joinImgWrapper = document.getElementById('joinImgWrapper');
+    let joinImg = document.getElementById('joinImg');
+    if (!joinImgWrapper) return;
 
-if (joinImgWrapper) {
     joinImgWrapper.onmouseover = () => {
         joinImg.style.animationPlayState = 'paused';
     };
@@ -50,12 +57,10 @@ if (joinImgWrapper) {
     };
 }
 
-let languageBtn = document.getElementById('languageBtn');
-let vectorPoint = document.getElementById('vectorPoint');
-let englishBtn = document.getElementById('englishBtn');
-let germanBtn = document.getElementById('germanBtn');
+function initLanguageBtn() {
+    let languageBtn = document.getElementById('languageBtn');
+    if (!languageBtn) return;
 
-if (languageBtn) {
     let vectorPoint = document.getElementById('vectorPoint');
     let englishBtn = document.getElementById('englishBtn');
     let germanBtn = document.getElementById('germanBtn');
@@ -67,9 +72,10 @@ if (languageBtn) {
     };
 }
 
-let sendBtn = document.getElementById('sendBtn');
+function initSendBtn() {
+    let sendBtn = document.getElementById('sendBtn');
+    if (!sendBtn) return;
 
-if (sendBtn) {
     let nameInput = document.getElementById('nameInput');
     let emailInput = document.getElementById('emailInput');
     let helpInput = document.getElementById('helpInput');
@@ -87,27 +93,28 @@ if (sendBtn) {
     nameInput.oninput = checkForm;
     emailInput.oninput = checkForm;
     helpInput.oninput = checkForm;
-    
+
     checkbox.onclick = () => {
         checkmark.classList.toggle('visible');
         checkForm();
     };
 }
 
-let nameQuestion = document.getElementById('nameQuestion');
-let emailQuestion = document.getElementById('emailQuestion');
-let helpQuestion = document.getElementById('helpQuestion');
-let barOne = document.getElementById('barOne');
-let barTwo = document.getElementById('barTwo');
-let barThree = document.getElementById('barThree');
-let barFour = document.getElementById('barFour');
+function initContactBars() {
+    let nameQuestion = document.getElementById('nameQuestion');
+    if (!nameQuestion) return;
 
-if (nameQuestion) {
+    let emailQuestion = document.getElementById('emailQuestion');
+    let helpQuestion = document.getElementById('helpQuestion');
+    let barOne = document.getElementById('barOne');
+    let barTwo = document.getElementById('barTwo');
+    let barThree = document.getElementById('barThree');
+    let barFour = document.getElementById('barFour');
+
     nameQuestion.onmouseover = () => {
         barOne.style.backgroundColor = 'var(--main-color-two)';
         barTwo.style.backgroundColor = 'var(--main-color-two)';
     };
-
     nameQuestion.onmouseout = () => {
         barOne.style.backgroundColor = '';
         barTwo.style.backgroundColor = '';
@@ -117,7 +124,6 @@ if (nameQuestion) {
         barTwo.style.backgroundColor = 'var(--main-color-two)';
         barThree.style.backgroundColor = 'var(--main-color-two)';
     };
-
     emailQuestion.onmouseout = () => {
         barTwo.style.backgroundColor = '';
         barThree.style.backgroundColor = '';
@@ -127,17 +133,16 @@ if (nameQuestion) {
         barThree.style.backgroundColor = 'var(--main-color-two)';
         barFour.style.backgroundColor = 'var(--main-color-two)';
     };
-
     helpQuestion.onmouseout = () => {
         barThree.style.backgroundColor = '';
         barFour.style.backgroundColor = '';
     };
 }
 
-let skillRight = document.querySelector('.skill-right');
-let peelStart = document.querySelector('.peel-img-start');
+function initPeel() {
+    let skillRight = document.querySelector('.skill-right');
+    if (!skillRight) return;
 
-if (skillRight) {
     skillRight.onclick = () => {
         skillRight.classList.toggle('peeled');
     };
