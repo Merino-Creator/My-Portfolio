@@ -161,10 +161,44 @@
     opacity: 1;
 }
 
-.skill-right.peeled .peel-img-begin {
+.skill-right.peeled .peel-img-begin,
+.skill-right.peeled .peel-img-start {
     opacity: 0;
 }
 
 .skill-right.peeled .peel-img-end {
     opacity: 1;
+}
+
+.skill-right.peeled .peeled-image-box {
+    opacity: 1;
+}
+
+.peeled-image-box {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.peeled-text {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: var(--small-text);
+}
+
+.peeled-skill-badge-img {
+    height: 50px;
+}
+
+.peeled-skill-badges {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
 }
