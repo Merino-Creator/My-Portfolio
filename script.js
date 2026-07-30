@@ -1,3 +1,7 @@
+function init() {
+    loadTemplates();
+}
+
 function highlightWords() {
     const legalNoticeRef = document.getElementById('legalNoticeText');
     const words = ['Portfolio', 'Developer Akademie GmbH', 'Developer Akademie'];

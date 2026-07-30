@@ -21,52 +21,14 @@
 
 </head>
 
-<body>
+<body onload="init()">
 
     <main>
 
         <section class="hero">
             <div class="hero-content-wrapper">
 
-                <header>
-                    <div class="nav-bar">
-                        <a href="../index.html"><img class="logo" src="../assets/images/logo.png"
-                                alt="logo of website in header">
-                        </a>
-                        <div class="header-tabs">
-                            <a class="about-me-tab" href="#about">
-                                About me
-                                <img class="nav-circle-img" src="./assets/images/header/circle.png" alt="">
-                            </a>
-                            <a class="skills-tab" href="#skills">
-                                Skills
-                                <img class="nav-string-img" src="./assets/images/header/string.png" alt="">
-                            </a>
-                            <a class="projects-tab" href="#projects">
-                                Projects
-                                <img class="nav-wave-img" src="./assets/images/header/wave.png" alt="">
-                            </a>
-                            <a class="contact-tab" href="#contact">
-                                Contact
-                                <img class="nav-underscore-img" src="./assets/images/header/underscore.png" alt="">
-                            </a>
-                        </div>
-                        <div id="languageBtn" class="language-btn">
-                            <div class="lang-btn-wrapper">
-                                <p id="englishBtn" class="lang-btn active">EN</p>
-                                <img class="lang-box-img" src="./assets/images/header/toggle.png" alt="">
-                            </div>
-                            <div class="toggle-track">
-                                <img class="vector-bar" src="./assets/images/header/vector-bar.png" alt="">
-                                <img id="vectorPoint" class="vector-point" src="./assets/images/header/vector-point.png"
-                                    alt="">
-                            </div>
-                            <div class="lang-btn-wrapper">
-                                <p id="germanBtn" class="lang-btn">DE</p>
-                                <img class="lang-box-img" src="./assets/images/header/toggle.png" alt="">
-                            </div>
-                        </div>
-                    </div>
+                <header id="headerContent">
                 </header>
 
                 <div class="hero-container">
@@ -177,7 +139,7 @@
                     <div class="skill-mid">
                         <div class="skill-description">
                             <img class="skill-paper-img" src="./assets/images/skills/paper-long-2.png" alt="">
-                            <p class="skill-text">My strengths lie in HTML, CSS, and JavaScript—the fundamental building
+                            <p class="skill-text">My strengths lay in HTML, CSS, and JavaScript—the fundamental building
                                 blocks of the modern web, which I strategically apply throughout my projects.
                             </p>
                         </div>
@@ -323,30 +285,7 @@
                     </div>
                 </div>
 
-                <footer>
-                    <div class="contact-bar">
-                        <div class="legal-notice">
-                            <img class="logo" src="./assets/images/logo.png" alt="logo of website in footer">
-                            <p>© Daniel Stürmer 2026 </p>
-                            <a class="legal-notice-link" href="./html/legal-notice.html">Legal Notice
-                                <img class="nav-underscore-img" src="./assets/images/header/underscore.png" alt="">
-                            </a>
-                        </div>
-                        <a href="https://github.com/Merino-Creator">
-                            <button class="github-link-btn">GitHub
-                                <img class="roll-img" src="./assets/images/hero/github-btn.png" alt="">
-                            </button>
-                        </a>
-                        <a href="https://www.linkedin.com/in/daniel-st%C3%BCrmer-b3b6673b3/">
-                            <button class="linkedin-link-btn">LinkedIn
-                                <img class="roll-img" src="./assets/images/hero/linkedin-btn.png" alt="">
-                            </button>
-                        </a>
-                        <a href=""><button class="email-link-btn">Email
-                                <img class="roll-img" src="./assets/images/hero/email-btn.png" alt="">
-                            </button>
-                        </a>
-                    </div>
+                <footer id="footerContent">
                 </footer>
 
             </div>
@@ -357,5 +296,8 @@
 </body>
 
 <script src="./script.js"></script>
+<script src="./script/loadTemplates.js"></script>
+<script src="./templates/headerTemplate.js"></script>
+<script src="./templates/footerTemplate.js"></script>
 
 </html>

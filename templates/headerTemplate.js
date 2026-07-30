@@ -1,0 +1,42 @@
+function headerTemplate() {
+    return `
+            <div class="nav-bar">
+                <a href="../index.html"><img class="logo" src="../assets/images/logo.png"
+                        alt="logo of website in header">
+                </a>
+                <div class="header-tabs">
+                    <a class="about-me-tab" href="#about">
+                        About me
+                        <img class="nav-circle-img" src="./assets/images/header/circle.png" alt="">
+                    </a>
+                    <a class="skills-tab" href="#skills">
+                        Skills
+                        <img class="nav-string-img" src="./assets/images/header/string.png" alt="">
+                    </a>
+                    <a class="projects-tab" href="#projects">
+                        Projects
+                        <img class="nav-wave-img" src="./assets/images/header/wave.png" alt="">
+                    </a>
+                    <a class="contact-tab" href="#contact">
+                        Contact
+                        <img class="nav-underscore-img" src="./assets/images/header/underscore.png" alt="">
+                    </a>
+                </div>
+                <div id="languageBtn" class="language-btn">
+                    <div class="lang-btn-wrapper">
+                        <p id="englishBtn" class="lang-btn active">EN</p>
+                        <img class="lang-box-img" src="./assets/images/header/toggle.png" alt="">
+                    </div>
+                    <div class="toggle-track">
+                        <img class="vector-bar" src="./assets/images/header/vector-bar.png" alt="">
+                        <img id="vectorPoint" class="vector-point" src="./assets/images/header/vector-point.png"
+                            alt="">
+                    </div>
+                    <div class="lang-btn-wrapper">
+                        <p id="germanBtn" class="lang-btn">DE</p>
+                        <img class="lang-box-img" src="./assets/images/header/toggle.png" alt="">
+                    </div>
+                </div>
+            </div>
+        `
+}
