@@ -212,3 +212,16 @@
     border: 1px solid gray;
     color: gray;
 }
+
+.name-question, .email-question, .help-question {
+    position: relative;
+}
+
+.error-msg {
+    position: absolute;
+    color: red;
+    top: 55%;
+    font-size: var(--small-text);
+    margin: 0;
+    pointer-events: none;
+}

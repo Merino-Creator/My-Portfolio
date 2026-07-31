@@ -147,3 +147,58 @@ function initPeel() {
         skillRight.classList.toggle('peeled');
     };
 }
+
+function initSendBtn() {
+    let sendBtn = document.getElementById('sendBtn');
+    if (!sendBtn) return;
+
+    let nameInput = document.getElementById('nameInput');
+    let emailInput = document.getElementById('emailInput');
+    let helpInput = document.getElementById('helpInput');
+
+    function showError(input, message) {
+        let existing = input.parentElement.querySelector('.error-msg');
+        if (!existing) {
+            input.insertAdjacentHTML('afterend', `<p class="error-msg">${message}</p>`);
+            input.placeholder = '';
+        }
+    }
+
+    function hideError(input, originalPlaceholder) {
+        let existing = input.parentElement.querySelector('.error-msg');
+        if (existing) {
+            existing.remove();
+            input.placeholder = originalPlaceholder;
+        }
+    }
+
+    nameInput.onblur = () => {
+        if (!nameInput.value) showError(nameInput, 'Please enter your name.');
+        else hideError(nameInput, 'Your name goes here');
+    };
+
+    nameInput.onfocus = () => hideError(nameInput, 'Your name goes here');
+
+    let namePlaceholder = nameInput.placeholder;
+    let emailPlaceholder = emailInput.placeholder;
+    let helpPlaceholder = helpInput.placeholder;
+
+    nameInput.onfocus = () => hideError(nameInput, namePlaceholder);
+    emailInput.onfocus = () => hideError(emailInput, emailPlaceholder);
+    helpInput.onfocus = () => hideError(helpInput, helpPlaceholder);
+
+    nameInput.onblur = () => {
+        if (!nameInput.value) showError(nameInput, 'Oops! it seems your name is missing');
+        else hideError(nameInput, namePlaceholder);
+    };
+
+    emailInput.onblur = () => {
+        if (!emailInput.value) showError(emailInput, 'Hoppla! your mail is required.');
+        else hideError(emailInput, emailPlaceholder);
+    };
+
+    helpInput.onblur = () => {
+        if (!helpInput.value) showError(helpInput, 'What do you need to develop?');
+        else hideError(helpInput, helpPlaceholder);
+    };
+}
