@@ -161,6 +161,7 @@ function initSendBtn() {
         if (!existing) {
             input.insertAdjacentHTML('afterend', `<p class="error-msg">${message}</p>`);
             input.placeholder = '';
+            input.parentElement.querySelector('h4').style.color = 'var(--main-color-three)';
         }
     }
 
@@ -169,6 +170,7 @@ function initSendBtn() {
         if (existing) {
             existing.remove();
             input.placeholder = originalPlaceholder;
+            input.parentElement.querySelector('h4').style.color = '';
         }
     }
 

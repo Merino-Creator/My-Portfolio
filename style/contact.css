@@ -134,6 +134,10 @@
     padding: 0 20px 0 20px;
 }
 
+.name-question:hover {
+    color: var(--main-color-three);
+}
+
 .email-question {
     display: flex;
     flex-direction: column;
@@ -141,11 +145,19 @@
     padding: 0 20px 0 20px;
 }
 
+.email-question:hover {
+    color: var(--main-color-three);
+}
+
 .help-question {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
     padding: 0 20px 0 20px;
+}
+
+.help-question:hover {
+    color: var(--main-color-three);
 }
 
 .contact-check {
