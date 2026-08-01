@@ -18,6 +18,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    max-width: 590px;
+    width: 100%;
 }
 
 .green {
@@ -90,7 +92,9 @@
 }
 
 .about-ripped-img {
-    height: 160px;
+    max-width: 590px;
+    width: 100%;
+    height: auto;
 }
 
 .about-me {
@@ -159,5 +163,7 @@
 }
 
 @media (max-width: 1250px) {
-
+    .about-me-text {
+        font-size: var(--small-text);
+    }
 }
