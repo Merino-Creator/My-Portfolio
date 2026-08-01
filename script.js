@@ -140,7 +140,7 @@ function initContactBars() {
 }
 
 function initPeel() {
-    let skillRight = document.querySelector('.skill-right');
+    let skillRight = document.querySelector('.skill-bottom-right');
     if (!skillRight) return;
 
     skillRight.onclick = () => {
