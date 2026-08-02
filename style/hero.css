@@ -95,7 +95,7 @@
 .hero-top {
     display: flex;
     justify-content: space-around;
-    gap: 12px;
+    gap: 20px;
 }
 
 .hero-top-left {
@@ -150,6 +150,13 @@
     transition: opacity 0.1s ease, left 0.7s ease, transform 0.7s ease;
 }
 
+.frontend-headline {
+    margin: 0;
+    font-size: 140px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
 .hero-top-right {
     display: flex;
     transform: rotate(8deg);
@@ -161,6 +168,13 @@
     justify-content: space-around;
     align-items: flex-end;
     gap: 20px;
+}
+
+.developer-headline {
+    margin: 0;
+    font-size: 140px;
+    font-weight: 600;
+    color: var(--primary-color);
 }
 
 .getintouch-btn {
@@ -180,4 +194,19 @@
     background-color: var(--button-hover-color);
     box-shadow: 0 0 0 0;
     transform: translate(4px, 4px);
+}
+
+@media (max-width: 1000px) {
+    .frontend-headline {
+        font-size: 125px;
+    }
+
+    .developer-headline {
+        font-size: 125px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+
 }
