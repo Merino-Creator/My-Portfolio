@@ -79,7 +79,8 @@
 .hero-content {
     display: flex;
     flex-direction: column;
-    width: 880px;
+    max-width: 880px;
+    width: 100%;
     gap: 16px;
     margin: 0 auto;
 }
@@ -94,6 +95,7 @@
 .hero-top {
     display: flex;
     justify-content: space-around;
+    gap: 12px;
 }
 
 .hero-top-left {

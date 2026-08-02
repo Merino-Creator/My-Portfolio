@@ -73,8 +73,8 @@
 }
 
 .skill-paper-img {
-    width: 650px;
-    height: 140px;
+    max-width: 650px;
+    width: 100%;
 }
 
 .skill-text {
@@ -241,4 +241,19 @@ figcaption {
     color: var(--primary-color);
     font-size: 16px;
     font-weight: 100;
+}
+
+@media (max-width: 950px) {
+    .skill-text {
+        font-size: 16px;
+    }
+
+    .skill-badge-img {
+        height: 60px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+    
 }
