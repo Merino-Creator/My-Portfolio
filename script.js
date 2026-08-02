@@ -7,6 +7,7 @@ function init() {
     initContactBars();
     initPeel();
     highlightWords();
+    splitLetters();
 }
 
 function highlightWords() {
@@ -203,4 +204,29 @@ function initSendBtn() {
         if (!helpInput.value) showError(helpInput, 'What do you need to develop?');
         else hideError(helpInput, helpPlaceholder);
     };
+}
+
+function splitLetters() {
+    const elements = document.querySelectorAll('.frontend-headline, .developer-headline');
+    
+    elements.forEach(el => {
+        el.innerHTML = el.textContent.split('').map(letter => 
+            `<span class="letter" data-letter="${letter}">${letter}</span>`
+        ).join('');
+    });
+
+    document.querySelectorAll('.letter').forEach(span => {
+        span.onmouseover = () => {
+            const letter = span.dataset.letter;
+            if (letter === letter.toUpperCase()) {
+                span.textContent = letter.toLowerCase();
+            } else {
+                span.textContent = letter.toUpperCase();
+            }
+        };
+
+        span.onmouseout = () => {
+            span.textContent = span.dataset.letter;
+        };
+    });
 }
