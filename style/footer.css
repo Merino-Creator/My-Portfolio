@@ -30,6 +30,10 @@ footer {
     position: relative;
 }
 
+.legal-notice-background .legal-notice-link {
+    color: var(--secondary-color);
+}
+
 .legal-notice-link:hover .nav-underscore-img {
     animation: draw-line 0.4s ease forwards;
 }
@@ -59,6 +63,24 @@ footer a {
     transition: ease 0.4s;
 }
 
+.legal-notice-background .github-link-btn {
+    color: var(--secondary-color);
+    font-size: var(--standard-text);
+    font-weight: var(--heavy-font-weight);
+}
+
+.legal-notice-background .linkedin-link-btn {
+    color: var(--secondary-color);
+    font-size: var(--standard-text);
+    font-weight: var(--heavy-font-weight);
+}
+
+.legal-notice-background .email-link-btn {
+    color: var(--secondary-color);
+    font-size: var(--standard-text);
+    font-weight: var(--heavy-font-weight);
+}
+
 .roll-img {
     position: absolute;
     bottom: 100%;
@@ -69,6 +91,11 @@ footer a {
     transform: translateX(0) rotate(180deg);
     transition: opacity 0.1s ease 0.15s, left 0.4s ease, transform 0.4s ease;
     pointer-events: none;
+}
+
+.legal-notice-background .roll-img {
+    background-color: var(--secondary-color);
+    border-radius: 50%;
 }
 
 .github-link-btn:hover .roll-img,

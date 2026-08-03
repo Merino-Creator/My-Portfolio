@@ -7,34 +7,34 @@ function headerTemplate() {
                 <div class="header-tabs">
                     <a class="about-me-tab" href="#about">
                         About me
-                        <img class="nav-circle-img" src="./assets/images/header/circle.png" alt="">
+                        <img class="nav-circle-img" src="../assets/images/header/circle.png" alt="">
                     </a>
                     <a class="skills-tab" href="#skills">
                         Skills
-                        <img class="nav-string-img" src="./assets/images/header/string.png" alt="">
+                        <img class="nav-string-img" src="../assets/images/header/string.png" alt="">
                     </a>
                     <a class="projects-tab" href="#projects">
                         Projects
-                        <img class="nav-wave-img" src="./assets/images/header/wave.png" alt="">
+                        <img class="nav-wave-img" src="../assets/images/header/wave.png" alt="">
                     </a>
                     <a class="contact-tab" href="#contact">
                         Contact
-                        <img class="nav-underscore-img" src="./assets/images/header/underscore.png" alt="">
+                        <img class="nav-underscore-img" src="../assets/images/header/underscore.png" alt="">
                     </a>
                 </div>
                 <div id="languageBtn" class="language-btn">
                     <div class="lang-btn-wrapper">
                         <p id="englishBtn" class="lang-btn active">EN</p>
-                        <img class="lang-box-img" src="./assets/images/header/toggle.png" alt="">
+                        <img class="lang-box-img" src="../assets/images/header/toggle.png" alt="">
                     </div>
                     <div class="toggle-track">
-                        <img class="vector-bar" src="./assets/images/header/vector-bar.png" alt="">
-                        <img id="vectorPoint" class="vector-point" src="./assets/images/header/vector-point.png"
+                        <img class="vector-bar" src="../assets/images/header/vector-bar.png" alt="">
+                        <img id="vectorPoint" class="vector-point" src="../assets/images/header/vector-point.png"
                             alt="">
                     </div>
                     <div class="lang-btn-wrapper">
                         <p id="germanBtn" class="lang-btn">DE</p>
-                        <img class="lang-box-img" src="./assets/images/header/toggle.png" alt="">
+                        <img class="lang-box-img" src="../assets/images/header/toggle.png" alt="">
                     </div>
                 </div>
                  <button id="burgerMenu" class="burger-menu">
@@ -60,20 +60,20 @@ function headerTemplate() {
                 <div class="mobile-language">
                     <p class="mobile-lang-btn active">EN</p>
                     <div class="toggle-track">
-                        <img class="vector-bar" src="./assets/images/header/vector-bar.png" alt="">
-                        <img class="vector-point" src="./assets/images/header/vector-point.png" alt="">
+                        <img class="vector-bar" src="../assets/images/header/vector-bar.png" alt="">
+                        <img class="vector-point" src="../assets/images/header/vector-point.png" alt="">
                     </div>
                     <p class="mobile-lang-btn">DE</p>
                 </div>
                 <div class="mobile-social">
                     <a href="https://www.linkedin.com/in/daniel-st%C3%BCrmer-b3b6673b3/">
-                        <img class="mobile-social-img" src="./assets/images/hero/linkedin-btn.png" alt="">
+                        <img class="mobile-social-img" src="../assets/images/hero/linkedin-btn.png" alt="">
                     </a>
                     <a href="https://github.com/Merino-Creator">
-                        <img class="mobile-social-img" src="./assets/images/hero/github-btn.png" alt="">
+                        <img class="mobile-social-img" src="../assets/images/hero/github-btn.png" alt="">
                     </a>
                     <a href="">
-                        <img class="mobile-social-img" src="./assets/images/hero/email-btn.png" alt="">
+                        <img class="mobile-social-img" src="../assets/images/hero/email-btn.png" alt="">
                     </a>
                 </div>
             </div>
