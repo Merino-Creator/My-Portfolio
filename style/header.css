@@ -114,6 +114,9 @@ header a {
 .toggle-track {
     position: relative;
     width: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .vector-bar {
@@ -132,4 +135,114 @@ header a {
 .vector-point.active {
     left: 100%;
     transform: translate(-100%, -50%);
+}
+
+/* Mobile Menu*/
+
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.burger-menu span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: white;
+    border-radius: 2px;
+}
+
+.mobile-menu {
+    position: fixed;
+    background-image: url('../assets/images/background/hero-bg.png');
+    background-position: bottom;
+    background-size: cover;
+    top: 0;
+    width: 100%;
+    height: 60vh;
+    transform: translateY(-100%);
+    transition: transform 0.4s ease;
+    gap: 40px;
+    z-index: 99;
+    display: none;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 15px 70px 15px 70px;
+}
+
+.mobile-menu.open {
+    transform: translateY(0);
+}
+
+.mobile-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.mobile-menu-logo:hover {
+    filter: invert(77%) sepia(84%) saturate(409%) hue-rotate(18deg) brightness(120%) contrast(101%);
+}
+
+.mobile-menu-close-btn {
+    background: none;
+    border: none;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    color: var(--primary-color);
+    cursor: pointer;
+    font-size: var(--standard-text);
+}
+
+.mobile-tabs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.mobile-language {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    color: var(--primary-color);
+}
+
+.mobile-social {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.mobile-social-img {
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+@media (max-width: 950px) {
+    .mobile-menu {
+        display: flex;
+    }
+
+    .mobile-menu.open {
+        display: flex;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+
+    .header-tabs {
+        display: none;
+    }
+
+    .language-btn {
+        display: none;
+    }
 }

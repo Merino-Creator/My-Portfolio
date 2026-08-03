@@ -8,6 +8,7 @@ function init() {
     initPeel();
     highlightWords();
     splitLetters();
+    initBurgerMenu();
 }
 
 function highlightWords() {
@@ -229,4 +230,19 @@ function splitLetters() {
             span.textContent = span.dataset.letter;
         };
     });
+}
+
+function initBurgerMenu() {
+    let burgerMenu = document.getElementById('burgerMenu');
+    let mobileMenu = document.getElementById('mobileMenu');
+    let closeBtn = document.querySelector('.mobile-menu-close-btn');
+    if (!burgerMenu) return;
+
+    burgerMenu.onclick = () => {
+        mobileMenu.classList.toggle('open');
+    };
+
+    closeBtn.onclick = () => {
+        mobileMenu.classList.remove('open');
+    };
 }
