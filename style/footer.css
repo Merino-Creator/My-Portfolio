@@ -24,6 +24,7 @@ footer {
 .logo {
     height: 60px;
     width: 60px;
+    cursor: pointer;
 }
 
 .legal-notice-link {
@@ -45,7 +46,9 @@ footer a {
     color: var(--primary-color);
 }
 
-.github-link-btn, .linkedin-link-btn, .email-link-btn {
+.github-link-btn,
+.linkedin-link-btn,
+.email-link-btn {
     background: none;
     border: none;
     border-radius: 20px;
@@ -58,7 +61,9 @@ footer a {
     overflow: visible;
 }
 
-.github-link-btn:hover, .linkedin-link-btn:hover, .email-link-btn:hover {
+.github-link-btn:hover,
+.linkedin-link-btn:hover,
+.email-link-btn:hover {
     background-color: var(--main-color-two);
     transition: ease 0.4s;
 }
@@ -114,4 +119,35 @@ footer a {
 .legal-notice-img {
     background-color: var(--secondary-color);
     border-radius: 50%;
+}
+
+/* Mobile */
+@media (max-width: 950px) {
+    footer {
+        height: 220px;
+    }
+
+
+    .contact-bar {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        height: 40px;
+        width: 40px;
+    }
+
+    .legal-notice {
+        width: 100%;
+        flex-direction: unset;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .legal-notice-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
 }

@@ -3,10 +3,12 @@ function footerTemplate() {
             <div class="contact-bar">
                 <div class="legal-notice">
                     <img class="logo" src="../assets/images/logo.png" alt="logo of website in footer">
-                    <p>© Daniel Stürmer 2026 </p>
-                    <a class="legal-notice-link" href="./html/legal-notice.html">Legal Notice
-                        <img class="nav-underscore-img" src="../assets/images/header/underscore.png" alt="">
-                    </a>
+                    <div class="legal-notice-mobile">
+                        <p>© Daniel Stürmer 2026</p>
+                        <a class="legal-notice-link" href="./html/legal-notice.html">Legal Notice
+                            <img class="nav-underscore-img" src="../assets/images/header/underscore.png" alt="">
+                        </a>
+                    </div>
                 </div>
                 <a href="https://github.com/Merino-Creator">
                     <button class="github-link-btn">GitHub
