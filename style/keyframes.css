@@ -35,3 +35,11 @@
     90% { transform: translate(-50%, -50%) scaleX(-1) rotateY(90deg); opacity: 0; }
     100% { transform: translate(-50%, -50%) scaleX(-1) rotateY(90deg); opacity: 0; }
 }
+
+@keyframes slide-in-out {
+    0% { transform: translateX(-100vw); }
+    20% { transform: translateX(0); }
+    70% { transform: translateX(0); }
+    90% { transform: translateX(-100vw); }
+    100% { transform: translateX(-100vw); }
+}

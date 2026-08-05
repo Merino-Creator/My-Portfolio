@@ -1,6 +1,6 @@
 .contact {
     position: relative;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -26,7 +26,7 @@
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    padding: 40px 70px 40px 70px;
+    padding: 100px 70px 40px 70px;
     display: flex;
     flex-direction: column;
 
@@ -76,6 +76,10 @@
     animation: draw-left-right 5s ease-in-out infinite;
 }
 
+.contact-arrow-img-mobile {
+    display: none;
+}
+
 .contact-right {
     display: flex;
     flex-direction: column;
@@ -88,6 +92,10 @@
     height: 100px;
     display: flex;
     justify-content: flex-end;
+}
+
+.contact-badge-mobile {
+    display: none;
 }
 
 .contact-badge-img {
@@ -226,7 +234,14 @@
     color: gray;
 }
 
-.name-question, .email-question, .help-question {
+.send-btn-mobile {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.name-question,
+.email-question,
+.help-question {
     position: relative;
 }
 
@@ -237,4 +252,43 @@
     font-size: var(--small-text);
     margin: 0;
     pointer-events: none;
+}
+
+/* Mobile */
+@media (max-width: 950px) {
+    .contact-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact-badge {
+        display: none;
+    }
+
+    .contact-badge-mobile {
+        height: 100px;
+        display: flex;
+        align-self: flex-end;
+    }
+
+    .contact-badge-img-mobile {
+        height: 140px;
+        z-index: 1;
+    }
+
+    .contact-arrow-img {
+        display: none;
+    }
+
+    .contact-arrow-img-mobile {
+        display: flex;
+        height: 44px;
+        width: 280px;
+        animation: slide-in-out 5s ease-in-out infinite;
+    }
+
+    .send-btn-mobile {
+        display: flex;
+        justify-content: space-between;
+    }
 }
