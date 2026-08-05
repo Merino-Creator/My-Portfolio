@@ -298,3 +298,47 @@
         padding: 100px 35px 20px 35px;
     }
 }
+
+@media (max-width: 505px) {
+    .contact-left h4 {
+        font-size: 20px;
+    }
+
+    .contact-left h3 {
+        font-size: 52px;
+    }
+
+    .contact-arrow-img-mobile {
+        width: 180px;
+        height: 38px;
+    }
+
+    .send-btn {
+        width: 120px;
+        height: 36px;
+    }
+}
+
+@media (max-width: 405px) {
+    .contact-content-wrapper{
+        padding: 100px 15px 15px 15px;
+    }
+
+    .contact-badge-img-mobile {
+        height: 120px;
+    }
+
+    .contact-left h3 {
+        font-size: 42px;
+    }
+
+    .contact-arrow-img-mobile {
+        width: 140px;
+        height: 30px;
+    }
+
+    .send-btn {
+        width: 100px;
+        height: 32px;
+    }
+}

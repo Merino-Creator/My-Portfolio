@@ -151,3 +151,20 @@ footer a {
         align-items: flex-end;
     }
 }
+
+@media (max-width: 505px) {
+    .github-link-btn {
+        width: 90px;
+        height: 30px;
+    }
+    
+    .linkedin-link-btn {
+        width: 90px;
+        height: 30px;
+    }
+    
+    .email-link-btn {
+        width: 90px;
+        height: 30px;
+    }
+}
