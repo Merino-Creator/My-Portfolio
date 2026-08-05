@@ -86,6 +86,7 @@
 .skill-paper-img {
     max-width: 650px;
     width: 100%;
+    min-height: 140px;
 }
 
 .skill-text {
@@ -281,6 +282,7 @@ figcaption {
         flex-direction: column;
         height: unset;
         gap: 40px;
+        margin-top: 40px;
     }
 
     .skill-top-left {
@@ -332,5 +334,79 @@ figcaption {
 @media (max-width: 680px) {
     .skills-content-wrapper{
         padding: 15px 35px 15px 35px;
+    }
+}
+
+@media (max-width: 505px) {
+    .skill-headline-one {
+        font-size: 20px;
+    }
+
+    .skill-headline-two {
+        font-size: 52px;
+    }
+
+    .skill-circle-img {
+        width: 220px;
+        left: 55%;
+    }
+
+    .peel-img-start {
+        height: 160px;
+        width: 160px;
+    }
+
+    .peel-img-begin {
+        height: 160px;
+        width: 160px;
+    }
+
+    .peel-img-end {
+        height: 160px;
+        width: 160px;
+    }
+
+    .peel-arrow {
+        height: 30px;
+    }
+
+    .peel-text {
+        font-size: 32px;
+    }
+
+    .peeled-image-box {
+        height: 160px;
+        width: 160px;
+    }
+
+    .peeled-text {
+        font-size: 16px;
+    }
+
+    .peeled-skill-badges {
+        width: 160px;
+    }
+}
+
+@media (max-width: 405px) {
+    .skills-content-wrapper{
+        padding: 15px 15px 15px 15px;
+    }
+
+    .skill-text {
+        font-size: 14px;
+    }
+
+    .skill-headline-two {
+        font-size: 42px;
+    }
+
+    .skill-circle-img {
+        width: 180px;
+        left: 65%;
+    }
+
+    .skills {
+        height: 1050px;
     }
 }
