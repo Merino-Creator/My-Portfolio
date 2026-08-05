@@ -74,34 +74,6 @@ function initLanguageBtn() {
     };
 }
 
-function initSendBtn() {
-    let sendBtn = document.getElementById('sendBtn');
-    if (!sendBtn) return;
-
-    let nameInput = document.getElementById('nameInput');
-    let emailInput = document.getElementById('emailInput');
-    let helpInput = document.getElementById('helpInput');
-    let checkbox = document.getElementById('checkbox');
-    let checkmark = document.getElementById('checkmark');
-
-    function checkForm() {
-        if (nameInput.value && emailInput.value && helpInput.value && checkbox.checked) {
-            sendBtn.disabled = false;
-        } else {
-            sendBtn.disabled = true;
-        }
-    }
-
-    nameInput.oninput = checkForm;
-    emailInput.oninput = checkForm;
-    helpInput.oninput = checkForm;
-
-    checkbox.onclick = () => {
-        checkmark.classList.toggle('visible');
-        checkForm();
-    };
-}
-
 function initContactBars() {
     let nameQuestion = document.getElementById('nameQuestion');
     if (!nameQuestion) return;
@@ -162,6 +134,16 @@ function initSendBtn() {
     let nameInput = document.getElementById('nameInput');
     let emailInput = document.getElementById('emailInput');
     let helpInput = document.getElementById('helpInput');
+    let checkbox = document.getElementById('checkbox');
+    let checkmark = document.getElementById('checkmark');
+
+    function checkForm() {
+        if (nameInput.value && emailInput.value && helpInput.value && checkbox.checked) {
+            sendBtn.disabled = false;
+        } else {
+            sendBtn.disabled = true;
+        }
+    }
 
     function showError(input, message) {
         let existing = input.parentElement.querySelector('.error-msg');
@@ -181,16 +163,13 @@ function initSendBtn() {
         }
     }
 
-    nameInput.onblur = () => {
-        if (!nameInput.value) showError(nameInput, 'Please enter your name.');
-        else hideError(nameInput, 'Your name goes here');
-    };
-
-    nameInput.onfocus = () => hideError(nameInput, 'Your name goes here');
-
     let namePlaceholder = nameInput.placeholder;
     let emailPlaceholder = emailInput.placeholder;
     let helpPlaceholder = helpInput.placeholder;
+
+    nameInput.oninput = checkForm;
+    emailInput.oninput = checkForm;
+    helpInput.oninput = checkForm;
 
     nameInput.onfocus = () => hideError(nameInput, namePlaceholder);
     emailInput.onfocus = () => hideError(emailInput, emailPlaceholder);
@@ -209,6 +188,11 @@ function initSendBtn() {
     helpInput.onblur = () => {
         if (!helpInput.value) showError(helpInput, 'What do you need to develop?');
         else hideError(helpInput, helpPlaceholder);
+    };
+
+    checkbox.onclick = () => {
+        checkmark.classList.toggle('visible');
+        checkForm();
     };
 }
 
