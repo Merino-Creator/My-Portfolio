@@ -225,6 +225,7 @@ header a {
     border-radius: 50%;
 }
 
+/* Mobile */
 @media (max-width: 950px) {
     .mobile-menu {
         display: flex;
