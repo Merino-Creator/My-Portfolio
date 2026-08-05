@@ -328,3 +328,9 @@ figcaption {
         opacity: 1;
     }
 }
+
+@media (max-width: 680px) {
+    .skills-content-wrapper{
+        padding: 15px 35px 15px 35px;
+    }
+}

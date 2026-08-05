@@ -31,7 +31,7 @@
     justify-content: center;
     max-width: 590px;
     width: 100%;
-    min-width: 400px;
+    min-width: 300px;
 }
 
 .green {
@@ -201,5 +201,11 @@
 
     .about-me {
         order: 1;
+    }
+}
+
+@media (max-width: 680px) {
+    .about-content-wrapper{
+        padding: 15px 35px 15px 35px;
     }
 }

@@ -70,7 +70,6 @@
 }
 
 .contact-arrow-img {
-    height: 44px;
     width: 280px;
     align-self: self-end;
     animation: draw-left-right 5s ease-in-out infinite;
@@ -290,5 +289,12 @@
     .send-btn-mobile {
         display: flex;
         justify-content: space-between;
+        gap: 8px;
+    }
+}
+
+@media (max-width: 680px) {
+    .contact-content-wrapper{
+        padding: 100px 35px 20px 35px;
     }
 }
