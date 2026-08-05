@@ -2,8 +2,19 @@
     background-image: url("../assets/images/background/skills-bg.png");
     background-position: bottom;
     background-size: cover;
-    height: 1000px;
+    height: 100vh;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-content-wrapper {
+    max-width: 1440px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 35px 70px 35px 70px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -121,6 +132,10 @@
     display: flex;
     transform: rotate(8deg);
     cursor: pointer;
+}
+
+.skill-bottom-right-mobile {
+    display: none;
 }
 
 .peel-img-start {
@@ -243,6 +258,7 @@ figcaption {
     font-weight: 100;
 }
 
+/* Mobile */
 @media (max-width: 950px) {
     .skill-text {
         font-size: 16px;
@@ -251,9 +267,64 @@ figcaption {
     .skill-badge-img {
         height: 60px;
     }
-}
 
-/* Mobile */
-@media (max-width: 900px) {
-    
+    .skill-badges {
+        gap: 40px;
+    }
+
+    .skills-content {
+        height: 100%;
+        gap: 40px;
+    }
+
+    .skill-top {
+        flex-direction: column;
+        height: unset;
+        gap: 40px;
+    }
+
+    .skill-top-left {
+        align-self: flex-end;
+    }
+
+    .skill-bottom {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: unset;
+        gap: 20px;
+    }
+
+    .skill-bottom-right {
+        display: none;
+    }
+
+    .skill-bottom-right-mobile {
+        display: flex;
+        transform: rotate(8deg);
+        cursor: pointer;
+    }
+
+    .skill-bottom-right-mobile:hover .peel-img-start,
+    .skill-bottom-right-mobile:hover .peel-text,
+    .skill-bottom-right-mobile:hover .peel-arrow {
+        opacity: 0;
+    }
+
+    .skill-bottom-right-mobile:hover .peel-img-begin {
+        opacity: 1;
+    }
+
+    .skill-bottom-right-mobile.peeled .peel-img-begin,
+    .skill-bottom-right-mobile.peeled .peel-img-start {
+        opacity: 0;
+    }
+
+    .skill-bottom-right-mobile.peeled .peel-img-end {
+        opacity: 1;
+    }
+
+    .skill-bottom-right-mobile.peeled .peeled-image-box {
+        opacity: 1;
+    }
 }

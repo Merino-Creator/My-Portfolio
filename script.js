@@ -143,10 +143,15 @@ function initContactBars() {
 
 function initPeel() {
     let skillRight = document.querySelector('.skill-bottom-right');
+    let skillRightMobile = document.querySelector('.skill-bottom-right-mobile');
     if (!skillRight) return;
 
     skillRight.onclick = () => {
         skillRight.classList.toggle('peeled');
+    };
+    
+    skillRightMobile.onclick = () => {
+        skillRightMobile.classList.toggle('peeled');
     };
 }
 
