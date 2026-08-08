@@ -257,6 +257,10 @@ header a {
         display: none;
     }
 
+    .lang-btn-wrapper:has(.lang-btn.active) {
+        pointer-events: none;
+    }
+
     .mobile-tabs a {
         position: relative;
     }

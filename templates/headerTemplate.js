@@ -66,12 +66,18 @@ function headerTemplate() {
                     </a>
                 </div>
                 <div class="mobile-language">
-                    <p class="mobile-lang-btn active">EN</p>
+                    <div class="lang-btn-wrapper">
+                        <p class="mobile-lang-btn lang-btn active">EN</p>
+                        <img class="lang-box-img" src="../assets/images/header/toggle.png" alt="">
+                    </div>
                     <div class="toggle-track">
                         <img class="vector-bar" src="../assets/images/header/vector-bar.png" alt="">
                         <img class="vector-point" src="../assets/images/header/vector-point.png" alt="">
                     </div>
-                    <p class="mobile-lang-btn">DE</p>
+                    <div class="lang-btn-wrapper">
+                        <p class="mobile-lang-btn lang-btn">DE</p>
+                        <img class="lang-box-img" src="../assets/images/header/toggle.png" alt="">
+                    </div>
                 </div>
                 <div class="mobile-social">
                     <div class="social-link-mobile">
