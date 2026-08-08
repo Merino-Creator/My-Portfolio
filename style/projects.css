@@ -251,6 +251,10 @@
     transform: translate(4px, 4px);
 }
 
+.project-details-btn-mobile {
+    display: none;
+}
+
 /* Mobile */
 @media (max-width: 950px) {
     .projects-top {
@@ -267,10 +271,68 @@
         flex-direction: column;
         align-items: center;
     }
+
+    .project-details-btn {
+        display: none;
+    }
+
+    .join-img-wrapper,
+    .sharky-img-wrapper,
+    .pokedex-img-wrapper {
+        transform: none;
+        pointer-events: none;
+    }
+
+    .join-img-wrapper::after,
+    .sharky-img-wrapper::after,
+    .pokedex-img-wrapper::after {
+        display: none;
+    }
+
+    .join-img {
+        animation: none;
+    }
+
+    .project-details-btn-box {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .project-details-btn-box a {
+        text-decoration: none;
+    }
+
+    .project-details-btn-mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: opacity 0.3s ease;
+        width: 170px;
+        height: 40px;
+        border: 1px solid black;
+        border-radius: 20px;
+        background: none;
+        color: var(--secondary-color);
+        font-size: var(--small-text);
+        box-shadow: 4px 4px 0 0;
+    }
+
+    .project-details-btn-mobile:hover {
+        cursor: pointer;
+        background-color: var(--button-hover-color);
+        box-shadow: 0 0 0 0;
+        transform: translate(4px, 4px);
+    }
 }
 
 @media (max-width: 680px) {
-    .projects-content-wrapper{
+    .projects-content-wrapper {
         padding: 15px 35px 15px 35px;
+    }
+}
+
+@media (max-width: 405px) {
+    .projects-content-wrapper {
+        padding: 15px 15px 15px 15px;
     }
 }
