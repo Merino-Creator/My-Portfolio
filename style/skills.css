@@ -329,6 +329,14 @@ figcaption {
     .skill-bottom-right-mobile.peeled .peeled-image-box {
         opacity: 1;
     }
+
+    .skill-badge-img {
+        filter: unset;
+    }
+
+    .skill-badge-img:hover {
+        pointer-events: none;
+    }
 }
 
 @media (max-width: 680px) {
@@ -393,10 +401,6 @@ figcaption {
         padding: 15px 15px 15px 15px;
     }
 
-    .skill-text {
-        font-size: 14px;
-    }
-
     .skill-headline-two {
         font-size: 42px;
     }
@@ -408,5 +412,9 @@ figcaption {
 
     .skills {
         height: 1050px;
+    }
+
+    .skill-paper-img {
+        height: 160px;
     }
 }
