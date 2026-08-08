@@ -238,6 +238,7 @@ header a {
 @media (max-width: 950px) {
     .mobile-menu {
         display: flex;
+        padding: 15px 70px 15px 70px;
     }
 
     .mobile-menu.open {
@@ -291,5 +292,31 @@ header a {
 
     .social-link-mobile:hover::before {
         transform: translateY(0);
+    }
+
+    .mobile-language {
+        align-items: center;
+        gap: 8px;
+    }
+
+    .mobile-lang-btn {
+        color: var(--primary-color);
+        cursor: pointer;
+    }
+
+    .mobile-lang-btn.active {
+        color: #F87A55;
+    }
+}
+
+@media (max-width: 680px) {
+    .mobile-menu {
+        padding: 15px 35px 15px 35px;
+    }
+}
+
+@media (max-width: 405px) {
+    .mobile-menu {
+        padding: 15px 15px 15px 15px;
     }
 }

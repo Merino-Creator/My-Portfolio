@@ -234,4 +234,15 @@ function initBurgerMenu() {
     closeBtn.onclick = () => {
         mobileMenu.classList.remove('open');
     };
+
+    let mobileLangBtns = mobileMenu.querySelectorAll('.mobile-lang-btn');
+    let mobileVectorPoint = mobileMenu.querySelector('.vector-point');
+
+    mobileLangBtns.forEach(btn => {
+        btn.onclick = () => {
+            mobileLangBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            mobileVectorPoint.classList.toggle('active');
+        };
+    });
 }
