@@ -257,6 +257,26 @@ header a {
         display: none;
     }
 
+    .mobile-tabs a {
+        position: relative;
+    }
+
+    .mobile-tabs a:hover .nav-circle-img {
+        animation: draw-circle 0.4s ease forwards;
+    }
+
+    .mobile-tabs a:hover .nav-string-img {
+        animation: draw-line 0.4s ease forwards;
+    }
+
+    .mobile-tabs a:hover .nav-wave-img {
+        animation: draw-line 0.4s ease forwards;
+    }
+
+    .mobile-tabs a:hover .nav-underscore-img {
+        animation: draw-line 0.4s ease forwards;
+    }
+
     .social-link-mobile {
         position: relative;
         border-radius: 50%;

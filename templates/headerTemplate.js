@@ -52,10 +52,18 @@ function headerTemplate() {
                     <button class="mobile-menu-close-btn">X</button>
                 </div>
                 <div class="mobile-tabs">
-                    <a href="#about">About me</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contact">Contact</a>
+                    <a href="#about">About me
+                        <img class="nav-circle-img" src="../assets/images/header/circle.png" alt="">
+                    </a>
+                    <a href="#skills">Skills
+                        <img class="nav-string-img" src="../assets/images/header/string.png" alt="">
+                    </a>
+                    <a href="#projects">Projects
+                        <img class="nav-wave-img" src="../assets/images/header/wave.png" alt="">
+                    </a>
+                    <a href="#contact">Contact
+                        <img class="nav-underscore-img" src="../assets/images/header/underscore.png" alt="">
+                    </a>
                 </div>
                 <div class="mobile-language">
                     <p class="mobile-lang-btn active">EN</p>
