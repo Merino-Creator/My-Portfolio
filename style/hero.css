@@ -51,6 +51,8 @@
 .social-images {
     height: 32px;
     width: 32px;
+    position: relative;
+    z-index: 1;
 }
 
 .social-link::before {
@@ -69,11 +71,6 @@
 
 .social-link:hover::before {
     transform: translateY(0);
-}
-
-.social-images {
-    position: relative;
-    z-index: 1;
 }
 
 .hero-content {

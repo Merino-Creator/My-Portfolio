@@ -66,15 +66,21 @@ function headerTemplate() {
                     <p class="mobile-lang-btn">DE</p>
                 </div>
                 <div class="mobile-social">
-                    <a href="https://www.linkedin.com/in/daniel-st%C3%BCrmer-b3b6673b3/">
-                        <img class="mobile-social-img" src="../assets/images/hero/linkedin-btn.png" alt="">
-                    </a>
-                    <a href="https://github.com/Merino-Creator">
-                        <img class="mobile-social-img" src="../assets/images/hero/github-btn.png" alt="">
-                    </a>
-                    <a href="">
-                        <img class="mobile-social-img" src="../assets/images/hero/email-btn.png" alt="">
-                    </a>
+                    <div class="social-link-mobile">
+                        <a href="https://www.linkedin.com/in/daniel-st%C3%BCrmer-b3b6673b3/">
+                            <img class="mobile-social-img" src="../assets/images/hero/linkedin-btn.png" alt="">
+                        </a>
+                    </div>
+                    <div class="social-link-mobile">
+                        <a href="https://github.com/Merino-Creator">
+                            <img class="mobile-social-img" src="../assets/images/hero/github-btn.png" alt="">
+                        </a>
+                    </div>
+                    <div class="social-link-mobile">
+                        <a href="">
+                            <img class="mobile-social-img" src="../assets/images/hero/email-btn.png" alt="">
+                        </a>
+                    </div>
                 </div>
             </div>
         `
