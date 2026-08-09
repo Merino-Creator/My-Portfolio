@@ -236,6 +236,11 @@ header a {
 
 /* Mobile */
 @media (max-width: 950px) {
+    .logo {
+        height: 40px;
+        width: 40px;
+    }
+
     .mobile-menu {
         display: flex;
         padding: 15px 70px 15px 70px;

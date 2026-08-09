@@ -1,7 +1,7 @@
 function loadTemplates() {
-    headerRef = document.getElementById('headerContent');
-    footerRef = document.getElementById('footerContent');
+    let headerRef = document.getElementById('headerContent');
+    let footerRef = document.getElementById('footerContent');
 
-    headerRef.innerHTML += headerTemplate();
-    footerRef.innerHTML += footerTemplate();
+    if (headerRef) headerRef.innerHTML += headerTemplate();
+    if (footerRef) footerRef.innerHTML += footerTemplate();
 }

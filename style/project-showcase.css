@@ -4,11 +4,13 @@ body {
     background-repeat: no-repeat;
     background-position: left;
     height: 100vh;
+    width: 100%;
     background-color: #1D1D1D;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: 'Bricolage', sans-serif;
+    position: relative;
 }
 
 main {
@@ -23,6 +25,11 @@ main {
     gap: 12px;
     margin-top: 80px;
     margin-bottom: 40px;
+    width: 110px;
+}
+
+.previous-link:hover {
+    color: var(--main-color-three);
 }
 
 .arrow-img {
@@ -51,18 +58,24 @@ h3 {
     justify-content: space-between;
     box-sizing: border-box;
     padding: 20px 50px 20px 60px;
+    gap: 120px;
+    width: 100%;
 }
 
 .underline-img {
     width: 120px;
     height: 20px;
     margin-bottom: 40px;
+    animation: draw-left-right 5s ease infinite;
 }
 
 .project-description {
     display: flex;
     flex-direction: column;
-    width: 45%;
+    width: 100%;
+    max-width: 540px;
+    min-width: 0;
+    flex-shrink: 1;
 }
 
 .tech-stack {
@@ -73,19 +86,26 @@ h3 {
 .project-container {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    max-width: 560px;
+    min-width: 420px;
+    flex-shrink: 1;
+}
+
+.project-img-wrapper {
     position: relative;
 }
 
 .project-img {
-    width: 560px;
-    height: 400px;
+    width: 100%;
+    height: auto;
     border-radius: 16px;
 }
 
 .project-badge-img {
     position: absolute;
     right: -10%;
-    bottom: 45%;
+    bottom: 30%;
     height: 120px;
 }
 
@@ -96,10 +116,133 @@ h3 {
     margin-top: 24px;
 }
 
+.test-github-btn {
+    background: none;
+    border: 1px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 125px;
+    height: 40px;
+    box-shadow: 4px 4px 0 0;
+    color: var(--primary-color);
+    font-size: var(--small-text);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.test-github-btn:hover {
+    cursor: pointer;
+    background-color: var(--button-hover-color);
+    box-shadow: 0 0 0 0;
+    transform: translate(4px, 4px);
+}
+
+.test-live-btn {
+    background: none;
+    border: 1px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 125px;
+    height: 40px;
+    box-shadow: 4px 4px 0 0;
+    color: var(--primary-color);
+    font-size: var(--small-text);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.test-live-btn:hover {
+    cursor: pointer;
+    background-color: var(--button-hover-color);
+    box-shadow: 0 0 0 0;
+    transform: translate(4px, 4px);
+}
+
 .next-link {
     display: flex;
     align-items: center;
     gap: 12px;
     align-self: flex-end;
     color: var(--primary-color);
+}
+
+.next-link:hover {
+    color: var(--main-color-one);
+}
+
+.previous-link-mobile {
+    display: none;
+}
+
+.prev-next-link {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media (max-width: 1210px) {
+    .project-showcase {
+        gap: 60px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .project-showcase {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 950px) {
+    body {
+        background-image: none;
+    }
+
+    .previous-link {
+        display: none;
+    }
+
+    .project-showcase {
+        flex-direction: column;
+        padding: 20px 0 60px 0;
+    }
+
+    .project-badge-img {
+        display: none;
+    }
+
+    .project-container {
+        min-width: unset;
+    }
+
+    .previous-link-mobile {
+        display: flex;
+    }
+
+    .prev-next-link {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 680px) {
+    .project-wrapper {
+        padding: 15px 35px 15px 35px;
+    }
+
+    .underline-img {
+        margin: 0;
+    }
+}
+
+@media (max-width: 505px) {
+    .test-github-btn {
+        width: 100px;
+    }
+
+    .test-live-btn {
+        width: 100px;
+    }
+}
+
+@media (max-width: 405px) {
+    .project-wrapper {
+        padding: 15px 15px 15px 15px;
+    }
 }
