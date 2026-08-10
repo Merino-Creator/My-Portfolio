@@ -1,8 +1,4 @@
 body {
-    background-image: url('../assets/images/background/paper-bg.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: left;
     height: 100vh;
     width: 100%;
     background-color: #1D1D1D;
@@ -11,6 +7,17 @@ body {
     align-items: center;
     font-family: 'Bricolage', sans-serif;
     position: relative;
+}
+
+.project-background-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vh;
+    height: 100vh;
+    object-fit: cover;
+    object-position: left;
+    z-index: -1;
 }
 
 main {
@@ -190,8 +197,12 @@ h3 {
 }
 
 @media (max-width: 950px) {
-    body {
-        background-image: none;
+    .project-background-img {
+        width: 100vh;
+        height: 100vw;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(90deg);
     }
 
     .previous-link {
@@ -213,6 +224,8 @@ h3 {
 
     .previous-link-mobile {
         display: flex;
+        color: var(--primary-color);
+        gap: 12px;
     }
 
     .prev-next-link {
