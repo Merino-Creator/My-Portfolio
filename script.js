@@ -9,6 +9,7 @@ function init() {
     highlightWords();
     splitLetters();
     initBurgerMenu();
+    getBasePath();
 }
 
 function highlightWords() {
@@ -245,4 +246,8 @@ function initBurgerMenu() {
             mobileVectorPoint.classList.toggle('active');
         };
     });
+}
+
+function getBasePath() {
+    return window.location.pathname.includes('/html/') ? '../' : './';
 }
