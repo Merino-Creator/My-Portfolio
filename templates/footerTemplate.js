@@ -21,7 +21,7 @@ function footerTemplate() {
                     <img class="roll-img" src="${base}assets/images/hero/linkedin-btn.png" alt="">
                 </button>
             </a>
-            <a href=""><button class="email-link-btn">Email
+            <a href="mailto:stuermer.dan137@gmail.com"><button class="email-link-btn">Email
                     <img class="roll-img" src="${base}assets/images/hero/email-btn.png" alt="">
                 </button>
             </a>
