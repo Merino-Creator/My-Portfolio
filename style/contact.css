@@ -89,8 +89,9 @@
 
 .contact-badge {
     height: 100px;
-    display: flex;
-    justify-content: flex-end;
+    width: 170px;
+    align-self: flex-end;
+    position: relative;
 }
 
 .contact-badge-mobile {
@@ -100,6 +101,24 @@
 .contact-badge-img {
     height: 170px;
     z-index: 1;
+}
+
+.contact-badge-circle-img {
+    position: absolute;
+    height: 160px;
+    z-index: 2;
+    right: 4%;
+    top: 4%;
+}
+
+.contact-badge-logo-img {
+    position: absolute;
+    height: 80px;
+    z-index: 2;
+    right: 25%;
+    top: 45%;
+    filter: brightness(0);
+    transform: rotate(16deg);
 }
 
 .contact-right h4 {
@@ -268,11 +287,30 @@
         height: 100px;
         display: flex;
         align-self: flex-end;
+        position: relative;
     }
 
     .contact-badge-img-mobile {
         height: 140px;
         z-index: 1;
+    }
+
+    .contact-badge-circle-img-mobile {
+        position: absolute;
+        height: 130px;
+        z-index: 2;
+        right: 4%;
+        top: 4%;
+    }
+
+    .contact-badge-logo-img-mobile {
+        position: absolute;
+        height: 60px;
+        z-index: 2;
+        right: 28%;
+        top: 40%;
+        filter: brightness(0);
+        transform: rotate(16deg);
     }
 
     .contact-arrow-img {
@@ -294,7 +332,7 @@
 }
 
 @media (max-width: 680px) {
-    .contact-content-wrapper{
+    .contact-content-wrapper {
         padding: 100px 35px 20px 35px;
     }
 }
@@ -320,7 +358,7 @@
 }
 
 @media (max-width: 405px) {
-    .contact-content-wrapper{
+    .contact-content-wrapper {
         padding: 100px 15px 15px 15px;
     }
 
