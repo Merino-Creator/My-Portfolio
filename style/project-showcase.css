@@ -184,6 +184,11 @@ h3 {
     justify-content: flex-end;
 }
 
+.adaptive-text {
+    color: white;
+    mix-blend-mode: difference;
+}
+
 @media (max-width: 1210px) {
     .project-showcase {
         gap: 60px;
