@@ -4,19 +4,19 @@ function headerTemplate() {
         <div class="nav-bar">
             <a href="${base}index.html"><img class="logo" src="${base}assets/images/logo.png" alt="logo of website in header"></a>
             <div class="header-tabs">
-                <a class="about-me-tab" href="${base}index.html#about">
+                <a class="about-me-tab adaptive-text" href="${base}index.html#about">
                     About me
                     <img class="nav-circle-img" src="${base}assets/images/header/circle.png" alt="">
                 </a>
-                <a class="skills-tab" href="${base}index.html#skills">
+                <a class="skills-tab adaptive-text" href="${base}index.html#skills">
                     Skills
                     <img class="nav-string-img" src="${base}assets/images/header/string.png" alt="">
                 </a>
-                <a class="projects-tab" href="${base}index.html#projects">
+                <a class="projects-tab adaptive-text" href="${base}index.html#projects">
                     Projects
                     <img class="nav-wave-img" src="${base}assets/images/header/wave.png" alt="">
                 </a>
-                <a class="contact-tab" href="${base}index.html#contact">
+                <a class="contact-tab adaptive-text" href="${base}index.html#contact">
                     Contact
                     <img class="nav-underscore-img" src="${base}assets/images/header/underscore.png" alt="">
                 </a>
@@ -35,7 +35,7 @@ function headerTemplate() {
                     <img class="lang-box-img" src="${base}assets/images/header/toggle.png" alt="">
                 </div>
             </div>
-            <button id="burgerMenu" class="burger-menu">
+            <button id="burgerMenu" class="burger-menu adaptive-text">
                 <span></span>
                 <span></span>
                 <span></span>
