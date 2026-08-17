@@ -103,17 +103,47 @@ h3 {
     position: relative;
 }
 
+.project-images-container {
+    position: relative;
+}
+
 .project-img {
     width: 100%;
     height: auto;
     border-radius: 16px;
 }
 
-.project-badge-img {
+.badge-group {
     position: absolute;
     right: -10%;
     bottom: 30%;
     height: 120px;
+    width: 120px;
+}
+
+.project-badge-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 120px;
+}
+
+.contact-badge-circle-img {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    height: 110px;
+    z-index: 2;
+}
+
+.contact-badge-logo-img {
+    position: absolute;
+    top: 28px;
+    left: 30px;
+    height: 60px;
+    z-index: 2;
+    filter: brightness(0);
+    transform: rotate(16deg);
 }
 
 .test-btn {
@@ -236,6 +266,10 @@ h3 {
     .prev-next-link {
         display: flex;
         justify-content: space-between;
+    }
+
+    .badge-group {
+        display: none;
     }
 }
 
