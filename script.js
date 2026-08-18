@@ -122,9 +122,11 @@ function initPeel() {
     skillRight.onclick = () => {
         skillRight.classList.toggle('peeled');
     };
-    
-    skillRightMobile.onclick = () => {
+
+    skillRightMobile.onclick = (e) => {
         skillRightMobile.classList.toggle('peeled');
+        e.currentTarget.blur();
+        document.activeElement.blur();
     };
 }
 
@@ -199,9 +201,9 @@ function initSendBtn() {
 
 function splitLetters() {
     const elements = document.querySelectorAll('.frontend-headline, .developer-headline');
-    
+
     elements.forEach(el => {
-        el.innerHTML = el.textContent.split('').map(letter => 
+        el.innerHTML = el.textContent.split('').map(letter =>
             `<span class="letter" data-letter="${letter}">${letter}</span>`
         ).join('');
     });

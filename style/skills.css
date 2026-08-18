@@ -307,18 +307,9 @@ figcaption {
         cursor: pointer;
     }
 
-    .skill-bottom-right-mobile:hover .peel-img-start,
-    .skill-bottom-right-mobile:hover .peel-text,
-    .skill-bottom-right-mobile:hover .peel-arrow {
-        opacity: 0;
-    }
-
-    .skill-bottom-right-mobile:hover .peel-img-begin {
-        opacity: 1;
-    }
-
-    .skill-bottom-right-mobile.peeled .peel-img-begin,
-    .skill-bottom-right-mobile.peeled .peel-img-start {
+    .skill-bottom-right-mobile.peeled .peel-img-start,
+    .skill-bottom-right-mobile.peeled .peel-text,
+    .skill-bottom-right-mobile.peeled .peel-arrow {
         opacity: 0;
     }
 
@@ -340,7 +331,7 @@ figcaption {
 }
 
 @media (max-width: 680px) {
-    .skills-content-wrapper{
+    .skills-content-wrapper {
         padding: 15px 35px 15px 35px;
     }
 }
@@ -397,7 +388,7 @@ figcaption {
 }
 
 @media (max-width: 405px) {
-    .skills-content-wrapper{
+    .skills-content-wrapper {
         padding: 15px 15px 15px 15px;
     }
 
