@@ -99,10 +99,6 @@ h3 {
     flex-shrink: 1;
 }
 
-.project-img-wrapper {
-    position: relative;
-}
-
 .project-images-container {
     position: relative;
 }
