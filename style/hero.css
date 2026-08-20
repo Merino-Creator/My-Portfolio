@@ -175,6 +175,11 @@
     }
 }
 
+.hero-top-right:hover .photo-signature,
+.hero-top-right-mobile:hover .photo-signature-mobile {
+    animation: wiggle 0.4s ease-in-out;
+}
+
 .photo-frame-img {
     position: absolute;
     height: auto;
