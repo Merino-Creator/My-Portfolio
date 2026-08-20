@@ -39,7 +39,7 @@ h4 {
 }
 
 .highlight {
-    color: var(--highlight-color-light);
+    color: var(--main-color-two);
 }
 
 @media (max-width: 950px) {
