@@ -10,6 +10,7 @@ function init() {
     splitLetters();
     initBurgerMenu();
     getBasePath();
+    initPhotoSignature();
 }
 
 function highlightWords() {
@@ -252,4 +253,21 @@ function initBurgerMenu() {
 
 function getBasePath() {
     return window.location.pathname.includes('/html/') ? '../' : './';
+}
+
+function initPhotoSignature() {
+    let heroTopRight = document.querySelector('.hero-top-right, .hero-top-right-mobile');
+    let signature = document.querySelector('.photo-signature, .photo-signature-mobile');
+    if (!heroTopRight) return;
+
+    let original = signature.textContent;
+    let hoverText = original.replace(':)', ':D');
+
+    heroTopRight.onmouseover = () => {
+        signature.textContent = hoverText;
+    };
+
+    heroTopRight.onmouseout = () => {
+        signature.textContent = original;
+    };
 }

@@ -156,8 +156,7 @@
     font-size: 140px;
     font-weight: 600;
     color: var(--primary-color);
-    max-width: 590px;
-    min-width: 530px;
+    min-width: 590px;
     line-height: 1;
 }
 
