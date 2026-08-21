@@ -206,7 +206,7 @@ function initSendBtn() {
             message: helpInput.value
         };
 
-        fetch('/send-mail.php', {
+        fetch('/contact_form_mail.php', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(data)
