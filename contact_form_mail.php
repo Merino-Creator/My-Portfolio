@@ -12,7 +12,7 @@ header("Content-Type: application/json; charset=utf-8");
 // ------------------------------------------------------------
 
 // >>> DEINE EMAIL HIER EINTRAGEN <<<
-$siteEmail = "stuermer.dan137@gmail.com";
+$siteEmail = "kontakt@daniel-stuermer.de";
 
 switch ($_SERVER['REQUEST_METHOD']) {
 
