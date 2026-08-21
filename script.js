@@ -198,6 +198,38 @@ function initSendBtn() {
         checkmark.classList.toggle('visible');
         checkForm();
     };
+
+    sendBtn.onclick = () => {
+        let data = {
+            name: nameInput.value,
+            email: emailInput.value,
+            message: helpInput.value
+        };
+
+        fetch('/send-mail.php', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data)
+        })
+            .then(response => response.json())
+            .then(result => {
+                if (result.success) {
+                    alert('Message sent successfully!');
+                    nameInput.value = '';
+                    emailInput.value = '';
+                    helpInput.value = '';
+                    checkbox.checked = false;
+                    checkmark.classList.remove('visible');
+                    checkForm();
+                } else {
+                    alert('Something went wrong.');
+                }
+            })
+            .catch(error => {
+                alert('Error sending message. Please try again later.');
+                console.error(error);
+            });
+    };
 }
 
 function splitLetters() {
