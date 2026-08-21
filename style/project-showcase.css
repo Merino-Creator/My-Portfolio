@@ -76,6 +76,20 @@ h3 {
     animation: draw-left-right 5s ease infinite;
 }
 
+.sharky-underline {
+    width: 220px;
+    height: 20px;
+    margin-bottom: 40px;
+    animation: draw-left-right 5s ease infinite;
+}
+
+.pokedex-underline {
+    width: 260px;
+    height: 20px;
+    margin-bottom: 40px;
+    animation: draw-left-right 5s ease infinite;
+}
+
 .project-description {
     display: flex;
     flex-direction: column;
