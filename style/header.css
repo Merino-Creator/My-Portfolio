@@ -56,6 +56,14 @@ header a {
     transition: none;
 }
 
+.lang-de .nav-circle-img {
+    width: 150px;
+}
+
+.lang-de .nav-string-img {
+    width: 280px;
+}
+
 .header-tabs a:hover .nav-circle-img {
     animation: draw-circle 0.4s ease forwards;
 }

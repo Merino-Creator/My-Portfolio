@@ -5,19 +5,19 @@ function headerTemplate() {
             <a href="${base}index.html"><img class="logo" src="${base}assets/images/logo.png" alt="logo of website in header"></a>
             <div class="header-tabs">
                 <a class="about-me-tab adaptive-text" href="${base}index.html#about">
-                    About me
+                    <span data-i18n="navAbout">About me</span>
                     <img class="nav-circle-img" src="${base}assets/images/header/circle.png" alt="">
                 </a>
                 <a class="skills-tab adaptive-text" href="${base}index.html#skills">
-                    Skills
+                    <span data-i18n="navSkills">Skills</span>
                     <img class="nav-string-img" src="${base}assets/images/header/string.png" alt="">
                 </a>
                 <a class="projects-tab adaptive-text" href="${base}index.html#projects">
-                    Projects
+                    <span data-i18n="navProjects">Projects</span>
                     <img class="nav-wave-img" src="${base}assets/images/header/wave.png" alt="">
                 </a>
                 <a class="contact-tab adaptive-text" href="${base}index.html#contact">
-                    Contact
+                    <span data-i18n="navContact">Contact</span>
                     <img class="nav-underscore-img" src="${base}assets/images/header/underscore.png" alt="">
                 </a>
             </div>
@@ -50,16 +50,20 @@ function headerTemplate() {
                 <button class="mobile-menu-close-btn">X</button>
             </div>
             <div class="mobile-tabs">
-                <a href="#about">About me
+                <a href="#about">
+                    <span data-i18n="navAbout">About me</span>
                     <img class="nav-circle-img" src="${base}assets/images/header/circle.png" alt="">
                 </a>
-                <a href="#skills">Skills
+                <a href="#skills">
+                    <span data-i18n="navSkills">Skills</span>
                     <img class="nav-string-img" src="${base}assets/images/header/string.png" alt="">
                 </a>
-                <a href="#projects">Projects
+                <a href="#projects">
+                    <span data-i18n="navProjects">Projects</span>
                     <img class="nav-wave-img" src="${base}assets/images/header/wave.png" alt="">
                 </a>
-                <a href="#contact">Contact
+                <a href="#contact">
+                    <span data-i18n="navContact">Contact</span>
                     <img class="nav-underscore-img" src="${base}assets/images/header/underscore.png" alt="">
                 </a>
             </div>

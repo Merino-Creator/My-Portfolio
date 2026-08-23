@@ -1,5 +1,10 @@
 const translations = {
     en: {
+        navAbout: "About me",
+        navSkills: "Skills",
+        navProjects: "Projects",
+        navContact: "Contact",
+
         heroFrontend: "Frontend",
         heroDeveloper: "DEVELOPER",
         heroGetInTouch: "Get in Touch",
@@ -45,9 +50,16 @@ const translations = {
         privacyText: "I´ve read the",
         privacyLink: "privacy policy",
         privacyTextEnd: "and agree to the processing of my data as outlined.",
-        sendBtn: "Send"
+        sendBtn: "Send",
+
+        legalNotice: "Legal Notice"
     },
     de: {
+        navAbout: "Über mich",
+        navSkills: "Fähigkeiten",
+        navProjects: "Projekte",
+        navContact: "Kontakt",
+
         heroFrontend: "Frontend",
         heroDeveloper: "ENTWICKLER",
         heroGetInTouch: "Kontakt",
@@ -93,6 +105,8 @@ const translations = {
         privacyText: "Ich habe die",
         privacyLink: "Datenschutzerklärung",
         privacyTextEnd: "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
-        sendBtn: "Senden"
+        sendBtn: "Senden",
+
+        legalNotice: "Impressum"
     }
 };

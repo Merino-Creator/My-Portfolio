@@ -6,7 +6,8 @@ function footerTemplate() {
                 <a href="${base}index.html"><img class="logo" src="${base}assets/images/logo.png" alt="logo of website in footer"></a>
                 <div class="legal-notice-mobile">
                     <p>© Daniel Stürmer 2026</p>
-                    <a class="legal-notice-link" href="${base}html/legal-notice.html">Legal Notice
+                    <a class="legal-notice-link" href="${base}html/legal-notice.html">
+                        <span data-i18n="legalNotice">Legal Notice</span>
                         <img class="nav-underscore-img" src="${base}assets/images/header/underscore.png" alt="">
                     </a>
                 </div>
