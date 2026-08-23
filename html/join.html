@@ -28,7 +28,8 @@
             </header>
 
             <a class="previous-link" href="../index.html">
-                <img class="arrow-img" src="../assets/images/projects/before-arrow.png" alt="">Go Back
+                <img class="arrow-img" src="../assets/images/projects/before-arrow.png" alt="">
+                <span data-i18n="projGoBack">Go Back</span>
             </a>
 
             <section>
@@ -36,18 +37,21 @@
                     <div class="project-description">
                         <h2 class="adaptive-text">Join</h2>
                         <img class="underline-img" src="../assets/images/about-me/underline.png" alt="">
-                        <h3 class="adaptive-text">Description</h3>
-                        <p class="adaptive-text">Task manager inspired by the Kanban System. Create and organize tasks
+                        <h3 class="adaptive-text" data-i18n="projDescriptionTitle">Description</h3>
+                        <p class="adaptive-text" data-i18n="joinDescriptionText">Task manager inspired by the Kanban
+                            System. Create and organize tasks
                             using drag and drop
                             functions, assign users and categories.
                         </p>
-                        <h3 class="adaptive-text">Implementation Details</h3>
-                        <p class="adaptive-text">In this project, we distributed tasks via Trello and implemented
+                        <h3 class="adaptive-text" data-i18n="projDetailsTitle">Implementation Details</h3>
+                        <p class="adaptive-text" data-i18n="joinDetailsText">In this project, we distributed tasks via
+                            Trello and implemented
                             features independently on separate Git branches. Mutual review and support were essential
                             throughout. I additionally took charge of the frontend logic, handled task planning and
                             distribution, and familiarized myself with Git workflows.
                         </p>
-                        <p class="adaptive-text"><strong>Duration:</strong> 6 weeks</p>
+                        <p class="adaptive-text"><strong data-i18n="projDurationLabel">Duration:</strong> <span
+                                data-i18n="joinDuration">6 weeks</span></p>
                         <div class="tech-stack">
                             <p class="adaptive-text">CSS</p>
                             <p class="adaptive-text">HTML</p>
@@ -66,11 +70,11 @@
                         <div class="test-btn">
                             <div class="adaptive-text">
                                 <a href="https://github.com/Merino-Creator/Join">
-                                    <button class="test-github-btn">GitHub</button></a>
+                                    <button class="test-github-btn" data-i18n="projGitHubBtn">GitHub</button></a>
                             </div>
                             <div class="adaptive-text">
                                 <a href="https://join.daniel-stuermer.de/html/login.html">
-                                    <button class="test-live-btn">Live Test</button>
+                                    <button class="test-live-btn" data-i18n="projLiveTestBtn">Live Test</button>
                                 </a>
                             </div>
                         </div>
@@ -78,14 +82,14 @@
                 </div>
             </section>
 
-            <div class="prev-next-link">
-                <a class="previous-link-mobile adaptive-text" href="../index.html">
-                    <img class="arrow-img" src="../assets/images/projects/before-arrow.png" alt="">Go Back
-                </a>
-                <a class="next-link adaptive-text" href="./sharky.html">Next Project
-                    <img class="arrow-img" src="../assets/images/projects/next-arrow.png" alt="">
-                </a>
-            </div>
+            <a class="previous-link-mobile adaptive-text" href="../index.html">
+                <img class="arrow-img" src="../assets/images/projects/before-arrow.png" alt="">
+                <span data-i18n="projGoBack">Go Back</span>
+            </a>
+            <a class="next-link adaptive-text" href="./sharky.html">
+                <span data-i18n="projNextProject">Next Project</span>
+                <img class="arrow-img" src="../assets/images/projects/next-arrow.png" alt="">
+            </a>
 
         </div>
     </main>
@@ -94,6 +98,7 @@
 
 <script src="../script/loadTemplates.js"></script>
 <script src="../templates/headerTemplate.js"></script>
+<script src="../script/translations.js"></script>
 <script src="../script.js"></script>
 
 </html>

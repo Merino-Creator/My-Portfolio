@@ -28,7 +28,8 @@
             </header>
 
             <a class="previous-link" href="../index.html">
-                <img class="arrow-img" src="../assets/images/projects/before-arrow.png" alt="">Go Back
+                <img class="arrow-img" src="../assets/images/projects/before-arrow.png" alt="">
+                <span data-i18n="projGoBack">Go Back</span>
             </a>
 
             <section>
@@ -36,20 +37,23 @@
                     <div class="project-description">
                         <h2 class="adaptive-text">Sharky</h2>
                         <img class="sharky-underline" src="../assets/images/about-me/underline.png" alt="">
-                        <h3 class="adaptive-text">Description</h3>
-                        <p class="adaptive-text">Jump, run and shoot game based on object-oriented approach. Help Sharky
+                        <h3 class="adaptive-text" data-i18n="projDescriptionTitle">Description</h3>
+                        <p class="adaptive-text" data-i18n="sharkyDescriptionText">Jump, run and shoot game based on
+                            object-oriented approach. Help Sharky
                             to find coins and
                             toxic bottles to fight against the killer whale.
                         </p>
-                        <h3 class="adaptive-text">Implementation Details</h3>
-                        <p class="adaptive-text">Developed a complete 2D browser game from scratch using vanilla
+                        <h3 class="adaptive-text" data-i18n="projDetailsTitle">Implementation Details</h3>
+                        <p class="adaptive-text" data-i18n="sharkyDetailsText">Developed a complete 2D browser game from
+                            scratch using vanilla
                             JavaScript, HTML5 Canvas and CSS – without any external frameworks or game engines.<br> The
                             development process was iterative and self-directed: features were planned, implemented,
                             tested and refined continuously.<br>
                             The codebase was kept maintainable through consistent JSDoc
                             documentation, modular file structure and refactoring sessions throughout development.
                         </p>
-                        <p class="adaptive-text"><strong>Duration:</strong> 4 weeks</p>
+                        <p class="adaptive-text"><strong data-i18n="projDurationLabel">Duration:</strong> <span
+                                data-i18n="sharkyDuration">4 weeks</span></p>
                         <div class="tech-stack">
                             <p class="adaptive-text">CSS</p>
                             <p class="adaptive-text">HTML</p>
@@ -70,12 +74,12 @@
                         <div class="test-btn">
                             <div class="adaptive-text">
                                 <a href="https://github.com/Merino-Creator/Sharky">
-                                    <button class="test-github-btn">GitHub</button>
+                                    <button class="test-github-btn" data-i18n="projGitHubBtn">GitHub</button>
                                 </a>
                             </div>
                             <div class="adaptive-text">
                                 <a href="https://sharky.daniel-stuermer.de/">
-                                    <button class="test-live-btn">Live Test</button>
+                                    <button class="test-live-btn" data-i18n="projLiveTestBtn">Live Test</button>
                                 </a>
                             </div>
                         </div>
@@ -85,9 +89,11 @@
 
             <div class="prev-next-link">
                 <a class="previous-link-mobile adaptive-text" href="../index.html">
-                    <img class="arrow-img" src="../assets/images/projects/before-arrow.png" alt="">Go Back
+                    <img class="arrow-img" src="../assets/images/projects/before-arrow.png" alt="">
+                    <span data-i18n="projGoBack">Go Back</span>
                 </a>
-                <a class="next-link adaptive-text" href="./sharky.html">Next Project
+                <a class="next-link adaptive-text" href="./pokedex.html">
+                    <span data-i18n="projNextProject">Next Project</span>
                     <img class="arrow-img" src="../assets/images/projects/next-arrow.png" alt="">
                 </a>
             </div>
@@ -99,6 +105,7 @@
 
 <script src="../script/loadTemplates.js"></script>
 <script src="../templates/headerTemplate.js"></script>
+<script src="../script/translations.js"></script>
 <script src="../script.js"></script>
 
 </html>

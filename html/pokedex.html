@@ -28,7 +28,8 @@
             </header>
 
             <a class="previous-link" href="../index.html">
-                <img class="arrow-img" src="../assets/images/projects/before-arrow.png" alt="">Go Back
+                <img class="arrow-img" src="../assets/images/projects/before-arrow.png" alt="">
+                <span data-i18n="projGoBack">Go Back</span>
             </a>
 
             <section>
@@ -36,18 +37,21 @@
                     <div class="project-description">
                         <h2 class="adaptive-text">Pokedex</h2>
                         <img class="pokedex-underline" src="../assets/images/about-me/underline.png" alt="">
-                        <h3 class="adaptive-text">Description</h3>
-                        <p class="adaptive-text">A web application that fetches Pokémon data from a public REST API and
+                        <h3 class="adaptive-text" data-i18n="projDescriptionTitle">Description</h3>
+                        <p class="adaptive-text" data-i18n="pokedexDescriptionText">A web application that fetches
+                            Pokémon data from a public REST API and
                             displays it in the browser.
                             From
                             fetching data and asynchronous JavaScript to caching, pagination, and dynamic UI updates.
                         </p>
-                        <h3 class="adaptive-text">Implementation Details</h3>
-                        <p class="adaptive-text">I independently designed a visual concept that matched the Pokémon
+                        <h3 class="adaptive-text" data-i18n="projDetailsTitle">Implementation Details</h3>
+                        <p class="adaptive-text" data-i18n="pokedexDetailsText">I independently designed a visual
+                            concept that matched the Pokémon
                             theme, which shaped my decisions on how many Pokémon to display and how to present them. I
                             worked through new visualization ideas step by step and successfully brought them to life.
                         </p>
-                        <p class="adaptive-text"><strong>Duration:</strong> 2 weeks</p>
+                        <p class="adaptive-text"><strong data-i18n="projDurationLabel">Duration:</strong> <span
+                                data-i18n="pokedexDuration">2 weeks</span></p>
                         <div class="tech-stack">
                             <p class="adaptive-text">CSS</p>
                             <p class="adaptive-text">HTML</p>
@@ -70,12 +74,12 @@
                         <div class="test-btn">
                             <div class="adaptive-text">
                                 <a href="https://github.com/Merino-Creator/Pokedex">
-                                    <button class="test-github-btn">GitHub</button>
+                                    <button class="test-github-btn" data-i18n="projGitHubBtn">GitHub</button>
                                 </a>
                             </div>
                             <div class="adaptive-text">
                                 <a href="https://pokedex.daniel-stuermer.de/">
-                                    <button class="test-live-btn">Live Test</button>
+                                    <button class="test-live-btn" data-i18n="projLiveTestBtn">Live Test</button>
                                 </a>
                             </div>
                         </div>
@@ -85,9 +89,11 @@
 
             <div class="prev-next-link">
                 <a class="previous-link-mobile adaptive-text" href="../index.html">
-                    <img class="arrow-img" src="../assets/images/projects/before-arrow.png" alt="">Go Back
+                    <img class="arrow-img" src="../assets/images/projects/before-arrow.png" alt="">
+                    <span data-i18n="projGoBack">Go Back</span>
                 </a>
-                <a class="next-link adaptive-text" href="./sharky.html">Next Project
+                <a class="next-link adaptive-text" href="./join.html">
+                    <span data-i18n="projNextProject">Next Project</span>
                     <img class="arrow-img" src="../assets/images/projects/next-arrow.png" alt="">
                 </a>
             </div>
@@ -99,6 +105,7 @@
 
 <script src="../script/loadTemplates.js"></script>
 <script src="../templates/headerTemplate.js"></script>
+<script src="../script/translations.js"></script>
 <script src="../script.js"></script>
 
 </html>

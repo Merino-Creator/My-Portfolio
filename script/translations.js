@@ -68,7 +68,26 @@ const translations = {
         legalDisclaimerTitle: "Disclaimer of warranties and limitation of liability",
         legalDisclaimerText: `Portfolio is provided "as is" without warranty of any kind, whether express or implied, including but not limited to the implied warranties of merchantability, fitness for a particular purpose, and non-infringement. In no event will we, the listed students, or the Developer Akademie, be liable for any direct, indirect, incidental, special, consequential or exemplary damages, including but not limited to, damages for loss of profits, goodwill, use, data, or other intangible losses, even if we have been advised of the possibility of such damages, arising out of or in connection with the use or performance of Portfolio.`,
         legalIndemnityTitle: "Indemnity",
-        legalIndemnityText: `You agree to indemnify, defend and hold harmless us, the listed students, the Developer Akademie, and our affiliates, partners, officers, directors, agents, and employees, from and against any claim, demand, loss, damage, cost, or liability (including reasonable legal fees) arising out of or relating to your use of Portfolio and/or your breach of this Legal Notice. For any questions or notices, please contact us at stuermer.dan137@gmail.com Date: July 26, 2025`
+        legalIndemnityText: `You agree to indemnify, defend and hold harmless us, the listed students, the Developer Akademie, and our affiliates, partners, officers, directors, agents, and employees, from and against any claim, demand, loss, damage, cost, or liability (including reasonable legal fees) arising out of or relating to your use of Portfolio and/or your breach of this Legal Notice. For any questions or notices, please contact us at stuermer.dan137@gmail.com Date: July 26, 2025`,
+
+        projGoBack: "Go Back",
+        projDescriptionTitle: "Description",
+        projDetailsTitle: "Implementation Details",
+        projDurationLabel: "Duration:",
+        projGitHubBtn: "GitHub",
+        projLiveTestBtn: "Live Test",
+        projNextProject: "Next Project",
+        joinDescriptionText: "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+        joinDetailsText: "In this project, we distributed tasks via Trello and implemented features independently on separate Git branches. Mutual review and support were essential throughout. I additionally took charge of the frontend logic, handled task planning and distribution, and familiarized myself with Git workflows.",
+        joinDuration: "6 weeks",
+
+        sharkyDescriptionText: "Jump, run and shoot game based on object-oriented approach. Help Sharky to find coins and toxic bottles to fight against the killer whale.",
+        sharkyDetailsText: "Developed a complete 2D browser game from scratch using vanilla JavaScript, HTML5 Canvas and CSS – without any external frameworks or game engines.<br> The development process was iterative and self-directed: features were planned, implemented, tested and refined continuously.<br>The codebase was kept maintainable through consistent JSDoc documentation, modular file structure and refactoring sessions throughout development.",
+        sharkyDuration: "4 weeks",
+
+        pokedexDescriptionText: "A web application that fetches Pokémon data from a public REST API and displays it in the browser. From fetching data and asynchronous JavaScript to caching, pagination, and dynamic UI updates.",
+        pokedexDetailsText: "I independently designed a visual concept that matched the Pokémon theme, which shaped my decisions on how many Pokémon to display and how to present them. I worked through new visualization ideas step by step and successfully brought them to life.",
+        pokedexDuration: "2 weeks"
     },
     de: {
         navAbout: "Über mich",
@@ -139,6 +158,25 @@ const translations = {
         legalDisclaimerTitle: "Haftungsausschluss und Haftungsbeschränkung",
         legalDisclaimerText: `Portfolio wird "wie besehen" ohne jegliche ausdrückliche oder stillschweigende Gewährleistung bereitgestellt, einschließlich, aber nicht beschränkt auf die stillschweigenden Gewährleistungen der Marktgängigkeit, der Eignung für einen bestimmten Zweck und der Nichtverletzung von Rechten Dritter. In keinem Fall haften wir, die aufgeführten Studierenden, oder die Developer Akademie für direkte, indirekte, zufällige, besondere, Folge- oder exemplarische Schäden, einschließlich, aber nicht beschränkt auf Gewinnverluste, Goodwill, Nutzungsausfall, Datenverlust oder andere immaterielle Verluste, selbst wenn wir auf die Möglichkeit solcher Schäden hingewiesen wurden, die sich aus oder im Zusammenhang mit der Nutzung oder Leistung von Portfolio ergeben.`,
         legalIndemnityTitle: "Freistellung",
-        legalIndemnityText: `Du erklärst dich damit einverstanden, uns, die aufgeführten Studierenden, die Developer Akademie sowie unsere verbundenen Unternehmen, Partner, leitenden Angestellten, Direktoren, Vertreter und Mitarbeiter von jeglichen Ansprüchen, Forderungen, Verlusten, Schäden, Kosten oder Haftungen (einschließlich angemessener Anwaltskosten) freizustellen, zu verteidigen und schadlos zu halten, die sich aus oder im Zusammenhang mit deiner Nutzung von Portfolio und/oder deinem Verstoß gegen dieses Impressum ergeben. Bei Fragen oder Mitteilungen kontaktiere uns bitte unter stuermer.dan137@gmail.com Datum: 26. Juli 2025`
+        legalIndemnityText: `Du erklärst dich damit einverstanden, uns, die aufgeführten Studierenden, die Developer Akademie sowie unsere verbundenen Unternehmen, Partner, leitenden Angestellten, Direktoren, Vertreter und Mitarbeiter von jeglichen Ansprüchen, Forderungen, Verlusten, Schäden, Kosten oder Haftungen (einschließlich angemessener Anwaltskosten) freizustellen, zu verteidigen und schadlos zu halten, die sich aus oder im Zusammenhang mit deiner Nutzung von Portfolio und/oder deinem Verstoß gegen dieses Impressum ergeben. Bei Fragen oder Mitteilungen kontaktiere uns bitte unter stuermer.dan137@gmail.com Datum: 26. Juli 2025`,
+
+        projGoBack: "Zurück",
+        projDescriptionTitle: "Beschreibung",
+        projDetailsTitle: "Umsetzungsdetails",
+        projDurationLabel: "Dauer:",
+        projGitHubBtn: "GitHub",
+        projLiveTestBtn: "Live Test",
+        projNextProject: "Nächstes Projekt",
+        joinDescriptionText: "Task-Manager, inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben per Drag & Drop, weise Nutzer und Kategorien zu.",
+        joinDetailsText: "In diesem Projekt haben wir Aufgaben über Trello verteilt und Features eigenständig auf separaten Git-Branches umgesetzt. Gegenseitige Reviews und Unterstützung waren dabei essenziell. Zusätzlich habe ich die Frontend-Logik übernommen, die Aufgabenplanung und -verteilung koordiniert und mich mit Git-Workflows vertraut gemacht.",
+        joinDuration: "6 Wochen",
+
+        sharkyDescriptionText: "Jump-and-Run-Spiel mit Schießmechanik, basierend auf einem objektorientierten Ansatz. Hilf Sharky, Münzen und Giftflaschen zu finden, um gegen den Killerwal zu kämpfen.",
+        sharkyDetailsText: "Ein vollständiges 2D-Browser-Spiel von Grund auf mit reinem JavaScript, HTML5 Canvas und CSS entwickelt – ohne externe Frameworks oder Game-Engines.<br> Der Entwicklungsprozess war iterativ und eigenständig: Features wurden geplant, umgesetzt, getestet und laufend verfeinert.<br>Die Codebasis wurde durch konsequente JSDoc-Dokumentation, eine modulare Dateistruktur und regelmäßige Refactoring-Phasen wartbar gehalten.",
+        sharkyDuration: "4 Wochen",
+
+        pokedexDescriptionText: "Eine Webanwendung, die Pokémon-Daten von einer öffentlichen REST-API abruft und im Browser darstellt. Von der Datenabfrage und asynchronem JavaScript bis hin zu Caching, Pagination und dynamischen UI-Updates.",
+        pokedexDetailsText: "Ich habe eigenständig ein visuelles Konzept entwickelt, das zum Pokémon-Thema passt, und darauf basierend entschieden, wie viele Pokémon angezeigt werden und wie sie präsentiert werden sollen. Ich habe neue Visualisierungsideen Schritt für Schritt erarbeitet und erfolgreich umgesetzt.",
+        pokedexDuration: "2 Wochen"
     }
 };
