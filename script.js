@@ -71,13 +71,20 @@ function initLanguageBtn() {
     let englishBtn = document.getElementById('englishBtn');
     let germanBtn = document.getElementById('germanBtn');
 
-    languageBtn.onclick = () => {
-        vectorPoint.classList.toggle('active');
-        englishBtn.classList.toggle('active');
-        germanBtn.classList.toggle('active');
+    englishBtn.onclick = () => {
+        if (englishBtn.classList.contains('active')) return;
+        vectorPoint.classList.remove('active');
+        englishBtn.classList.add('active');
+        germanBtn.classList.remove('active');
+        switchLanguage('en');
+    };
 
-        let currentLang = englishBtn.classList.contains('active') ? 'en' : 'de';
-        switchLanguage(currentLang);
+    germanBtn.onclick = () => {
+        if (germanBtn.classList.contains('active')) return;
+        vectorPoint.classList.add('active');
+        germanBtn.classList.add('active');
+        englishBtn.classList.remove('active');
+        switchLanguage('de');
     };
 }
 
@@ -304,6 +311,16 @@ function initBurgerMenu() {
             mobileLangBtns.forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
             mobileVectorPoint.classList.toggle('active');
+
+            let lang = btn.textContent.trim() === 'EN' ? 'en' : 'de';
+            switchLanguage(lang);
+
+            let englishBtn = document.getElementById('englishBtn');
+            let germanBtn = document.getElementById('germanBtn');
+            let vectorPoint = document.getElementById('vectorPoint');
+            englishBtn.classList.toggle('active', lang === 'en');
+            germanBtn.classList.toggle('active', lang === 'de');
+            vectorPoint.classList.toggle('active', lang === 'de');
         };
     });
 }
