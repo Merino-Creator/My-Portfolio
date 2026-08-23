@@ -162,7 +162,7 @@ header a {
 
 .mobile-menu {
     position: fixed;
-    background-image: url('../assets/images/background/hero-bg.png');
+    background-image: url('../assets/images/background/hero-bg.webp');
     background-position: bottom;
     background-size: cover;
     top: 0;

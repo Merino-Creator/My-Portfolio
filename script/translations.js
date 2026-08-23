@@ -58,7 +58,7 @@ const translations = {
 
         aboutBasedIn: "Wohnhaft in Stuttgart",
         aboutRelocate: "Offen für Umzug",
-        aboutRemote: "Offen für Remote-Arbeit",
+        aboutRemote: "Offen für Homeoffice",
         aboutWhoTitle: "WER IST DANIEL?",
         aboutTitle: "Über mich",
         aboutText: "Hallo, ich bin Daniel.<br>Dein zukünftiger Frontend-Entwickler.<br>Meine Leidenschaft fürs Programmieren kommt daher, Ideen und Gedanken in etwas Greifbares zu verwandeln.<br>Ein Großteil meiner Inspiration kommt aus dem Gaming-Bereich. Oft fasziniert mich die Möglichkeit, ganze Welten zu erschaffen.<br>Und genau wie beim Erschaffen einer Welt in einem Spiel, ist auch eine Website ein Ort, den man baut und so angenehm wie möglich für den Nutzer gestaltet.<br>Mit jeder Welt, die ich baue, lerne ich, sie für die Zukunft besser und spannender zu machen.<br><br>Lass uns zusammenarbeiten und die Welt bauen, die du suchst!",
@@ -67,8 +67,8 @@ const translations = {
         skillStackLabel: "MEIN STACK",
         skillSetTitle: "Fähigkeiten",
         skillText: "Meine Stärken liegen in HTML, CSS und JavaScript – den grundlegenden Bausteinen des modernen Webs, die ich gezielt in meinen Projekten einsetze.",
-        skillPullToPeel: "Ziehen zum<br>Abziehen",
-        skillPeeledText: "Außerdem interessiere<br>ich mich für:",
+        skillPullToPeel: "Hier<br>ziehen",
+        skillPeeledText: "Außerdem<br> interessiere<br>ich mich für:",
 
         projectsCraftLabel: "MEIN HANDWERK",
         projectsTitle: "Projekte",
