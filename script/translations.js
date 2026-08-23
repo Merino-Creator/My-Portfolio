@@ -108,7 +108,7 @@ const translations = {
         aboutRemote: "Offen für Homeoffice",
         aboutWhoTitle: "WER IST DANIEL?",
         aboutTitle: "Über mich",
-        aboutText: "Hallo, ich bin Daniel.<br>Dein zukünftiger Frontend-Entwickler.<br>Meine Leidenschaft fürs Programmieren kommt daher, Ideen und Gedanken in etwas Greifbares zu verwandeln.<br>Ein Großteil meiner Inspiration kommt aus dem Gaming-Bereich. Oft fasziniert mich die Möglichkeit, ganze Welten zu erschaffen.<br>Und genau wie beim Erschaffen einer Welt in einem Spiel, ist auch eine Website ein Ort, den man baut und so angenehm wie möglich für den Nutzer gestaltet.<br>Mit jeder Welt, die ich baue, lerne ich, sie für die Zukunft besser und spannender zu machen.<br><br>Lass uns zusammenarbeiten und die Welt bauen, die du suchst!",
+        aboutText: "Hallo, ich bin Daniel.<br>Dein zukünftiger Frontend-Entwickler.<br>Meine Leidenschaft für das Programmieren kommt aus dem Wunsch, Ideen in greifbare digitale Erlebnisse zu verwandeln.<br>Inspiriert durch meine Begeisterung fürs Gaming fasziniert mich besonders die Möglichkeit, eigene Welten zu erschaffen.<br>Genauso wie beim Game Design verstehe ich auch eine Website als einen Raum, den man sorgfältig gestaltet, um Nutzer intuitiv und nachhaltig zu begeistern.<br>Mit jedem Projekt lerne ich dazu, erstelle saubereren Code und baue noch durchdachtere Benutzeroberflächen.<br><br>Lass uns gemeinsam die digitale Welt gestalten, die du dir vorstellst!",
         aboutLetsTalk: "Lass uns reden",
 
         skillStackLabel: "MEIN STACK",
@@ -119,18 +119,18 @@ const translations = {
 
         projectsCraftLabel: "MEIN HANDWERK",
         projectsTitle: "Projekte",
-        projectsText: "Willkommen in meinem Projektbereich – schau dir gerne meine neuesten Arbeiten an! Mein Ansatz kombiniert sauberen, effizienten Code mit responsiven Layouts für ein reibungsloses Nutzererlebnis. Von strukturierter Aufgabenverwaltung über dynamisches Gaming bis hin zu Echtzeit-API-Integration – hier ist eine Auswahl dessen, was ich baue.",
+        projectsText: "Willkommen in meiner Projektabteilung – hier findest du eine Auswahl meiner aktuellen Projekte. Mein Fokus liegt auf sauberem, strukturiertem Code und vollresponsiven Layouts, die für eine intuitive UX sorgen. Ob Kanban-Task-Manager, objektorientierte Browsergames oder dynamische REST-API-Einbindungen – hier siehst du, wie ich Ideen in Code umsetze.",
         projectDetailsBtn: "Projektdetails",
         joinTitle: "Join",
-        joinText: "Task-Manager, inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben per Drag & Drop, weise Nutzer und Kategorien zu.",
+        joinText: "Task-Manager, inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben per Drag & Drop und weise Nutzer,sowie Kategorien zu.",
         sharkyTitle: "Sharky",
-        sharkyText: "Jump-and-Run-Spiel mit objektorientiertem Ansatz. Hilf Sharky, Münzen und Giftflaschen zu sammeln, um gegen den großen Killerwal zu kämpfen.",
+        sharkyText: "Jump-and-Run-Spiel mit objektorientiertem Ansatz. Hilf Sharky, Münzen und Giftflaschen zu sammeln, um den großen Killerwal zu besiegen.",
         pokedexTitle: "Pokedex",
         pokedexText: "Webanwendung mit Fokus auf API-Nutzung. Durchsuche deine Lieblings-Pokémon der ersten 4 Generationen.",
 
         contactMeLabel: "KONTAKT",
         contactTitle: "Bereit, zusammen zu arbeiten?",
-        contactText: "Ich suche eine Position als Frontend-Entwickler, in der ich mein Wissen in HTML, CSS und JavaScript aktiv einbringen und gleichzeitig weiter wachsen kann. Ich arbeite strukturiert, stelle mich Problemen und versuche die beste Lösung zu finden.<br><br>Ich freue mich darauf, Teil eines Teams zu werden, in dem ich neue Ideen einbringen und von den Erfahrungen anderer lernen kann.",
+        contactText: "Ich suche eine Position als Frontend-Entwickler, in der ich meine Kenntnisse in HTML, CSS und JavaScript aktiv einbringen und wertvolle Praxiserfahrung sammeln kann. Ich arbeite strukturiert, gehe technische Herausforderungen analytisch an und verfolge immer den Anspruch, die sauberste und effizienteste Lösung zu finden.<br><br>Ich freue mich darauf, mich in ein starkes Team einzubringen, gemeinsame Impulse zu setzen und täglich dazuzulernen.",
         nameQuestion: "Wie heißt du?",
         namePlaceholder: "Dein Name",
         emailQuestion: "Wie ist deine E-Mail?",
@@ -167,16 +167,16 @@ const translations = {
         projGitHubBtn: "GitHub",
         projLiveTestBtn: "Live Test",
         projNextProject: "Nächstes Projekt",
-        joinDescriptionText: "Task-Manager, inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben per Drag & Drop, weise Nutzer und Kategorien zu.",
-        joinDetailsText: "In diesem Projekt haben wir Aufgaben über Trello verteilt und Features eigenständig auf separaten Git-Branches umgesetzt. Gegenseitige Reviews und Unterstützung waren dabei essenziell. Zusätzlich habe ich die Frontend-Logik übernommen, die Aufgabenplanung und -verteilung koordiniert und mich mit Git-Workflows vertraut gemacht.",
+        joinDescriptionText: "Task-Manager, inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben per Drag & Drop und weise Nutzer, sowie Kategorien zu.",
+        joinDetailsText: "Die Zusammenarbeit in diesem Projekt basierte auf einem klaren Agile-Workflow: Wir haben Aufgaben strukturiert über Trello koordiniert und neue Features eigenständig auf separaten Git-Branches entwickelt. Regelmäßige Code-Reviews und gegenseitiges Sparring im Team waren dabei entscheidend für die Qualität unseres Codes. Neben der eigenverantwortlichen Umsetzung der Frontend-Logik habe ich die Aufgabenverteilung mitgestaltet und unsere Git-Workflows sowie Merge-Prozesse aktiv begleitet.",
         joinDuration: "6 Wochen",
 
-        sharkyDescriptionText: "Jump-and-Run-Spiel mit Schießmechanik, basierend auf einem objektorientierten Ansatz. Hilf Sharky, Münzen und Giftflaschen zu finden, um gegen den Killerwal zu kämpfen.",
-        sharkyDetailsText: "Ein vollständiges 2D-Browser-Spiel von Grund auf mit reinem JavaScript, HTML5 Canvas und CSS entwickelt – ohne externe Frameworks oder Game-Engines.<br> Der Entwicklungsprozess war iterativ und eigenständig: Features wurden geplant, umgesetzt, getestet und laufend verfeinert.<br>Die Codebasis wurde durch konsequente JSDoc-Dokumentation, eine modulare Dateistruktur und regelmäßige Refactoring-Phasen wartbar gehalten.",
+        sharkyDescriptionText: "Jump-and-Run-Spiel mit Schießmechanik, basierend auf einem objektorientierten Ansatz. Hilf Sharky, Münzen und Giftflaschen zu sammeln, um den Killerwal zu besiegen.",
+        sharkyDetailsText: "Ein vollständiges 2D-Browsergame, das von Grund auf mit reinem JavaScript, HTML5 Canvas und CSS entwickelt wurde – ganz ohne externe Frameworks oder Game-Engines. Der Entwicklungsprozess verlief durchweg iterativ und eigenständig: Neue Features wurden strukturiert konzipiert, umgesetzt, getestet und kontinuierlich verfeinert. Um das Projekt langfristig sauber und wartbar zu halten, lag der Fokus auf einer modularen Architektur, konsequenter JSDoc-Dokumentation und regelmäßigen Refactoring-Phasen.",
         sharkyDuration: "4 Wochen",
 
         pokedexDescriptionText: "Eine Webanwendung, die Pokémon-Daten von einer öffentlichen REST-API abruft und im Browser darstellt. Von der Datenabfrage und asynchronem JavaScript bis hin zu Caching, Pagination und dynamischen UI-Updates.",
-        pokedexDetailsText: "Ich habe eigenständig ein visuelles Konzept entwickelt, das zum Pokémon-Thema passt, und darauf basierend entschieden, wie viele Pokémon angezeigt werden und wie sie präsentiert werden sollen. Ich habe neue Visualisierungsideen Schritt für Schritt erarbeitet und erfolgreich umgesetzt.",
+        pokedexDetailsText: "Ich habe eigenständig ein zum Thema passendes UI-Design entwickelt und die Benutzeroberfläche gezielt auf eine übersichtliche Präsentation der Pokémon-Daten ausgelegt. Von der Konzeption der Anzeigelogik und Mengensteuerung bis zur visuellen Aufbereitung habe ich eigene Designideen schrittweise ausgearbeitet und umgesetzt.",
         pokedexDuration: "2 Wochen"
     }
 };
