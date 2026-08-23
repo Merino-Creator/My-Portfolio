@@ -52,4 +52,8 @@ h4 {
     .legal-notice-wrapper {
         padding: 15px 15px 15px 15px;
     }
+
+    .lang-de h3 {
+    font-size: 48px;
+}
 }
