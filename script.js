@@ -106,6 +106,7 @@ function switchLanguage(lang) {
     document.body.classList.toggle('lang-de', lang === 'de');
 
     splitLetters();
+    highlightWords();
 }
 
 function initContactBars() {
