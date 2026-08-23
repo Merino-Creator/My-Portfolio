@@ -157,14 +157,26 @@ footer a {
         width: 90px;
         height: 30px;
     }
-    
+
     .linkedin-link-btn {
         width: 90px;
         height: 30px;
     }
-    
+
     .email-link-btn {
         width: 90px;
         height: 30px;
+    }
+
+    .legal-notice-background .github-link-btn {
+        font-size: var(--small-text);
+    }
+
+    .legal-notice-background .linkedin-link-btn {
+        font-size: var(--small-text);
+    }
+
+    .legal-notice-background .email-link-btn {
+        font-size: var(--small-text);
     }
 }
