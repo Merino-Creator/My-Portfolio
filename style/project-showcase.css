@@ -212,7 +212,7 @@ h3 {
     margin-top: auto;
 }
 
-.next-link:hover {
+.next-link-desktop:hover {
     color: var(--main-color-one);
 }
 
@@ -254,6 +254,10 @@ h3 {
         display: none;
     }
 
+    .previous-link-mobile:hover {
+        color: var(--main-color-three);
+    }
+
     .project-showcase {
         flex-direction: column;
         padding: 20px 0 60px 0;
@@ -285,6 +289,10 @@ h3 {
         display: flex;
         gap: 12px;
         color: var(--primary-color);
+    }
+
+    .next-link:hover {
+        color: var(--main-color-one);
     }
 
     .prev-next-btn-box-mobile {
