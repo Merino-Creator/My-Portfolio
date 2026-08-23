@@ -35,13 +35,15 @@ function initHelloBtn() {
     let helloWrapper = helloBtn.parentElement;
 
     helloBtn.onmouseover = () => {
-        helloBtn.textContent = "I´M DANIEL STUERMER";
+        let currentLang = document.getElementById('englishBtn').classList.contains('active') ? 'en' : 'de';
+        helloBtn.textContent = translations[currentLang].heroHelloWorldHover;
         helloBtn.classList.add('expanded');
         helloWrapper.classList.add('expanded');
     };
 
     helloBtn.onmouseout = () => {
-        helloBtn.textContent = "Hello world";
+        let currentLang = document.getElementById('englishBtn').classList.contains('active') ? 'en' : 'de';
+        helloBtn.textContent = translations[currentLang].heroHelloWorld;
         helloBtn.classList.remove('expanded');
         helloWrapper.classList.remove('expanded');
     };
@@ -73,7 +75,28 @@ function initLanguageBtn() {
         vectorPoint.classList.toggle('active');
         englishBtn.classList.toggle('active');
         germanBtn.classList.toggle('active');
+
+        let currentLang = englishBtn.classList.contains('active') ? 'en' : 'de';
+        switchLanguage(currentLang);
     };
+}
+
+function switchLanguage(lang) {
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.dataset.i18n;
+        if (translations[lang][key]) {
+            el.innerHTML = translations[lang][key];
+        }
+    });
+
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+        const key = el.dataset.i18nPlaceholder;
+        if (translations[lang][key]) {
+            el.placeholder = translations[lang][key];
+        }
+    });
+
+    splitLetters();
 }
 
 function initContactBars() {
