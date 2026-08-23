@@ -47,6 +47,7 @@
     align-items: flex-start;
     max-width: 560px;
     width: 100%;
+    word-break: break-word;
 }
 
 .contact-left h4 {
@@ -157,7 +158,7 @@
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    padding: 0 20px 0 20px;
+    padding: 0 0 0 20px;
     z-index: 2;
 }
 
@@ -169,7 +170,7 @@
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    padding: 0 20px 0 20px;
+    padding: 0 0 0 20px;
 }
 
 .email-question:hover {
@@ -180,7 +181,7 @@
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    padding: 0 20px 0 20px;
+    padding: 0 0 0 20px;
 }
 
 .help-question:hover {
@@ -369,6 +370,18 @@
     .contact-arrow-img-mobile {
         width: 140px;
         height: 30px;
+    }
+
+    .name-question {
+        padding: 0 0 0 10px;
+    }
+    
+    .email-question {
+        padding: 0 0 0 10px;
+    }
+    
+    .help-question {
+        padding: 0 0 0 10px;
     }
 
     .send-btn {
