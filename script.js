@@ -11,6 +11,7 @@ function init() {
     initBurgerMenu();
     getBasePath();
     initPhotoSignature();
+    applyStoredLanguage();
 }
 
 function highlightWords() {
@@ -89,6 +90,8 @@ function initLanguageBtn() {
 }
 
 function switchLanguage(lang) {
+    localStorage.setItem('preferredLanguage', lang);
+
     document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.dataset.i18n;
         if (translations[lang][key]) {
@@ -107,6 +110,22 @@ function switchLanguage(lang) {
 
     splitLetters();
     highlightWords();
+}
+
+function applyStoredLanguage() {
+    let storedLang = localStorage.getItem('preferredLanguage') || 'en';
+    
+    if (storedLang === 'de') {
+        let englishBtn = document.getElementById('englishBtn');
+        let germanBtn = document.getElementById('germanBtn');
+        let vectorPoint = document.getElementById('vectorPoint');
+        
+        englishBtn.classList.remove('active');
+        germanBtn.classList.add('active');
+        vectorPoint.classList.add('active');
+    }
+
+    switchLanguage(storedLang);
 }
 
 function initContactBars() {
