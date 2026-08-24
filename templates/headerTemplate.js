@@ -1,22 +1,25 @@
 function headerTemplate() {
     const base = getBasePath();
+    const isIndexPage = window.location.pathname.endsWith('index.html') || window.location.pathname.endsWith('/');
+    const linkPrefix = isIndexPage ? '' : `${base}index.html`;
+
     return `
         <div class="nav-bar">
             <a href="${base}index.html"><img class="logo" src="${base}assets/images/logo.png" alt="logo of website in header"></a>
             <div class="header-tabs">
-                <a class="about-me-tab adaptive-text" href="#about">
+                <a class="about-me-tab adaptive-text" href="${linkPrefix}#about">
                     <span data-i18n="navAbout">About me</span>
                     <img class="nav-circle-img" src="${base}assets/images/header/circle.png" alt="">
                 </a>
-                <a class="skills-tab adaptive-text" href="#skills">
+                <a class="skills-tab adaptive-text" href="${linkPrefix}#skills">
                     <span data-i18n="navSkills">Skills</span>
                     <img class="nav-string-img" src="${base}assets/images/header/string.png" alt="">
                 </a>
-                <a class="projects-tab adaptive-text" href="#projects">
+                <a class="projects-tab adaptive-text" href="${linkPrefix}#projects">
                     <span data-i18n="navProjects">Projects</span>
                     <img class="nav-wave-img" src="${base}assets/images/header/wave.png" alt="">
                 </a>
-                <a class="contact-tab adaptive-text" href="#contact">
+                <a class="contact-tab adaptive-text" href="${linkPrefix}#contact">
                     <span data-i18n="navContact">Contact</span>
                     <img class="nav-underscore-img" src="${base}assets/images/header/underscore.png" alt="">
                 </a>
