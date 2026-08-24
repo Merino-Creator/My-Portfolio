@@ -273,6 +273,37 @@
     pointer-events: none;
 }
 
+.success-popup,
+.error-popup {
+    position: fixed;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-100px);
+    color: white;
+    padding: 16px 32px;
+    border-radius: 20px;
+    font-size: var(--small-text);
+    box-shadow: 4px 4px 0 0 rgba(0,0,0,0.2);
+    opacity: 0;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    z-index: 999;
+    pointer-events: none;
+}
+
+.success-popup {
+    background: var(--main-color-two);
+}
+
+.error-popup {
+    background: #d64545;
+}
+
+.success-popup.show,
+.error-popup.show {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+}
+
 /* Mobile */
 @media (max-width: 950px) {
     .contact-content {

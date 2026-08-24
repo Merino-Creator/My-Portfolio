@@ -87,7 +87,10 @@ const translations = {
 
         pokedexDescriptionText: "A web application that fetches Pokémon data from a public REST API and displays it in the browser. From fetching data and asynchronous JavaScript to caching, pagination, and dynamic UI updates.",
         pokedexDetailsText: "I independently designed a visual concept that matched the Pokémon theme, which shaped my decisions on how many Pokémon to display and how to present them. I worked through new visualization ideas step by step and successfully brought them to life.",
-        pokedexDuration: "2 weeks"
+        pokedexDuration: "2 weeks",
+
+        popupSuccess: "Message sent successfully!",
+        popupError: "Something went wrong. Please try again later."
     },
     de: {
         navAbout: "Über mich",
@@ -177,6 +180,9 @@ const translations = {
 
         pokedexDescriptionText: "Eine Webanwendung, die Pokémon-Daten von einer öffentlichen REST-API abruft und im Browser darstellt. Von der Datenabfrage und asynchronem JavaScript bis hin zu Caching, Pagination und dynamischen UI-Updates.",
         pokedexDetailsText: "Ich habe eigenständig ein zum Thema passendes UI-Design entwickelt und die Benutzeroberfläche gezielt auf eine übersichtliche Präsentation der Pokémon-Daten ausgelegt. Von der Konzeption der Anzeigelogik und Mengensteuerung bis zur visuellen Aufbereitung habe ich eigene Designideen schrittweise ausgearbeitet und umgesetzt.",
-        pokedexDuration: "2 Wochen"
+        pokedexDuration: "2 Wochen",
+
+        popupSuccess: "Nachricht erfolgreich gesendet!",
+        popupError: "Etwas ist schiefgelaufen. Bitte versuche es später erneut."
     }
 };

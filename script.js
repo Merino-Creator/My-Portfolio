@@ -114,12 +114,12 @@ function switchLanguage(lang) {
 
 function applyStoredLanguage() {
     let storedLang = localStorage.getItem('preferredLanguage') || 'en';
-    
+
     if (storedLang === 'de') {
         let englishBtn = document.getElementById('englishBtn');
         let germanBtn = document.getElementById('germanBtn');
         let vectorPoint = document.getElementById('vectorPoint');
-        
+
         englishBtn.classList.remove('active');
         germanBtn.classList.add('active');
         vectorPoint.classList.add('active');
@@ -266,7 +266,7 @@ function initSendBtn() {
             .then(response => response.json())
             .then(result => {
                 if (result.success) {
-                    alert('Message sent successfully!');
+                    showSuccessPopup();
                     nameInput.value = '';
                     emailInput.value = '';
                     helpInput.value = '';
@@ -274,14 +274,23 @@ function initSendBtn() {
                     checkmark.classList.remove('visible');
                     checkForm();
                 } else {
-                    alert('Something went wrong.');
+                    showPopup('errorPopup');
                 }
             })
             .catch(error => {
-                alert('Error sending message. Please try again later.');
+                showPopup('errorPopup');
                 console.error(error);
             });
     };
+}
+
+function showPopup(id) {
+    let popup = document.getElementById(id);
+    popup.classList.add('show');
+
+    setTimeout(() => {
+        popup.classList.remove('show');
+    }, 3000);
 }
 
 function splitLetters() {
