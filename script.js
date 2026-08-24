@@ -12,6 +12,8 @@ function init() {
     getBasePath();
     initPhotoSignature();
     applyStoredLanguage();
+    initScrollRestore();
+    restoreScrollPosition();
 }
 
 function highlightWords() {
@@ -373,4 +375,21 @@ function initPhotoSignature() {
     heroTopRight.onmouseout = () => {
         signature.textContent = original;
     };
+}
+
+function initScrollRestore() {
+    window.addEventListener('scroll', () => {
+        sessionStorage.setItem('scrollPosition', window.scrollY);
+    });
+
+    window.addEventListener('beforeunload', () => {
+        sessionStorage.setItem('scrollPosition', window.scrollY);
+    });
+}
+
+function restoreScrollPosition() {
+    let savedPosition = sessionStorage.getItem('scrollPosition');
+    if (savedPosition) {
+        window.scrollTo(0, parseInt(savedPosition));
+    }
 }

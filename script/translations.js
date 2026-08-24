@@ -92,6 +92,7 @@ const translations = {
         popupSuccess: "Message sent successfully!",
         popupError: "Something went wrong. Please try again later."
     },
+    
     de: {
         navAbout: "Über mich",
         navSkills: "Fähigkeiten",
