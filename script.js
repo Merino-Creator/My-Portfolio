@@ -268,7 +268,7 @@ function initSendBtn() {
             .then(response => response.json())
             .then(result => {
                 if (result.success) {
-                    showSuccessPopup();
+                    showPopup('successPopup');
                     nameInput.value = '';
                     emailInput.value = '';
                     helpInput.value = '';
