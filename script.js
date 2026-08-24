@@ -14,6 +14,7 @@ function init() {
     applyStoredLanguage();
     initScrollRestore();
     restoreScrollPosition();
+    initNavLinkClear();
 }
 
 function highlightWords() {
@@ -392,4 +393,12 @@ function restoreScrollPosition() {
     if (savedPosition) {
         window.scrollTo(0, parseInt(savedPosition));
     }
+}
+
+function initNavLinkClear() {
+    document.querySelectorAll('a[href*="#"]').forEach(link => {
+        link.addEventListener('click', () => {
+            sessionStorage.removeItem('scrollPosition');
+        });
+    });
 }
