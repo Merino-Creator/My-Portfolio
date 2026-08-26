@@ -53,19 +53,19 @@ function headerTemplate() {
                 <button class="mobile-menu-close-btn">X</button>
             </div>
             <div class="mobile-tabs">
-                <a href="#about">
+                <a href="${linkPrefix}#about">
                     <span data-i18n="navAbout">About me</span>
                     <img class="nav-circle-img" src="${base}assets/images/header/circle.png" alt="">
                 </a>
-                <a href="#skills">
+                <a href="${linkPrefix}#skills">
                     <span data-i18n="navSkills">Skills</span>
                     <img class="nav-string-img" src="${base}assets/images/header/string.png" alt="">
                 </a>
-                <a href="#projects">
+                <a href="${linkPrefix}#projects">
                     <span data-i18n="navProjects">Projects</span>
                     <img class="nav-wave-img" src="${base}assets/images/header/wave.png" alt="">
                 </a>
-                <a href="#contact">
+                <a href="${linkPrefix}#contact">
                     <span data-i18n="navContact">Contact</span>
                     <img class="nav-underscore-img" src="${base}assets/images/header/underscore.png" alt="">
                 </a>

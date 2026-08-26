@@ -382,23 +382,28 @@ function initScrollRestore() {
     window.addEventListener('scroll', () => {
         sessionStorage.setItem('scrollPosition', window.scrollY);
     });
-
-    window.addEventListener('beforeunload', () => {
-        sessionStorage.setItem('scrollPosition', window.scrollY);
-    });
 }
 
 function restoreScrollPosition() {
+    let skipRestore = sessionStorage.getItem('skipScrollRestore');
+    
+    if (skipRestore === 'true') {
+        sessionStorage.removeItem('skipScrollRestore');
+        return;
+    }
+
     let savedPosition = sessionStorage.getItem('scrollPosition');
-    if (savedPosition) {
-        window.scrollTo(0, parseInt(savedPosition));
+    if (savedPosition !== null) {
+        setTimeout(() => {
+            window.scrollTo(0, parseInt(savedPosition));
+        }, 0);
     }
 }
 
 function initNavLinkClear() {
     document.querySelectorAll('a[href*="#"]').forEach(link => {
         link.addEventListener('click', () => {
-            sessionStorage.removeItem('scrollPosition');
+            sessionStorage.setItem('skipScrollRestore', 'true');
         });
     });
 }
