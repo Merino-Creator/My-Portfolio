@@ -65,26 +65,28 @@ function projectsTemplate() {
                     </div>
                 </div>
             </div>
-            <div class="pokedex-project">
-                <div class="pokedex">
-                    <div class="pokedex-img-wrapper">
+            <div class="dabubble-project">
+                <div class="dabubble">
+                    <div class="dabubble-img-wrapper">
                         <a href="${base}html/pokedex.html">
-                            <img class="pokedex-img" src="${base}assets/images/projects/pokedex.png" alt="">
+                            <img class="dabubble-img" src="${base}assets/images/projects/dabubble.png" alt="">
                         </a>
-                        <a href="${base}html/pokedex.html">
-                            <button class="project-details-btn" data-i18n="projectDetailsBtn">Project
-                                details</button>
+                        <a href="">
+                            <button class="project-details-btn" data-i18n="projectDetailsBtn">
+                                Project details
+                            </button>
                         </a>
                     </div>
-                    <h4 data-i18n="pokedexTitle">Pokedex</h4>
-                    <p data-i18n="pokedexText">Web application focused on API consumption. Review and
-                        search for your favorite
-                        Pokemon out of the first 4 generations.
+                    <h4 data-i18n="dabubbleTitle">DABubble</h4>
+                    <p data-i18n="dabubbleText">
+                        This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, 
+                        real-time messaging, and robust channel organization.
                     </p>
                     <div class="project-details-btn-box">
-                        <a href="${base}html/pokedex.html">
-                            <button class="project-details-btn-mobile" data-i18n="projectDetailsBtn">Project
-                                details</button>
+                        <a href="">
+                            <button class="project-details-btn-mobile" data-i18n="projectDetailsBtn">
+                                Project details
+                            </button>
                         </a>
                     </div>
                 </div>

@@ -35,8 +35,8 @@ const translations = {
         joinText: "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
         sharkyTitle: "Sharky",
         sharkyText: "Jump, run and throw game based on object-oriented approach. Help Sharky to find coins and toxic bottles to fight against the big killer whale.",
-        pokedexTitle: "Pokedex",
-        pokedexText: "Web application, focused on API consumption. Review and search for your favourite Pokemon out of the first 4 generations.",
+        dabubbleTitle: "DABubble",
+        dabubbleText: "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
 
         contactMeLabel: "CONTACT ME",
         contactTitle: "Ready to work together?",
@@ -92,7 +92,7 @@ const translations = {
         popupSuccess: "Message sent successfully!",
         popupError: "Something went wrong. Please try again later."
     },
-    
+
     de: {
         navAbout: "Über mich",
         navSkills: "Fähigkeiten",
@@ -129,8 +129,8 @@ const translations = {
         joinText: "Task-Manager, inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben per Drag & Drop und weise Nutzer,sowie Kategorien zu.",
         sharkyTitle: "Sharky",
         sharkyText: "Jump-and-Run-Spiel mit objektorientiertem Ansatz. Hilf Sharky, Münzen und Giftflaschen zu sammeln, um den großen Killerwal zu besiegen.",
-        pokedexTitle: "Pokedex",
-        pokedexText: "Webanwendung mit Fokus auf API-Nutzung. Durchsuche deine Lieblings-Pokémon der ersten 4 Generationen.",
+        dabubbleTitle: "DABubble",
+        dabubbleText: "Diese App ist ein Slack-Clone. Sie revolutioniert die Teamkommunikation und Zusammenarbeit mit einer intuitiven Oberfläche, Echtzeit-Messaging und einer durchdachten Kanalorganisation.",
 
         contactMeLabel: "KONTAKT",
         contactTitle: "Bereit, zusammen zu arbeiten?",

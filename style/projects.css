@@ -179,7 +179,7 @@
     border-radius: 16px;
 }
 
-.pokedex-project {
+.dabubble-project {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -187,12 +187,12 @@
     max-width: 560px;
 }
 
-.pokedex-img-wrapper {
+.dabubble-img-wrapper {
     position: relative;
     transition: transform 0.3s ease;
 }
 
-.pokedex-img-wrapper:hover {
+.dabubble-img-wrapper:hover {
     .project-details-btn {
         opacity: 1;
     }
@@ -200,7 +200,7 @@
     transform: scale(1.1);
 }
 
-.pokedex-img-wrapper::after {
+.dabubble-img-wrapper::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -214,12 +214,12 @@
     pointer-events: none;
 }
 
-.pokedex-img-wrapper:hover::after {
+.dabubble-img-wrapper:hover::after {
     opacity: 1;
     z-index: 1;
 }
 
-.pokedex-img {
+.dabubble-img {
     width: 100%;
     max-width: 560px;
     height: auto;
