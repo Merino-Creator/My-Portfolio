@@ -353,7 +353,15 @@ function initBurgerMenu() {
             englishBtn.classList.toggle('active', lang === 'en');
             germanBtn.classList.toggle('active', lang === 'de');
             vectorPoint.classList.toggle('active', lang === 'de');
+
+            mobileMenu.classList.remove('open');
         };
+    });
+
+    mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.remove('open');
+        });
     });
 }
 
@@ -386,7 +394,7 @@ function initScrollRestore() {
 
 function restoreScrollPosition() {
     let skipRestore = sessionStorage.getItem('skipScrollRestore');
-    
+
     if (skipRestore === 'true') {
         sessionStorage.removeItem('skipScrollRestore');
         return;
