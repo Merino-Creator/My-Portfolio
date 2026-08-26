@@ -83,8 +83,8 @@ h3 {
     animation: draw-left-right 5s ease infinite;
 }
 
-.pokedex-underline {
-    width: 260px;
+.dabubble-underline {
+    width: 280px;
     height: 20px;
     margin-bottom: 40px;
     animation: draw-left-right 5s ease infinite;
@@ -161,6 +161,7 @@ h3 {
     justify-content: flex-end;
     gap: 24px;
     margin-top: 24px;
+    margin-bottom: 24px;
 }
 
 .test-github-btn {

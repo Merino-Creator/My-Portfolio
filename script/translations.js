@@ -85,9 +85,9 @@ const translations = {
         sharkyDetailsText: "Developed a complete 2D browser game from scratch using vanilla JavaScript, HTML5 Canvas and CSS – without any external frameworks or game engines.<br> The development process was iterative and self-directed: features were planned, implemented, tested and refined continuously.<br>The codebase was kept maintainable through consistent JSDoc documentation, modular file structure and refactoring sessions throughout development.",
         sharkyDuration: "4 weeks",
 
-        pokedexDescriptionText: "A web application that fetches Pokémon data from a public REST API and displays it in the browser. From fetching data and asynchronous JavaScript to caching, pagination, and dynamic UI updates.",
-        pokedexDetailsText: "I independently designed a visual concept that matched the Pokémon theme, which shaped my decisions on how many Pokémon to display and how to present them. I worked through new visualization ideas step by step and successfully brought them to life.",
-        pokedexDuration: "2 weeks",
+        dabubbleDescriptionText: "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
+        dabubbleDetailsText: "In the making!",
+        dabubbleDuration: "still coding...",
 
         popupSuccess: "Message sent successfully!",
         popupError: "Something went wrong. Please try again later."
@@ -179,9 +179,9 @@ const translations = {
         sharkyDetailsText: "Ein vollständiges 2D-Browsergame, das von Grund auf mit reinem JavaScript, HTML5 Canvas und CSS entwickelt wurde – ganz ohne externe Frameworks oder Game-Engines. Der Entwicklungsprozess verlief durchweg iterativ und eigenständig: Neue Features wurden strukturiert konzipiert, umgesetzt, getestet und kontinuierlich verfeinert. Um das Projekt langfristig sauber und wartbar zu halten, lag der Fokus auf einer modularen Architektur, konsequenter JSDoc-Dokumentation und regelmäßigen Refactoring-Phasen.",
         sharkyDuration: "4 Wochen",
 
-        pokedexDescriptionText: "Eine Webanwendung, die Pokémon-Daten von einer öffentlichen REST-API abruft und im Browser darstellt. Von der Datenabfrage und asynchronem JavaScript bis hin zu Caching, Pagination und dynamischen UI-Updates.",
-        pokedexDetailsText: "Ich habe eigenständig ein zum Thema passendes UI-Design entwickelt und die Benutzeroberfläche gezielt auf eine übersichtliche Präsentation der Pokémon-Daten ausgelegt. Von der Konzeption der Anzeigelogik und Mengensteuerung bis zur visuellen Aufbereitung habe ich eigene Designideen schrittweise ausgearbeitet und umgesetzt.",
-        pokedexDuration: "2 Wochen",
+        dabubbleDescriptionText: "Diese App ist ein Slack-Clone. Sie revolutioniert die Teamkommunikation und Zusammenarbeit mit einer intuitiven Oberfläche, Echtzeit-Messaging und einer durchdachten Kanalorganisation",
+        dabubbleDetailsText: "In Erstellung!",
+        dabubbleDuration: "noch am programmieren...",
 
         popupSuccess: "Nachricht erfolgreich gesendet!",
         popupError: "Etwas ist schiefgelaufen. Bitte versuche es später erneut."

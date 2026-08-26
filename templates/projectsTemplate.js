@@ -68,7 +68,7 @@ function projectsTemplate() {
             <div class="dabubble-project">
                 <div class="dabubble">
                     <div class="dabubble-img-wrapper">
-                        <a href="${base}html/pokedex.html">
+                        <a href="${base}html/dabubble.html">
                             <img class="dabubble-img" src="${base}assets/images/projects/dabubble.png" alt="">
                         </a>
                         <a href="">
