@@ -3,7 +3,8 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 40px;
+    z-index: 100;
+    background-image: url("../assets/images/background/hero-bg.webp");
 }
 
 header a {
@@ -19,6 +20,9 @@ header a {
     align-items: center;
     height: 100%;
     width: 100%;
+    max-width: 1440px;
+    box-sizing: border-box;
+    padding: 15px 70px 15px 70px;
 }
 
 .logo {
@@ -180,7 +184,6 @@ header a {
     transform: translateY(-100%);
     transition: transform 0.4s ease;
     gap: 40px;
-    z-index: 99;
     display: none;
     flex-direction: column;
     box-sizing: border-box;
@@ -251,8 +254,7 @@ header a {
 @media (max-width: 950px) {
     header {
         position: sticky;
-        top: 15px;
-        z-index: 10;
+        top: -1px;
     }
 
     .logo {
@@ -358,12 +360,20 @@ header a {
 }
 
 @media (max-width: 680px) {
+    .nav-bar {
+        padding: 15px 35px 15px 35px;
+    }
+
     .mobile-menu {
         padding: 15px 35px 15px 35px;
     }
 }
 
 @media (max-width: 405px) {
+    .nav-bar {
+        padding: 15px 15px 15px 15px;
+    }
+
     .mobile-menu {
         padding: 15px 15px 15px 15px;
     }
