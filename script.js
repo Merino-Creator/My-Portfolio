@@ -202,7 +202,9 @@ function initSendBtn() {
     let checkmark = document.getElementById('checkmark');
 
     function checkForm() {
-        if (nameInput.value.trim() && isValidEmail(emailInput.value.trim()) && helpInput.value.trim() && checkbox.checked) {
+        let nameValid = nameInput.value.trim() && /[a-zA-ZäöüÄÖÜß]/.test(nameInput.value);
+
+        if (nameValid && isValidEmail(emailInput.value.trim()) && helpInput.value.trim() && checkbox.checked) {
             sendBtn.disabled = false;
         } else {
             sendBtn.disabled = true;
@@ -252,7 +254,11 @@ function initSendBtn() {
         }
     }
 
-    nameInput.oninput = () => { checkForm(); checkPrivacyError(); };
+    nameInput.oninput = () => {
+        nameInput.value = nameInput.value.replace(/[^a-zA-ZäöüÄÖÜßé\s-]/g, '');
+        checkForm();
+        checkPrivacyError();
+    };
     emailInput.oninput = () => { checkForm(); checkPrivacyError(); };
     helpInput.oninput = () => { checkForm(); checkPrivacyError(); };
 
@@ -261,7 +267,8 @@ function initSendBtn() {
     helpInput.onfocus = () => hideError(helpInput);
 
     nameInput.onblur = () => {
-        if (!nameInput.value.trim()) showError(nameInput, 'Oops! it seems your name is missing');
+        let nameValid = nameInput.value.trim() && /[a-zA-ZäöüÄÖÜß]/.test(nameInput.value);
+        if (!nameValid) showError(nameInput, 'Oops! seems like your name is invalid');
         else hideError(nameInput);
     };
 
