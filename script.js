@@ -186,6 +186,11 @@ function initPeel() {
     };
 }
 
+function isValidEmail(email) {
+    let regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+}
+
 function initSendBtn() {
     let sendBtn = document.getElementById('sendBtn');
     if (!sendBtn) return;
@@ -197,7 +202,7 @@ function initSendBtn() {
     let checkmark = document.getElementById('checkmark');
 
     function checkForm() {
-        if (nameInput.value.trim() && emailInput.value.trim() && helpInput.value.trim() && checkbox.checked) {
+        if (nameInput.value.trim() && isValidEmail(emailInput.value.trim()) && helpInput.value.trim() && checkbox.checked) {
             sendBtn.disabled = false;
         } else {
             sendBtn.disabled = true;
@@ -205,53 +210,83 @@ function initSendBtn() {
     }
 
     function showError(input, message) {
-        let existing = input.parentElement.querySelector('.error-msg');
+        let existing = input.parentElement.querySelector('.error-msg-formular');
         if (!existing) {
-            input.insertAdjacentHTML('afterend', `<p class="error-msg">${message}</p>`);
-            input.placeholder = '';
-            input.parentElement.querySelector('h4').style.color = 'var(--main-color-three)';
+            input.insertAdjacentHTML('afterend', `<p class="error-msg-formular">${message}</p>`);
         }
     }
 
-    function hideError(input, originalPlaceholder) {
-        let existing = input.parentElement.querySelector('.error-msg');
-        if (existing) {
-            existing.remove();
-            input.placeholder = originalPlaceholder;
-            input.parentElement.querySelector('h4').style.color = '';
+    function hideError(input) {
+        let existing = input.parentElement.querySelector('.error-msg-formular');
+        removeWithFade(existing);
+    }
+
+    function showEmailFormatError() {
+        let existing = emailInput.parentElement.querySelector('.email-format-error');
+        if (!existing) {
+            emailInput.insertAdjacentHTML('afterend', `<p class="email-format-error">Please enter a valid email address.</p>`);
         }
     }
 
-    let namePlaceholder = nameInput.placeholder;
-    let emailPlaceholder = emailInput.placeholder;
-    let helpPlaceholder = helpInput.placeholder;
+    function hideEmailFormatError() {
+        let existing = emailInput.parentElement.querySelector('.email-format-error');
+        removeWithFade(existing);
+    }
 
-    nameInput.oninput = checkForm;
-    emailInput.oninput = checkForm;
-    helpInput.oninput = checkForm;
+    function removeWithFade(element) {
+        if (!element) return;
+        element.style.animation = 'fadeOut 0.3s ease forwards';
+        setTimeout(() => element.remove(), 300);
+    }
 
-    nameInput.onfocus = () => hideError(nameInput, namePlaceholder);
-    emailInput.onfocus = () => hideError(emailInput, emailPlaceholder);
-    helpInput.onfocus = () => hideError(helpInput, helpPlaceholder);
+    function checkPrivacyError() {
+        let privacyText = document.querySelector('.contact-check p');
+        let existing = document.querySelector('.privacy-error-msg');
+
+        if (nameInput.value.trim() && emailInput.value.trim() && helpInput.value.trim() && !checkbox.checked) {
+            if (!existing) {
+                privacyText.insertAdjacentHTML('afterend', `<p class="privacy-error-msg">Please accept the privacy policy.</p>`);
+            }
+        } else {
+            removeWithFade(existing);
+        }
+    }
+
+    nameInput.oninput = () => { checkForm(); checkPrivacyError(); };
+    emailInput.oninput = () => { checkForm(); checkPrivacyError(); };
+    helpInput.oninput = () => { checkForm(); checkPrivacyError(); };
+
+    nameInput.onfocus = () => hideError(nameInput);
+    emailInput.onfocus = () => { hideError(emailInput); hideEmailFormatError(); };
+    helpInput.onfocus = () => hideError(helpInput);
 
     nameInput.onblur = () => {
         if (!nameInput.value.trim()) showError(nameInput, 'Oops! it seems your name is missing');
-        else hideError(nameInput, namePlaceholder);
+        else hideError(nameInput);
     };
 
     emailInput.onblur = () => {
-        if (!emailInput.value.trim()) showError(emailInput, 'Hoppla! your mail is required.');
-        else hideError(emailInput, emailPlaceholder);
+        if (!emailInput.value.trim()) {
+            showError(emailInput, 'Hoppla! your mail is required.');
+            hideEmailFormatError();
+        } else if (!isValidEmail(emailInput.value.trim())) {
+            hideError(emailInput);
+            showEmailFormatError();
+        } else {
+            hideError(emailInput);
+            hideEmailFormatError();
+        }
     };
 
     helpInput.onblur = () => {
         if (!helpInput.value.trim()) showError(helpInput, 'What do you need to develop?');
-        else hideError(helpInput, helpPlaceholder);
+        else hideError(helpInput);
     };
 
     checkbox.onclick = () => {
         checkmark.classList.toggle('visible');
         checkForm();
+        checkPrivacyError();
     };
 
     sendBtn.onclick = () => {
