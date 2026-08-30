@@ -197,7 +197,7 @@ function initSendBtn() {
     let checkmark = document.getElementById('checkmark');
 
     function checkForm() {
-        if (nameInput.value && emailInput.value && helpInput.value && checkbox.checked) {
+        if (nameInput.value.trim() && emailInput.value.trim() && helpInput.value.trim() && checkbox.checked) {
             sendBtn.disabled = false;
         } else {
             sendBtn.disabled = true;
@@ -235,17 +235,17 @@ function initSendBtn() {
     helpInput.onfocus = () => hideError(helpInput, helpPlaceholder);
 
     nameInput.onblur = () => {
-        if (!nameInput.value) showError(nameInput, 'Oops! it seems your name is missing');
+        if (!nameInput.value.trim()) showError(nameInput, 'Oops! it seems your name is missing');
         else hideError(nameInput, namePlaceholder);
     };
 
     emailInput.onblur = () => {
-        if (!emailInput.value) showError(emailInput, 'Hoppla! your mail is required.');
+        if (!emailInput.value.trim()) showError(emailInput, 'Hoppla! your mail is required.');
         else hideError(emailInput, emailPlaceholder);
     };
 
     helpInput.onblur = () => {
-        if (!helpInput.value) showError(helpInput, 'What do you need to develop?');
+        if (!helpInput.value.trim()) showError(helpInput, 'What do you need to develop?');
         else hideError(helpInput, helpPlaceholder);
     };
 

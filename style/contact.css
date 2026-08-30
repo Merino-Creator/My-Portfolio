@@ -223,6 +223,7 @@
 
 .contact-link {
     color: var(--main-color-two);
+    text-decoration: none;
 }
 
 .send-btn {

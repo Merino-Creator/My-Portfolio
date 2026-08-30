@@ -33,9 +33,9 @@ switch ($_SERVER['REQUEST_METHOD']) {
             exit;
         }
 
-        $email = $params->email ?? '';
-        $name = $params->name ?? '';
-        $userMessage = $params->message ?? '';
+        $email = trim($params->email ?? '');
+        $name = trim($params->name ?? '');
+        $userMessage = trim($params->message ?? '');
 
         // Basic validation
         if (!filter_var($email, FILTER_VALIDATE_EMAIL) || empty($name) || empty($userMessage)) {
