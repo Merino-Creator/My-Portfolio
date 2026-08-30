@@ -187,6 +187,7 @@ header a {
     flex-direction: column;
     box-sizing: border-box;
     padding: 15px 70px 15px 70px;
+    z-index: 100;
 }
 
 .mobile-menu.open {
@@ -252,8 +253,11 @@ header a {
 /* Mobile */
 @media (max-width: 950px) {
     header {
-        position: sticky;
-        top: -1px;
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        z-index: 50;
     }
 
     .logo {
