@@ -2,9 +2,8 @@
     background-image: url("../assets/images/background/hero-bg.webp");
     background-size: cover;
     background-position: bottom;
-    height: calc(100vh + 100px);
+    height: 100vh;
     margin-top: -100px;
-    padding-top: 100px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -271,6 +270,11 @@
 
 /* Mobile */
 @media (max-width: 950px) {
+
+    .hero-content-wrapper {
+        padding: 150px 70px 15px 70px;
+    }
+
     .hero-content {
         gap: unset;
     }
@@ -371,7 +375,7 @@
 
 @media (max-width: 680px) {
     .hero-content-wrapper {
-        padding: 15px 35px 15px 35px;
+        padding: 150px 35px 15px 35px;
     }
 
     .frontend-headline {
