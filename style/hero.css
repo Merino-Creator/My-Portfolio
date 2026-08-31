@@ -94,8 +94,6 @@
 .hero-top {
     display: flex;
     justify-content: space-around;
-    align-items: flex-end;
-    gap: 8px;
     height: 260px;
 }
 
@@ -165,7 +163,6 @@
     position: relative;
     width: 100%;
     max-width: 200px;
-    height: 260px;
     transform: rotate(8deg);
     flex-shrink: 0;
 }
@@ -183,8 +180,6 @@
 
 .photo-frame-img {
     position: absolute;
-    height: auto;
-    width: 100%;
     bottom: 25px;
     left: 0;
     z-index: 2;
@@ -192,10 +187,11 @@
 
 .profile-picture {
     position: absolute;
+    object-fit: cover;
+    width: 180px;
     height: 200px;
-    width: 87%;
     bottom: 60px;
-    right: 12px;
+    left: 12px;
     filter: grayscale();
 }
 
@@ -343,8 +339,9 @@
 
     .profile-picture-mobile {
         position: absolute;
+        object-fit: cover;
         height: 200px;
-        width: 87%;
+        width: 180px;
         bottom: 60px;
         right: 12px;
         filter: grayscale();
@@ -399,7 +396,7 @@
 
 @media (max-width: 405px) {
     .hero-content-wrapper {
-        padding: 15px 15px 15px 15px;
+        padding: 150px 15px 15px 15px;
     }
 
     .frontend-headline {

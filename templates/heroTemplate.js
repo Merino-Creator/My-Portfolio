@@ -29,7 +29,7 @@ function heroTemplate() {
                 </div>
                 <div class="hero-top-right">
                     <img class="photo-frame-img" src="${base}assets/images/hero/polaroid-frame.png" alt="">
-                    <img class="profile-picture" src="${base}assets/images/hero/PPT1.jpg" alt="">
+                    <img class="profile-picture" src="${base}assets/images/hero/PPT1-small.jpg" alt="">
                     <p class="photo-signature" data-i18n="heroSignature">Daniel :)</p>
                 </div>
             </div>
@@ -40,7 +40,7 @@ function heroTemplate() {
             <div class="mobile-photo-container">
                 <div class="hero-top-right-mobile">
                     <img class="photo-frame-img-mobile" src="${base}assets/images/hero/polaroid-frame.png" alt="">
-                    <img class="profile-picture-mobile" src="${base}assets/images/hero/PPT1.jpg" alt="">
+                    <img class="profile-picture-mobile" src="${base}assets/images/hero/PPT1-small.jpg" alt="">
                     <p class="photo-signature-mobile" data-i18n="heroSignature">Daniel :)</p>
                 </div>
             </div>
