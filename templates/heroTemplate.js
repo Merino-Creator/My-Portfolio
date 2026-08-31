@@ -13,7 +13,7 @@ function heroTemplate() {
                 </a>
             </div>
             <div class="social-link">
-                <a href="">
+                <a href="mailto:stuermer.dan137@gmail.com">
                     <img class="social-images" src="${base}assets/images/hero/email-btn.png" alt="">
                 </a>
             </div>

@@ -55,7 +55,7 @@ function skillsTemplate() {
                     </p>
                     <img class="peel-img-end" src="${base}assets/images/skills/peel-end.webp" alt="">
                     <div class="peeled-image-box">
-                        <p class="peeled-text" data-i18n="skillPeeledText">Also I´m interested<br> in diving
+                        <p class="peeled-text" data-i18n="skillPeeledText">Also I'm interested<br> in diving
                             into:</p>
                         <div class="peeled-skill-badges">
                             <figure class="peeled-figure">
@@ -82,7 +82,7 @@ function skillsTemplate() {
                 </p>
                 <img class="peel-img-end" src="${base}assets/images/skills/peel-end.webp" alt="">
                 <div class="peeled-image-box">
-                    <p class="peeled-text" data-i18n="skillPeeledText">Also I´m interested<br> in diving
+                    <p class="peeled-text" data-i18n="skillPeeledText">Also I'm interested<br> in diving
                         into:</p>
                     <div class="peeled-skill-badges">
                         <figure class="peeled-figure">

@@ -30,13 +30,13 @@ function contactTemplate() {
             <div class="contact-questions">
                 <div id="barOne" class="contact-questions-seperator bar-one"></div>
                 <div id="nameQuestion" class="name-question">
-                    <h4 data-i18n="nameQuestion">What´s your name?</h4>
+                    <h4 data-i18n="nameQuestion">What's your name?</h4>
                     <input id="nameInput" class="contact-input-field" type="text"
                         placeholder="Your name goes here" data-i18n-placeholder="namePlaceholder">
                 </div>
                 <div id="barTwo" class="contact-questions-seperator bar-two"></div>
                 <div id="emailQuestion" class="email-question">
-                    <h4 data-i18n="emailQuestion">What´s your email?</h4>
+                    <h4 data-i18n="emailQuestion">What's your email?</h4>
                     <input id="emailInput" class="contact-input-field" type="email"
                         placeholder="yourmail@email.com" data-i18n-placeholder="emailPlaceholder">
                 </div>
@@ -55,7 +55,7 @@ function contactTemplate() {
                     <img id="checkmark" class="checkmark-img" src="${base}assets/images/contact/check.png"
                         alt="">
                 </div>
-                <p><span data-i18n="privacyText">I´ve read the</span> <a href="${base}html/legal-notice.html" class="contact-link"
+                <p><span data-i18n="privacyText">I've read the</span> <a href="${base}html/legal-notice.html" class="contact-link"
                         data-i18n="privacyLink">privacy policy</a> <span data-i18n="privacyTextEnd">and
                         agree to the processing of
                         my data as outlined.</span></p>

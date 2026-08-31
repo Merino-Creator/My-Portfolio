@@ -26,7 +26,7 @@ function aboutTemplate() {
         </div>
         <div class="about-me">
             <div class="about-me-top">
-                <h4 data-i18n="aboutWhoTitle">WHO´S DANIEL?</h4>
+                <h4 data-i18n="aboutWhoTitle">WHO'S DANIEL?</h4>
                 <h3 data-i18n="aboutTitle">About me</h3>
                 <img class="about-underline" src="${base}assets/images/about-me/underline.png" alt="">
             </div>
@@ -47,7 +47,7 @@ function aboutTemplate() {
                 </p>
             </div>
             <div class="about-me-bottom">
-                <a href="#contact"><button class="lets-talk-btn" data-i18n="aboutLetsTalk">Let´s talk</button></a>
+                <a href="#contact"><button class="lets-talk-btn" data-i18n="aboutLetsTalk">Let's talk</button></a>
             </div>
         </div>
     `;

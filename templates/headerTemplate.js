@@ -96,7 +96,7 @@ function headerTemplate() {
                     </a>
                 </div>
                 <div class="social-link-mobile">
-                    <a href="">
+                    <a href="mailto:stuermer.dan137@gmail.com">
                         <img class="mobile-social-img" src="${base}assets/images/hero/email-btn.png" alt="">
                     </a>
                 </div>
