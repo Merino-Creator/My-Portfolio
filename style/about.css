@@ -1,9 +1,9 @@
 .about {
-    height: 750px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    scroll-margin-top: 70px;
 }
 
 .about-content-wrapper {

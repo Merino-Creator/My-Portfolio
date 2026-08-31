@@ -6,6 +6,7 @@
     flex-direction: column;
     align-items: center;
     color: var(--primary-color);
+    scroll-margin-top: 20px;
 }
 
 .contact::before {

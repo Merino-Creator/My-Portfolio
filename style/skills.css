@@ -2,10 +2,10 @@
     background-image: url("../assets/images/background/skills-bg.webp");
     background-position: bottom;
     background-size: cover;
-    height: 800px;
     width: 100%;
     display: flex;
     justify-content: center;
+    scroll-margin-top: 70px;
 }
 
 .skills-content-wrapper {
