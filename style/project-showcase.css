@@ -110,6 +110,7 @@ h3 {
     width: 100%;
     max-width: 560px;
     min-width: 420px;
+    height: 550px;
     flex-shrink: 1;
 }
 
@@ -238,7 +239,7 @@ h3 {
 
 @media (max-width: 1050px) {
     .project-showcase {
-        gap: 20px;
+        gap: 40px;
     }
 }
 
