@@ -79,14 +79,15 @@
 
 .join-img-wrapper {
     position: relative;
-    transition: transform 0.3s ease;
+    overflow: hidden;
+    border-radius: 16px;
 }
 
-.join-img-wrapper:hover {
-    .project-details-btn {
-        opacity: 1;
-    }
+.join-img-wrapper:hover .project-details-btn {
+    opacity: 1;
+}
 
+.join-img-wrapper:hover .join-img {
     transform: scale(1.1);
 }
 
@@ -102,6 +103,7 @@
     opacity: 0;
     transition: opacity 0.3s ease;
     pointer-events: none;
+    z-index: 1;
 }
 
 .join-img-wrapper:hover::after {
@@ -114,7 +116,7 @@
     height: auto;
     aspect-ratio: 560 / 360;
     border-radius: 16px;
-    animation: float 3s ease-in-out infinite;
+    transition: transform 0.3s ease;
 }
 
 .join-badge-img {
@@ -124,6 +126,7 @@
     pointer-events: none;
     width: 28%;
     height: auto;
+    z-index: 2;
 }
 
 .projects-bottom {
@@ -141,16 +144,21 @@
     max-width: 560px;
 }
 
-.sharky-img-wrapper {
+.sharky {
     position: relative;
-    transition: transform 0.3s ease;
 }
 
-.sharky-img-wrapper:hover {
-    .project-details-btn {
-        opacity: 1;
-    }
+.sharky-img-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+}
 
+.sharky-img-wrapper:hover .project-details-btn {
+    opacity: 1;
+}
+
+.sharky-img-wrapper:hover .sharky-img {
     transform: scale(1.1);
 }
 
@@ -166,11 +174,11 @@
     opacity: 0;
     transition: opacity 0.3s ease;
     pointer-events: none;
+    z-index: 1;
 }
 
 .sharky-img-wrapper:hover::after {
     opacity: 1;
-    z-index: 1;
 }
 
 .sharky-img {
@@ -179,6 +187,7 @@
     height: auto;
     aspect-ratio: 560 / 360;
     border-radius: 16px;
+    transition: transform 0.3s ease;
 }
 
 .dabubble-project {
@@ -189,16 +198,21 @@
     max-width: 560px;
 }
 
-.dabubble-img-wrapper {
+.dabubble {
     position: relative;
-    transition: transform 0.3s ease;
 }
 
-.dabubble-img-wrapper:hover {
-    .project-details-btn {
-        opacity: 1;
-    }
+.dabubble-img-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+}
 
+.dabubble-img-wrapper:hover .project-details-btn {
+    opacity: 1;
+}
+
+.dabubble-img-wrapper:hover .dabubble-img {
     transform: scale(1.1);
 }
 
@@ -214,11 +228,11 @@
     opacity: 0;
     transition: opacity 0.3s ease;
     pointer-events: none;
+    z-index: 1;
 }
 
 .dabubble-img-wrapper:hover::after {
     opacity: 1;
-    z-index: 1;
 }
 
 .dabubble-img {
@@ -227,6 +241,7 @@
     height: auto;
     aspect-ratio: 560 / 360;
     border-radius: 16px;
+    transition: transform 0.3s ease;
 }
 
 .project-details-btn {

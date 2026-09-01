@@ -58,12 +58,14 @@ function initJoinWrapper() {
     let joinImg = document.getElementById('joinImg');
     if (!joinImgWrapper) return;
 
+    joinImg.style.animation = 'float 3s ease-in-out infinite';
+
     joinImgWrapper.onmouseover = () => {
-        joinImg.style.animationPlayState = 'paused';
+        joinImg.style.animation = 'none';
     };
 
     joinImgWrapper.onmouseout = () => {
-        joinImg.style.animationPlayState = 'running';
+        joinImg.style.animation = 'float 3s ease-in-out infinite';
     };
 }
 
