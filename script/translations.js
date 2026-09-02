@@ -112,7 +112,7 @@ const translations = {
         <p>You may lodge a complaint with a supervisory authority at any time, e.g. the supervisory authority responsible for your state of residence or the authority responsible for us as the controller.</p>
         <p>A list of supervisory authorities (for the non-public sector) with addresses can be found at: <a href="https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html">https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html</a>.</p>
         <h2>Processing Activities</h2>
-        <h3>Contact</h3>
+        <h3 class="privacy-h3">Contact</h3>
         <p>Nature and purpose of processing</p>
         <p>Our website has a contact form that can be used to contact us electronically. If a user makes use of this option, the data entered in the input form will be transmitted to us and stored.</p>
         <p>At the time the message is sent, the following data is also stored:</p>
@@ -135,10 +135,10 @@ const translations = {
         <h4>Objection</h4>
         <p>Please refer to the information on your right to object under Art. 21 GDPR below.</p>
         <h2>Information on Your Right to Object under Art. 21 GDPR</h2>
-        <h3>Case-by-Case Right to Object</h3>
+        <h3 class="privacy-h3">Case-by-Case Right to Object</h3>
         <p>You have the right to object at any time, for reasons arising from your particular situation, to the processing of personal data concerning you which is based on Art. 6 (1)(f) GDPR (data processing based on a balancing of interests); this also applies to profiling within the meaning of Art. 4 No. 4 GDPR based on this provision.</p>
         <p>If you object, we will no longer process your personal data unless we can demonstrate compelling legitimate grounds for the processing that outweigh your interests, rights, and freedoms, or the processing serves to assert, exercise, or defend legal claims.</p>
-        <h3>Recipient of an Objection</h3>
+        <h3 class="privacy-h3">Recipient of an Objection</h3>
         <p class='generator_user_input'>Daniel Stuermer</p>
         <h2>Changes to Our Privacy Policy</h2>
         <p>We reserve the right to adapt this privacy policy so that it always complies with current legal requirements or to implement changes to our services in the privacy policy, e.g. when introducing new services. The new privacy policy will apply on your next visit.</p>
@@ -261,7 +261,7 @@ const translations = {
         <p>Sie können sich jederzeit mit einer Beschwerde an eine Aufsichtsbehörde wenden, z. B. an die zuständige Aufsichtsbehörde des Bundeslands Ihres Wohnsitzes oder an die für uns als verantwortliche Stelle zuständige Behörde.</p>
         <p>Eine Liste der Aufsichtsbehörden (für den nichtöffentlichen Bereich) mit Anschrift finden Sie unter: <a href="https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html">https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html</a>.</p>
         <h2>Verarbeitungstätigkeiten</h2>
-        <h3>Kontaktaufnahme</h3>
+        <h3 class="privacy-h3">Kontaktaufnahme</h3>
         <p>Art und Zweck der Verarbeitung</p>
         <p>Auf unserer Website ist ein Kontaktformular vorhanden, welches für die elektronische Kontaktaufnahme genutzt werden kann. Nimmt ein Nutzer diese Möglichkeit wahr, so werden die in der Eingabemaske eingegeben Daten an uns übermittelt und gespeichert.</p>
         <p>Zum Zeitpunkt der Absendung der Nachricht werden zudem folgende Daten gespeichert:</p>
@@ -284,10 +284,10 @@ const translations = {
         <h4>Widerspruch</h4>
         <p>Lesen Sie dazu die Informationen über Ihr Widerspruchsrecht nach Art. 21 DSGVO weiter unten.</p>
         <h2>Information über Ihr Widerspruchsrecht nach Art. 21 DSGVO</h2>
-        <h3>Einzelfallbezogenes Widerspruchsrecht</h3>
+        <h3 class="privacy-h3">Einzelfallbezogenes Widerspruchsrecht</h3>
         <p>Sie haben das Recht, aus Gründen, die sich aus Ihrer besonderen Situation ergeben, jederzeit gegen die Verarbeitung Sie betreffender personenbezogener Daten, die aufgrund Art. 6 Abs. 1 lit. f DSGVO (Datenverarbeitung auf der Grundlage einer Interessenabwägung) erfolgt, Widerspruch einzulegen; dies gilt auch für ein auf diese Bestimmung gestütztes Profiling im Sinne von Art. 4 Nr. 4 DSGVO.</p>
         <p>Legen Sie Widerspruch ein, werden wir Ihre personenbezogenen Daten nicht mehr verarbeiten, es sei denn, wir können zwingende schutzwürdige Gründe für die Verarbeitung nachweisen, die Ihre Interessen, Rechte und Freiheiten überwiegen, oder die Verarbeitung dient der Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen.</p>
-        <h3>Empfänger eines Widerspruchs</h3>
+        <h3 class="privacy-h3">Empfänger eines Widerspruchs</h3>
         <p class='generator_user_input'>Daniel Stuermer</p>
         <h2>Änderung unserer Datenschutzerklärung</h2>
         <p>Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht oder um Änderungen unserer Leistungen in der Datenschutzerklärung umzusetzen, z.B. bei der Einführung neuer Services. Für Ihren erneuten Besuch gilt dann die neue Datenschutzerklärung.</p>
