@@ -132,6 +132,10 @@ header a {
     justify-content: center;
 }
 
+.toggle-track:hover {
+    cursor: pointer;
+}
+
 .vector-bar {
     width: 100%;
     display: block;

@@ -73,24 +73,38 @@ function initLanguageBtn() {
     let languageBtn = document.getElementById('languageBtn');
     if (!languageBtn) return;
 
+    let toggleBar = document.getElementById('toggleBar');
     let vectorPoint = document.getElementById('vectorPoint');
     let englishBtn = document.getElementById('englishBtn');
     let germanBtn = document.getElementById('germanBtn');
 
+    function setLanguage(lang) {
+        if (lang === 'en') {
+            vectorPoint.classList.remove('active');
+            englishBtn.classList.add('active');
+            germanBtn.classList.remove('active');
+        } else {
+            vectorPoint.classList.add('active');
+            germanBtn.classList.add('active');
+            englishBtn.classList.remove('active');
+        }
+        switchLanguage(lang);
+    }
+
+    toggleBar.onclick = () => {
+        let currentLang = englishBtn.classList.contains('active') ? 'en' : 'de';
+        let nextLang = currentLang === 'en' ? 'de' : 'en';
+        setLanguage(nextLang);
+    };
+
     englishBtn.onclick = () => {
         if (englishBtn.classList.contains('active')) return;
-        vectorPoint.classList.remove('active');
-        englishBtn.classList.add('active');
-        germanBtn.classList.remove('active');
-        switchLanguage('en');
+        setLanguage('en');
     };
 
     germanBtn.onclick = () => {
         if (germanBtn.classList.contains('active')) return;
-        vectorPoint.classList.add('active');
-        germanBtn.classList.add('active');
-        englishBtn.classList.remove('active');
-        switchLanguage('de');
+        setLanguage('de');
     };
 }
 

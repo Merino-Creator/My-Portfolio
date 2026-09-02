@@ -29,7 +29,7 @@ function headerTemplate() {
                     <p id="englishBtn" class="lang-btn active">EN</p>
                     <img class="lang-box-img" src="${base}assets/images/header/toggle.png" alt="">
                 </div>
-                <div class="toggle-track">
+                <div id="toggleBar" class="toggle-track">
                     <img class="vector-bar" src="${base}assets/images/header/vector-bar.png" alt="">
                     <img id="vectorPoint" class="vector-point" src="${base}assets/images/header/vector-point.png" alt="">
                 </div>
