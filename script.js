@@ -1,4 +1,8 @@
 function init() {
+    if (window.location.hash) {
+        history.replaceState(null, null, window.location.pathname + window.location.search);
+    }
+
     loadTemplates();
     initLanguageBtn();
     initHelloBtn();
@@ -15,6 +19,7 @@ function init() {
     initScrollRestore();
     restoreScrollPosition();
     initNavLinkClear();
+    scrollToHashAfterLoad();
 }
 
 function highlightWords() {
@@ -470,6 +475,21 @@ function initNavLinkClear() {
     document.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', () => {
             sessionStorage.setItem('skipScrollRestore', 'true');
+
+            let href = link.getAttribute('href');
+            if (href && href.includes('#')) {
+                let hash = '#' + href.split('#')[1];
+                sessionStorage.setItem('pendingHash', hash);
+            }
         });
     });
+}
+
+function scrollToHashAfterLoad() {
+    let hash = sessionStorage.getItem('pendingHash');
+    if (hash) {
+        sessionStorage.removeItem('pendingHash');
+        let target = document.querySelector(hash);
+        if (target) target.scrollIntoView();
+    }
 }

@@ -90,7 +90,62 @@ const translations = {
         dabubbleDuration: "still coding...",
 
         popupSuccess: "Message sent successfully!",
-        popupError: "Something went wrong. Please try again later."
+        popupError: "Something went wrong. Please try again later.",
+
+        privacyHeadline: "Privacy Policy",
+        privacyPolicyFullText: `
+        <h1>Privacy Notice</h1>
+        <h2>Controller</h2>
+        <p>The controller within the meaning of data protection laws, in particular the EU General Data Protection Regulation (GDPR), is:</p>
+        <p class='generator_user_input'>Daniel Stuermer</p>
+        <h2>Your Rights as a Data Subject</h2>
+        <p>Using the contact details provided, you can exercise the following rights at any time under the EU General Data Protection Regulation (GDPR):</p>
+        <ul>
+            <li>Access to your data stored with us and its processing (Art. 15 GDPR),</li>
+            <li>Correction of incorrect personal data (Art. 16 GDPR),</li>
+            <li>Deletion of your data stored with us (Art. 17 GDPR),</li>
+            <li>Restriction of data processing, provided we are not yet permitted to delete your data due to legal obligations (Art. 18 GDPR),</li>
+            <li>Objection to the processing of your data with us (Art. 21 GDPR), and</li>
+            <li>Data portability, provided you have consented to data processing or concluded a contract with us (Art. 20 GDPR).</li>
+        </ul>
+        <p>If you have given us your consent, you can revoke it at any time with effect for the future.</p>
+        <p>You may lodge a complaint with a supervisory authority at any time, e.g. the supervisory authority responsible for your state of residence or the authority responsible for us as the controller.</p>
+        <p>A list of supervisory authorities (for the non-public sector) with addresses can be found at: <a href="https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html">https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html</a>.</p>
+        <h2>Processing Activities</h2>
+        <h3>Contact</h3>
+        <p>Nature and purpose of processing</p>
+        <p>Our website has a contact form that can be used to contact us electronically. If a user makes use of this option, the data entered in the input form will be transmitted to us and stored.</p>
+        <p>At the time the message is sent, the following data is also stored:</p>
+        <ul>
+            <li>Date and time of the request</li>
+        </ul>
+        <p>Contact is also possible via the provided email addresses. In this case, the user's personal data transmitted with the email will be stored. This includes the date and time the email was sent, the email address, IP addresses, and information about the servers involved in the email communication.</p>
+        <p>Regardless of the chosen method of communication, we collect the content of your inquiry. Your data is stored for the purpose of individual communication with you.</p>
+        <h4>Legal Basis</h4>
+        <p>The processing of the data is based on a legitimate interest (Art. 6 (1)(f) GDPR).</p>
+        <p>Our legitimate interest in processing your data is to enable an uncomplicated way to contact us.</p>
+        <p>If you contact us to request a quote, the data is processed for the purpose of carrying out pre-contractual measures (Art. 6 (1)(b) GDPR).</p>
+        <h4>Recipients</h4>
+        <p>Recipients of the data may include technical service providers who act as processors for the operation and maintenance of our website.</p>
+        <h4>Storage Duration</h4>
+        <p>Data is deleted at the latest [please add information] after the contact request has been processed.</p>
+        <p>If a contractual relationship arises, we are subject to statutory retention periods. These are generally 6 or 10 years due to proper accounting and tax law requirements.</p>
+        <h4>Provision Mandatory or Required</h4>
+        <p>The provision of your personal data is voluntary. However, we can only process your inquiry if you provide us with the required data and the reason for your inquiry.</p>
+        <h4>Objection</h4>
+        <p>Please refer to the information on your right to object under Art. 21 GDPR below.</p>
+        <h2>Information on Your Right to Object under Art. 21 GDPR</h2>
+        <h3>Case-by-Case Right to Object</h3>
+        <p>You have the right to object at any time, for reasons arising from your particular situation, to the processing of personal data concerning you which is based on Art. 6 (1)(f) GDPR (data processing based on a balancing of interests); this also applies to profiling within the meaning of Art. 4 No. 4 GDPR based on this provision.</p>
+        <p>If you object, we will no longer process your personal data unless we can demonstrate compelling legitimate grounds for the processing that outweigh your interests, rights, and freedoms, or the processing serves to assert, exercise, or defend legal claims.</p>
+        <h3>Recipient of an Objection</h3>
+        <p class='generator_user_input'>Daniel Stuermer</p>
+        <h2>Changes to Our Privacy Policy</h2>
+        <p>We reserve the right to adapt this privacy policy so that it always complies with current legal requirements or to implement changes to our services in the privacy policy, e.g. when introducing new services. The new privacy policy will apply on your next visit.</p>
+        <h2>Questions about Data Protection</h2>
+        <p>If you have any questions about data protection, please send us an email to the controller named above.</p>
+        <h2>Copyright Notice</h2>
+        <p><em>This privacy policy was created with the help of activeMind AG – the experts for <a href="https://www.activemind.de/datenschutz/datenschutzbeauftragter/" target="_blank" rel="noopener dofollow">external data protection officers</a> (Version #2024-10-25).</em></p>`
     },
 
     de: {
@@ -184,6 +239,62 @@ const translations = {
         dabubbleDuration: "noch am programmieren...",
 
         popupSuccess: "Nachricht erfolgreich gesendet!",
-        popupError: "Etwas ist schiefgelaufen. Bitte versuche es später erneut."
+        popupError: "Etwas ist schiefgelaufen. Bitte versuche es später erneut.",
+
+        privacyHeadline: "Datenschutzerklärung",
+        privacyPolicyFullText: `
+        <h1>Datenschutzhinweise</h1>
+        <h2>Verantwortlicher</h2>
+        <p>Verantwortlicher im Sinne der Datenschutzgesetze, insbesondere der EU-Datenschutz-Grundverordnung (DSGVO), ist:</p>
+        <p class='generator_user_input'>Daniel Stuermer</p>
+        <h2>Ihre Betroffenenrechte</h2>
+        <p>Unter den angegebenen Kontaktdaten können Sie gemäß EU-Datenschutz-Grundverordnung (DSGVO) jederzeit folgende Rechte ausüben:</p>
+        <ul>
+            <li>Auskunft über Ihre bei uns gespeicherten Daten und deren Verarbeitung (Art. 15 DSGVO),</li>
+            <li>Berichtigung unrichtiger personenbezogener Daten (Art. 16 DSGVO),</li>
+            <li>Löschung Ihrer bei uns gespeicherten Daten (Art. 17 DSGVO),</li>
+            <li>Einschränkung der Datenverarbeitung, sofern wir Ihre Daten aufgrund gesetzlicher Pflichten noch nicht löschen dürfen (Art. 18 DSGVO),</li>
+            <li>Widerspruch gegen die Verarbeitung Ihrer Daten bei uns (Art. 21 DSGVO) und</li>
+            <li>Datenübertragbarkeit, sofern Sie in die Datenverarbeitung eingewilligt haben oder einen Vertrag mit uns abgeschlossen haben (Art. 20 DSGVO).</li>
+        </ul>
+        <p>Sofern Sie uns eine Einwilligung erteilt haben, können Sie diese jederzeit mit Wirkung für die Zukunft widerrufen.</p>
+        <p>Sie können sich jederzeit mit einer Beschwerde an eine Aufsichtsbehörde wenden, z. B. an die zuständige Aufsichtsbehörde des Bundeslands Ihres Wohnsitzes oder an die für uns als verantwortliche Stelle zuständige Behörde.</p>
+        <p>Eine Liste der Aufsichtsbehörden (für den nichtöffentlichen Bereich) mit Anschrift finden Sie unter: <a href="https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html">https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html</a>.</p>
+        <h2>Verarbeitungstätigkeiten</h2>
+        <h3>Kontaktaufnahme</h3>
+        <p>Art und Zweck der Verarbeitung</p>
+        <p>Auf unserer Website ist ein Kontaktformular vorhanden, welches für die elektronische Kontaktaufnahme genutzt werden kann. Nimmt ein Nutzer diese Möglichkeit wahr, so werden die in der Eingabemaske eingegeben Daten an uns übermittelt und gespeichert.</p>
+        <p>Zum Zeitpunkt der Absendung der Nachricht werden zudem folgende Daten gespeichert:</p>
+        <ul>
+            <li>Datum und Uhrzeit der Anfrage</li>
+        </ul>
+        <p>Eine Kontaktaufnahme ist über die bereitgestellten E-Mail-Adressen möglich. In diesem Fall werden die mit der E-Mail übermittelten personenbezogenen Daten des Nutzers gespeichert. Hierzu zählen Datum und Uhrzeit des E-Mailversands, E-Mailadresse, IP-Adressen sowie Informationen zu den an der E-Mail-Kommunikation beteiligten Servern.</p>
+        <p>Unabhängig von der gewählten Kommunikationsart erheben wir den Inhalt Ihrer Anfrage. Ihre Daten werden zum Zweck der individuellen Kommunikation mit Ihnen gespeichert.</p>
+        <h4>Rechtsgrundlage</h4>
+        <p>Die Verarbeitung der Daten erfolgt auf der Grundlage eines berechtigten Interesses (Art. 6 Abs. 1 lit. f DSGVO).</p>
+        <p>Unser berechtigtes Interesse an der Verarbeitung Ihrer Daten ist die Ermöglichung einer unkomplizierten Kontaktaufnahme.</p>
+        <p>Sofern Sie mit uns Kontakt aufnehmen, um ein Angebot zu erfragen, erfolgt die Verarbeitung der Daten zur Durchführung vorvertraglicher Maßnahmen (Art. 6 Abs. 1 lit. b DSGVO).</p>
+        <h4>Empfänger</h4>
+        <p>Empfänger der Daten sind ggf. technische Dienstleister, die für den Betrieb und die Wartung unserer Webseite als Auftragsverarbeiter tätig werden.</p>
+        <h4>Speicherdauer</h4>
+        <p>Daten werden spätestens [Bitte Informationen ergänzen] nach Bearbeitung der Kontaktaufnahme gelöscht.</p>
+        <p>Sofern es zu einem Vertragsverhältnis kommt, unterliegen wir den gesetzlichen Aufbewahrungsfristen. Diese betragen grundsätzlich 6 oder 10 Jahre aus Gründen der ordnungsmäßigen Buchführung und steuerrechtlichen Anforderungen.</p>
+        <h4>Bereitstellung vorgeschrieben oder erforderlich</h4>
+        <p>Die Bereitstellung Ihrer personenbezogenen Daten erfolgt freiwillig. Wir können Ihre Anfrage jedoch nur bearbeiten, sofern Sie uns die erforderlichen Daten und den Grund der Anfrage mitteilen.</p>
+        <h4>Widerspruch</h4>
+        <p>Lesen Sie dazu die Informationen über Ihr Widerspruchsrecht nach Art. 21 DSGVO weiter unten.</p>
+        <h2>Information über Ihr Widerspruchsrecht nach Art. 21 DSGVO</h2>
+        <h3>Einzelfallbezogenes Widerspruchsrecht</h3>
+        <p>Sie haben das Recht, aus Gründen, die sich aus Ihrer besonderen Situation ergeben, jederzeit gegen die Verarbeitung Sie betreffender personenbezogener Daten, die aufgrund Art. 6 Abs. 1 lit. f DSGVO (Datenverarbeitung auf der Grundlage einer Interessenabwägung) erfolgt, Widerspruch einzulegen; dies gilt auch für ein auf diese Bestimmung gestütztes Profiling im Sinne von Art. 4 Nr. 4 DSGVO.</p>
+        <p>Legen Sie Widerspruch ein, werden wir Ihre personenbezogenen Daten nicht mehr verarbeiten, es sei denn, wir können zwingende schutzwürdige Gründe für die Verarbeitung nachweisen, die Ihre Interessen, Rechte und Freiheiten überwiegen, oder die Verarbeitung dient der Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen.</p>
+        <h3>Empfänger eines Widerspruchs</h3>
+        <p class='generator_user_input'>Daniel Stuermer</p>
+        <h2>Änderung unserer Datenschutzerklärung</h2>
+        <p>Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht oder um Änderungen unserer Leistungen in der Datenschutzerklärung umzusetzen, z.B. bei der Einführung neuer Services. Für Ihren erneuten Besuch gilt dann die neue Datenschutzerklärung.</p>
+        <h2>Fragen zum Datenschutz</h2>
+        <p>Wenn Sie Fragen zum Datenschutz haben, schreiben Sie uns bitte eine E-Mail an den oben genannten Verantwortlichen.</p>
+        <h2>Urheberrechtliche Hinweise</h2>
+        <p><em>Diese Datenschutzerklärung wurde mit Hilfe der activeMind AG erstellt – den Experten für <a href="https://www.activemind.de/datenschutz/datenschutzbeauftragter/" target="_blank" rel="noopener dofollow">externe Datenschutzbeauftragte</a> (Version #2024-10-25).</em></p>`
     }
+
 };
