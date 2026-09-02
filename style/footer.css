@@ -56,6 +56,7 @@ footer a {
     border-radius: 20px;
     color: var(--primary-color);
     font-size: var(--small-text);
+    font-weight: var(--middle-font-weight);
     cursor: pointer;
     width: 120px;
     height: 40px;
@@ -72,20 +73,14 @@ footer a {
 
 .legal-notice-background .github-link-btn {
     color: var(--secondary-color);
-    font-size: var(--standard-text);
-    font-weight: var(--heavy-font-weight);
 }
 
 .legal-notice-background .linkedin-link-btn {
     color: var(--secondary-color);
-    font-size: var(--standard-text);
-    font-weight: var(--heavy-font-weight);
 }
 
 .legal-notice-background .email-link-btn {
     color: var(--secondary-color);
-    font-size: var(--standard-text);
-    font-weight: var(--heavy-font-weight);
 }
 
 .roll-img {
@@ -114,21 +109,11 @@ footer a {
     transition: opacity 0.1s ease, left 0.4s ease, transform 0.4s ease;
 }
 
-.legal-notice-btn {
-    color: var(--secondary-color);
-}
-
-.legal-notice-img {
-    background-color: var(--secondary-color);
-    border-radius: 50%;
-}
-
 /* Mobile */
 @media (max-width: 950px) {
     footer {
         height: 220px;
     }
-
 
     .contact-bar {
         display: flex;
@@ -168,17 +153,5 @@ footer a {
     .email-link-btn {
         width: 90px;
         height: 30px;
-    }
-
-    .legal-notice-background .github-link-btn {
-        font-size: var(--small-text);
-    }
-
-    .legal-notice-background .linkedin-link-btn {
-        font-size: var(--small-text);
-    }
-
-    .legal-notice-background .email-link-btn {
-        font-size: var(--small-text);
     }
 }
