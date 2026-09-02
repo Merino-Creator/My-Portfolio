@@ -467,7 +467,7 @@ function restoreScrollPosition() {
 }
 
 function initNavLinkClear() {
-    document.querySelectorAll('a[href*="#"]').forEach(link => {
+    document.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', () => {
             sessionStorage.setItem('skipScrollRestore', 'true');
         });
