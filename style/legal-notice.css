@@ -15,6 +15,10 @@ h3 {
     color: var(--primary-color);
 }
 
+.privacy-h3 {
+    color: black;
+}
+
 h4 {
     font-size: var(--small-headline);
     color: var(--highlight-color);
@@ -38,6 +42,7 @@ h4 {
     padding: 15px 70px 50px 70px;
     display: flex;
     flex-direction: column;
+    word-break: break-word;
 }
 
 .highlight {
@@ -45,6 +50,10 @@ h4 {
 }
 
 @media (max-width: 950px) {
+    .privacy-bg {
+        height: 350px;
+    }
+
     .legal-notice-content {
         padding: 100px 0 100px 0;
     }
@@ -58,4 +67,10 @@ h4 {
     .lang-de h3 {
     font-size: 48px;
 }
+}
+
+@media (max-width: 380px) {
+    .privacy-bg {
+        height: 400px;
+    }
 }

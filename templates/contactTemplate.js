@@ -55,7 +55,7 @@ function contactTemplate() {
                     <img id="checkmark" class="checkmark-img" src="${base}assets/images/contact/check.png"
                         alt="">
                 </div>
-                <p><span data-i18n="privacyText">I've read the</span> <a href="${base}html/legal-notice.html" class="contact-link"
+                <p><span data-i18n="privacyText">I've read the</span> <a href="${base}html/privacy-policy.html" class="contact-link"
                         data-i18n="privacyLink">privacy policy</a> <span data-i18n="privacyTextEnd">and
                         agree to the processing of
                         my data as outlined.</span></p>
